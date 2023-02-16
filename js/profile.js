@@ -17,3 +17,9 @@ ageField.addEventListener('input', toggleSaveButton);
 function toggleSaveButton() {
     saveProfileBtn.disabled = false;
   }
+
+// Edit profile button
+editProfileBtn.addEventListener('click', () => {
+    // Enable form fields for editing
+    usernameField.removeAttribute('readonly');
+    emailField.removeAttribute('readonly');
