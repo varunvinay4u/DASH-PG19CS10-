@@ -10,3 +10,5 @@ const saveProfileBtn = document.querySelector('#save-profile-btn');
 // Add event listeners to form fields
 usernameField.addEventListener('input', toggleSaveButton);
 emailField.addEventListener('input', toggleSaveButton);
+passwordField.addEventListener('input', toggleSaveButton);
+ageField.addEventListener('input', toggleSaveButton);
