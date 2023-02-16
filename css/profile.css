@@ -31,3 +31,8 @@ input {
     margin-bottom: 20px;
     width: 100%;
   }
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
