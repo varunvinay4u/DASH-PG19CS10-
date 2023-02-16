@@ -53,3 +53,15 @@ main {
     height: auto;
     margin-top: 50px;
   }
+
+  .alphabet {
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #33BBFF;
+  }
