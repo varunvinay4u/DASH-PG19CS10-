@@ -36,3 +36,8 @@ button {
     font-weight: bold;
     color: #fff;
     background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
