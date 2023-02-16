@@ -18,3 +18,8 @@ form {
     align-items: center;
     margin-top: 20px;
   }
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
