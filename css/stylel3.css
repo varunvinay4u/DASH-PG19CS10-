@@ -52,4 +52,11 @@ p {
     margin-bottom: 20px;
     text-align: center;
 }
- 
+
+/* Lesson Content */
+.lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
