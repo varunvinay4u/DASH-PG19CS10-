@@ -22,3 +22,23 @@
     
     <div class="profile">
         <h2>Profile Information</h2>
+        <form id="profile-form">
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" value="johndoe" readonly>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="johndoe@example.com" readonly>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" value="********" readonly>
+            </div>
+            <div>
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" value="8" readonly>
+            </div>
+            <button type="button" id="edit-profile-btn">Edit Profile</button>
+            <button type="submit" id="save-profile-btn" disabled>Save Profile</button>
+          </form>
