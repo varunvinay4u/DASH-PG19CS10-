@@ -15,3 +15,9 @@ nav {
     font-weight: bold;
     margin-right: 10px;
   }
+
+  nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
