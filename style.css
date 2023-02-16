@@ -16,3 +16,17 @@ header {
 	align-items: center;
 	padding: 20px;
 }
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
