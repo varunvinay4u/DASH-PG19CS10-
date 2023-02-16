@@ -7,3 +7,12 @@
 body {
 	font-family: Arial, sans-serif;
 }
+
+header {
+	background-color: #4CAF50;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
