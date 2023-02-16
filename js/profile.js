@@ -25,3 +25,8 @@ editProfileBtn.addEventListener('click', () => {
     emailField.removeAttribute('readonly');
     passwordField.removeAttribute('readonly');
     ageField.removeAttribute('readonly');
+    
+  // Toggle edit/save button
+  editProfileBtn.disabled = true;
+  saveProfileBtn.disabled = false;
+});
