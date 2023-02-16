@@ -7,3 +7,19 @@ body {
     line-height: 1.5;
     margin: 0;
   }
+
+/* Navigation Bar */
+
+nav {
+    background-color: #33BBFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
