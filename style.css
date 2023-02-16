@@ -30,3 +30,11 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 }
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
