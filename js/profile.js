@@ -12,3 +12,8 @@ usernameField.addEventListener('input', toggleSaveButton);
 emailField.addEventListener('input', toggleSaveButton);
 passwordField.addEventListener('input', toggleSaveButton);
 ageField.addEventListener('input', toggleSaveButton);
+
+// Toggle the save button
+function toggleSaveButton() {
+    saveProfileBtn.disabled = false;
+  }
