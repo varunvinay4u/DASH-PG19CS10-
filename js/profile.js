@@ -34,3 +34,12 @@ editProfileBtn.addEventListener('click', () => {
 // Save profile button
 profileForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
+  // Save changes to database or API
+  // ...
+
+  // Disable form fields for editing
+  usernameField.setAttribute('readonly', true);
+  emailField.setAttribute('readonly', true);
+  passwordField.setAttribute('readonly', true);
+  ageField.setAttribute('readonly', true);
