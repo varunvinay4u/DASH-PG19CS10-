@@ -56,3 +56,18 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
+/* Animations */
+
+section h1,
+section p {
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
