@@ -30,3 +30,7 @@ editProfileBtn.addEventListener('click', () => {
   editProfileBtn.disabled = true;
   saveProfileBtn.disabled = false;
 });
+
+// Save profile button
+profileForm.addEventListener('submit', (event) => {
+    event.preventDefault();
