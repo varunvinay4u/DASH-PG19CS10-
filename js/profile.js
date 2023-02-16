@@ -43,3 +43,8 @@ profileForm.addEventListener('submit', (event) => {
   emailField.setAttribute('readonly', true);
   passwordField.setAttribute('readonly', true);
   ageField.setAttribute('readonly', true);
+
+  // Toggle edit/save button
+  editProfileBtn.disabled = false;
+  saveProfileBtn.disabled = true;
+});
