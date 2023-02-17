@@ -29,6 +29,10 @@ body {
 	font-size: 18px;
 }
 
+nav a:hover {
+	text-decoration: underline;
+}
+
 .content {
 	background-color: white;
 	padding: 20px;
