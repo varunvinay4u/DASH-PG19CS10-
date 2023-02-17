@@ -4,6 +4,15 @@ nav {
 	flex-wrap: wrap;
 }
 
+header {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 nav a {
   color: white;
 	margin-right: 20px;
