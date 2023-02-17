@@ -14,3 +14,8 @@ justify-content: space-between;
 align-items: center;
 padding: 20px;
 }
+nav a {
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+}
