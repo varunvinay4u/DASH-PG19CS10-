@@ -1,19 +1,11 @@
 /* Lesson 4 Styles */
 
 body {
-    background-color: #F9D9E0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-/* Navigation Bar */
-
-body {
 	background-color: #F7CAC9;
 	font-family: Arial, sans-serif;
 }
+
+/* Navigation Bar */
 
 .header {
 	background-color: #4E9AF1;
@@ -45,7 +37,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-  /* Main Content */
+/* Main Content */
 
 .content {
     background-color: white;
