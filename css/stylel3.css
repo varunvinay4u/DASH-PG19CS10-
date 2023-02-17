@@ -42,12 +42,13 @@ nav li {
 }
 
 /* Main Content */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
 
 h1 {
   font-size: 36px;
