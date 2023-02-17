@@ -10,4 +10,8 @@ body {
 	padding: 20px;
 }
 
-
+header {
+	background-color: #49b5ff;
+	color: white;
+	padding: 10px;
+}
