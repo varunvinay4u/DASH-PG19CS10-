@@ -25,9 +25,19 @@ header,
 	align-items: center;
 }
 
+.nav-link{
+	font-size: 18px;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
 .nav-item {
 	margin-right: 20px;
-	
+
 	color: white;
 }
 
@@ -35,15 +45,12 @@ header,
 	text-decoration: underline;
 }
 
-/* nav{
+nav{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
-}
+/* 
 
 .nav-item {
 	margin-right: 20px;
