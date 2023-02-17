@@ -44,6 +44,10 @@ nav a {
 	font-size: 18px;
 }
 
+nav a:hover {
+	text-decoration: underline;
+}
+
 .content {
 	padding: 20px;
 }
