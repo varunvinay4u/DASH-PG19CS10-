@@ -28,9 +28,10 @@ nav {
 }
   
 nav a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
+  color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 18px;
 }
 
 nav a:hover {
