@@ -33,3 +33,7 @@ nav a {
 	text-decoration: none;
 	font-size: 1.2em;
 }
+
+nav a.active {
+	font-weight: bold;
+}
