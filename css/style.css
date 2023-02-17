@@ -14,7 +14,26 @@ body {
 	font-weight: bold;
 }
 
+header, 
+.nav-link {
+	background-color: #4E9AF1;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.nav-item {
+	margin-right: 20px;
+	
+	color: white;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
 
 /* nav{
 	display: flex;
