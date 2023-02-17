@@ -10,19 +10,31 @@ body {
 
 /* Navigation Bar */
 
+.header {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 nav {
-    background-color: #33BBFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
   
-  nav a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-  }
+nav a {
+  color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
 
   nav a:hover {
     text-decoration: underline;
@@ -37,11 +49,10 @@ nav {
   /* Main Content */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px;
-  }
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
 
   h2 {
     font-size: 30px;
