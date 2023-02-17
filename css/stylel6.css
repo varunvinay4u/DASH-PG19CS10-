@@ -10,33 +10,37 @@ body {
 	padding: 20px;
 }
 
-header {
-	background-color: #49b5ff;
+.header {
+	background-color: #4E9AF1;
 	color: white;
 	padding: 10px;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
-nav li {
-	margin: 0 10px;
-}
-
-nav a {
-	color: white;
-	text-decoration: none;
-	font-size: 1.2em;
-}
-
-nav a.active {
+.logo {
+	font-size: 24px;
 	font-weight: bold;
 }
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar a {
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+
 
 main {
 	margin-top: 20px;
