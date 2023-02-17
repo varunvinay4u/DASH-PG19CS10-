@@ -38,8 +38,10 @@ nav li {
 }
 
 nav a {
-	color: #fff;
+	color: white;
+	margin-right: 20px;
 	text-decoration: none;
+	font-size: 18px;
 }
 
 .content {
