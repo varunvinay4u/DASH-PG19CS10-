@@ -19,3 +19,6 @@ color: #fff;
 font-size: 20px;
 text-decoration: none;
 }
+nav a:hover {
+text-decoration: underline;
+}
