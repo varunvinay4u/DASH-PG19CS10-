@@ -27,3 +27,10 @@ color: #fff;
 font-size: 36px;
 margin: 0;
 }
+/* Main Content */
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 50px;
+}
