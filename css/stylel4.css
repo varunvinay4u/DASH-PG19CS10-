@@ -1,19 +1,16 @@
 /* Lesson 4 Styles */
 
 body {
-	  background-color: #F7CAC9;
-	  font-family: Arial, sans-serif;
+    background-color: #F9D9E0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 0;
   }
 
 /* Navigation Bar */
 
-body {
-	background-color: #F7CAC9;
-	font-family: Arial, sans-serif;
-}
-
-.header {
+.eader {
 	background-color: #4E9AF1;
 	color: white;
 	padding: 10px;
@@ -22,34 +19,34 @@ body {
 	align-items: center;
 }
 
+nav {
+  display: flex;
+	flex-wrap: wrap;
+}
+
 .logo {
 	font-size: 24px;
 	font-weight: bold;
 }
-
-.navbar {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.navbar a {
-	color: white;
+  
+nav a {
+  color: white;
 	margin-right: 20px;
 	text-decoration: none;
 	font-size: 18px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+  }
 
-nav h1 {
-  color: #fff;
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Main Content */
+  /* Main Content */
 
 main {
     background-color: white;
@@ -57,18 +54,18 @@ main {
     margin-top: 20px;
 }
 
-h2 {
+  h2 {
     font-size: 30px;
     margin-top: 50px;
-}
+  }
 
-video {
+  video {
     width: 100%;
     height: auto;
     margin-top: 50px;
-}
+  }
 
-.alphabet {
+  .alphabet {
     display: flex;
   flex-direction: column;
     justify-content: center;
@@ -79,7 +76,6 @@ video {
     text-transform: uppercase;
     color: #33BBFF;
   }
-
   footer {
     background-color: #4E9AF1;
     color: white;
