@@ -50,3 +50,8 @@ li {
 margin: 10px;
 padding: 10px;
 background-color: #fff;
+border-radius: 5px;
+font-size: 24px;
+text-transform: uppercase;
+color: #33BBFF;
+}
