@@ -53,18 +53,18 @@ main {
     margin: 50px;
   }
 
-  h2 {
+h2 {
     font-size: 30px;
     margin-top: 50px;
-  }
+}
 
-  video {
+video {
     width: 100%;
     height: auto;
     margin-top: 50px;
-  }
+}
 
-  .alphabet {
+.alphabet {
     display: flex;
   flex-direction: column;
     justify-content: center;
@@ -75,6 +75,7 @@ main {
     text-transform: uppercase;
     color: #33BBFF;
   }
+
   footer {
     background-color: #4E9AF1;
     color: white;
