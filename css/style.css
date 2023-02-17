@@ -14,16 +14,9 @@ body {
 	font-weight: bold;
 }
 
-header {
-	background-color: #4E9AF1;
-	color: white;
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
-nav{
+
+/* nav{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -33,19 +26,19 @@ nav ul {
 	display: flex;
 }
 
-nav li {
+.nav-item {
 	margin-right: 20px;
 }
 
-nav a {
+.nav-link {
 	color: white;
 	text-decoration: none;
 	font-size: 18px;
 }
 
-nav a:hover {
+.nav-link:hover {
 	text-decoration: underline;
-}
+} */
 
 .content {
 	padding: 20px;
