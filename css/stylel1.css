@@ -29,7 +29,7 @@ body {
 	font-size: 18px;
 }
 
-nav a:hover {
+.navbar a:hover {
 	text-decoration: underline;
 }
 
