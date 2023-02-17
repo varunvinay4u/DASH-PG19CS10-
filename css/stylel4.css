@@ -65,3 +65,9 @@ main {
     text-transform: uppercase;
     color: #33BBFF;
   }
+  .footer {
+    background-color: #4E9AF1;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
