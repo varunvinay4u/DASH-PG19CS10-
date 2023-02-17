@@ -23,6 +23,11 @@ header {
 	align-items: center;
 }
 
+nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 nav ul {
 	list-style: none;
 	display: flex;
