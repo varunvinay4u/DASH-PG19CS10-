@@ -34,3 +34,7 @@ flex-direction: column;
 align-items: center;
 margin: 50px;
 }
+h2 {
+font-size: 30px;
+margin-top: 50px;
+}
