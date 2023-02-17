@@ -4,6 +4,11 @@ nav {
 	flex-wrap: wrap;
 }
 
+body {
+	background-color: #F7CAC9;
+	font-family: Arial, sans-serif;
+}
+
 header {
 	background-color: #4E9AF1;
 	color: white;
