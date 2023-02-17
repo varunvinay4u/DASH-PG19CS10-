@@ -10,6 +10,11 @@ body {
 
 /* Navigation Bar */
 
+body {
+	background-color: #F7CAC9;
+	font-family: Arial, sans-serif;
+}
+
 .header {
 	background-color: #4E9AF1;
 	color: white;
@@ -19,66 +24,60 @@ body {
 	align-items: center;
 }
 
-nav {
-  display: flex;
-	flex-wrap: wrap;
-}
-
 .logo {
 	font-size: 24px;
 	font-weight: bold;
 }
-  
-nav a {
-  color: white;
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar a {
+	color: white;
 	margin-right: 20px;
 	text-decoration: none;
 	font-size: 18px;
 }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  nav h1 {
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-  }
+nav a:hover {
+	text-decoration: underline;
+}
 
   /* Main Content */
 
-main {
+.content {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
 
-  h2 {
+h2 {
     font-size: 30px;
     margin-top: 50px;
-  }
+}
 
-  video {
+video {
     width: 100%;
     height: auto;
     margin-top: 50px;
-  }
+}
 
-  .alphabet {
-    display: flex;
-  flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #33BBFF;
-  }
-  footer {
-    background-color: #4E9AF1;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+.alphabet {
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #33BBFF;
+}
+footer {
+  background-color: #4E9AF1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
