@@ -1,40 +1,50 @@
 /* Lesson 4 Styles */
 
 body {
-    background-color: #F9D9E0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+	  background-color: #F7CAC9;
+	  font-family: Arial, sans-serif;
     margin: 0;
   }
 
 /* Navigation Bar */
 
+.eader {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 nav {
-    background-color: #33BBFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-  }
+  display: flex;
+	flex-wrap: wrap;
+}
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
   
-  nav h1 {
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-  }
+nav a {
+  color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
 
-  /* Main Content */
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Main Content */
 
 main {
     display: flex;
@@ -43,18 +53,18 @@ main {
     margin: 50px;
   }
 
-  h2 {
+h2 {
     font-size: 30px;
     margin-top: 50px;
-  }
+}
 
-  video {
+video {
     width: 100%;
     height: auto;
     margin-top: 50px;
-  }
+}
 
-  .alphabet {
+.alphabet {
     display: flex;
   flex-direction: column;
     justify-content: center;
@@ -65,6 +75,7 @@ main {
     text-transform: uppercase;
     color: #33BBFF;
   }
+
   footer {
     background-color: #4E9AF1;
     color: white;
