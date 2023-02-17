@@ -10,29 +10,23 @@ body {
   
   /* Navigation Bar */
   
-  nav {
-    background-color: #33BBFF;
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
   }
   
-  nav a {
-    color: #fff;
-    font-size: 20px;
+  .navbar a {
+    color: white;
+    margin-right: 20px;
     text-decoration: none;
+    font-size: 18px;
   }
   
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  nav h1 {
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-  }
   
   /* Main Content */
   
