@@ -27,3 +27,9 @@ nav ul {
 nav li {
 	margin: 0 10px;
 }
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
