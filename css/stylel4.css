@@ -8,7 +8,12 @@ body {
 
 /* Navigation Bar */
 
-.eader {
+body {
+	background-color: #F7CAC9;
+	font-family: Arial, sans-serif;
+}
+
+.header {
 	background-color: #4E9AF1;
 	color: white;
 	padding: 10px;
@@ -17,18 +22,18 @@ body {
 	align-items: center;
 }
 
-nav {
-  display: flex;
-	flex-wrap: wrap;
-}
-
 .logo {
 	font-size: 24px;
 	font-weight: bold;
 }
-  
-nav a {
-  color: white;
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar a {
+	color: white;
 	margin-right: 20px;
 	text-decoration: none;
 	font-size: 18px;
@@ -47,11 +52,10 @@ nav h1 {
 /* Main Content */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px;
-  }
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
 
 h2 {
     font-size: 30px;
