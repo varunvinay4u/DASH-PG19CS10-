@@ -22,3 +22,8 @@ text-decoration: none;
 nav a:hover {
 text-decoration: underline;
 }
+nav h1 {
+color: #fff;
+font-size: 36px;
+margin: 0;
+}
