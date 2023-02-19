@@ -88,12 +88,14 @@ section p {
 	margin-bottom: 20px;
 }
 
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+.footer {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
 	text-align: center;
 }
+
+
 
 /* Animations */
 
