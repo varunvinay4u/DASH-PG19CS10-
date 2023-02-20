@@ -9,21 +9,42 @@
   <link rel="stylesheet" href="css/stylel5.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <style>
+		.nav-link{
+			display: flex;
+			background-color: #4E9AF1;
+			text-decoration: none;
+			font-size: 18px;
+			color: #fff;
+		}
+      	.dropdown-menu .nav-link{
+        	color: #000;
+      	}
+	</style>
 </head>
 <body>
-  <div class="header">
+  <header>
 		<div class="logo">DASH Learning Platform</div>
-		<div class="navbar">
-			<a href="index.html">Home</a>
-			<a href="lesson1.html">Lesson 1</a>
-			<a href="lesson2.html">Lesson 2</a>
-			<a href="lesson3.html">Lesson 3</a>
-			<a href="lesson4.html">Lesson 4</a>
-			<a href="lesson5.html">Lesson 5</a>
-			<a href="lesson6.html">Lesson 6</a>
-			<a href="profile.html">Profile</a>
-		</div>
-	</div>
+		<nav class="navbar" fixed-top>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a class="nav-link" active href="index.html">Home</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lessons</a>
+					<ul class="dropdown-menu">
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson1.html">Lesson 1</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson2.html">Lesson 2</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson3.html">Lesson 3</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson4.html">Lesson 4</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson5.html">Lesson 5</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson6.html">Lesson 6</a></li>
+					  <li class="nav-item"><hr class="dropdown-divider"></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="#">Extra Activities</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="profile.html"><i class="bi bi-person-fill"></i>Profile</a></li>
+			</ul>
+		</nav>
+	</header>
   
   <main>
     <h2>Lesson 5 - Colors</h2>
