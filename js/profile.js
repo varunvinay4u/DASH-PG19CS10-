@@ -21,8 +21,8 @@ function toggleSaveButton() {
 // Edit profile button
 editProfileBtn.addEventListener('click', () => {
     // Enable form fields for editing
-    $("#username").attr("readonly",false);
-    document.getElementById('username').removeAttribute('readonly');
+    // $("#username").attr("readonly",false);
+    // document.getElementById('username').removeAttribute('readonly');
     usernameField.removeAttribute('readonly');
     emailField.removeAttribute('readonly');
     passwordField.removeAttribute('readonly');
