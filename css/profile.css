@@ -1,3 +1,32 @@
+.header {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar a {
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
 .profile-container {
     max-width: 800px;
     margin: 0 auto;
@@ -40,4 +69,10 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+.footer {
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	text-align: center;
 }
