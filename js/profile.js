@@ -21,12 +21,14 @@ function toggleSaveButton() {
 // Edit profile button
 editProfileBtn.addEventListener('click', () => {
     // Enable form fields for editing
+    $("#username").attr("readonly",false);
+    document.getElementById('username').removeAttribute('readonly');
     usernameField.removeAttribute('readonly');
     emailField.removeAttribute('readonly');
     passwordField.removeAttribute('readonly');
     ageField.removeAttribute('readonly');
     
-  // Toggle edit/save button
+  // // Toggle edit/save button
   editProfileBtn.disabled = true;
   saveProfileBtn.disabled = false;
 });
