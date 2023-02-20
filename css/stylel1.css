@@ -3,34 +3,48 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.header {
+.logo {
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+}
+
+header {
 	background-color: #4E9AF1;
 	color: white;
+	text-decoration: none;
 	padding: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.logo {
-	font-size: 24px;
-	font-weight: bold;
-}
-
-.navbar {
+.nav-link{
 	display: flex;
-	flex-wrap: wrap;
-}
-
-.navbar a {
-	color: white;
-	margin-right: 20px;
+	background-color: #4E9AF1;
 	text-decoration: none;
 	font-size: 18px;
+	color: #fff;
 }
 
-.navbar a:hover {
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	margin-right: 20px;
+
+	color: white;
+}
+
+.nav-link:hover {
 	text-decoration: underline;
+}
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .content {
