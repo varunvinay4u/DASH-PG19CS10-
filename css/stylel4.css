@@ -71,6 +71,10 @@ video {
 }
 
 footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
   background-color: #4E9AF1;
   color: white;
   padding: 10px;
