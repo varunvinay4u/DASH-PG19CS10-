@@ -50,23 +50,16 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-
+  
+  /* Main Content */
+  
   .content {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-  }
-  
- 
-  
-  /* Main Content */
-  
-  main {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 50px;
-  }
+}
   
   h2 {
     font-size: 30px;
