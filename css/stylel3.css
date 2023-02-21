@@ -117,3 +117,8 @@ main p {
 	padding: 10px;
 	text-align: center;
 }
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}

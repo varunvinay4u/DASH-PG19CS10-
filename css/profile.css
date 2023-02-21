@@ -76,6 +76,20 @@ form {
     align-items: center;
     margin-top: 20px;
   }
+
+
+/*.*/
+  input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+/*.*/
+
+
 label {
     font-size: 18px;
     font-weight: bold;
