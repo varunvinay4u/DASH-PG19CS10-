@@ -49,3 +49,8 @@ p {
   p:hover {
     background-color: #ddd;
   }
+
+  input[type="radio"]:checked + p {
+    background-color: #4CAF50;
+    color: #fff;
+  }
