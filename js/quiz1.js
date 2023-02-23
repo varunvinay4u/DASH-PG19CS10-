@@ -48,8 +48,9 @@ function CheckQuiz() {
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
 
-    let btn = document.createElement("button");
-    btn.innerHTML = "Click Me";
+    var btn = document.createElement("a");
+    btn.innerText = "Try Again";
+    btn.href = 'quiz1.html';
 document.body.appendChild(btn);
 
 
