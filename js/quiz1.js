@@ -34,3 +34,6 @@ function CheckQuiz() {
     var totalQuestions = '3';
     var score = GetScore();
     MarkIncorrectQuestions();
+    document.write("You scored: " + score + " out of " + totalQuestions + ".");
+
+    let btn = document.createElement("button");
