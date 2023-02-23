@@ -28,3 +28,14 @@ function GetScore() {
     }
     return score;
 }
+
+function ApplyDefaultQuestionStyles() {
+    for(i = 1; i <= totalQuestions; i++) {
+        if(i % 2 == 0) {
+            document.getElementById(i).className = "question";
+        }
+        else {
+            document.getElementById(i).className = "question odd";
+        }
+    }
+}
