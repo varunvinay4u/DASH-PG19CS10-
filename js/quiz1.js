@@ -48,11 +48,10 @@ function CheckQuiz() {
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
 
-    var btn = document.createElement("a");
-    btn.innerText = "Try Again";
-    btn.href = 'quiz1.html';
-document.body.appendChild(btn);
-
+    var btn1 = document.createElement("a");
+    btn1.innerText = "Try Again";
+    btn1.href = 'quiz1.html';
+    document.body.appendChild(btn1);
 
 }
 
