@@ -45,3 +45,7 @@ function CheckQuiz() {
     var totalQuestions = '4';
     var score = GetScore();
     MarkIncorrectQuestions();
+    document.write("You scored: " + score + " out of " + totalQuestions + ".");
+
+    let btn = document.createElement("button");
+    btn.innerHTML = "Click Me";
