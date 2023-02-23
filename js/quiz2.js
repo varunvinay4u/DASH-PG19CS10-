@@ -29,19 +29,19 @@ function GetScore() {
     return score;
 }
 
-function ApplyDefaultQuestionStyles() {
-    for(i = 1; i <= totalQuestions; i++) {
-        if(i % 2 == 0) {
-            document.getElementById(i).className = "question";
-        }
-        else {
-            document.getElementById(i).className = "question odd";
-        }
-    }
-}
+// function ApplyDefaultQuestionStyles() {
+//     for(i = 1; i <= totalQuestions; i++) {
+//         if(i % 2 == 0) {
+//             document.getElementById(i).className = "question";
+//         }
+//         else {
+//             document.getElementById(i).className = "question odd";
+//         }
+//     }
+// }
 
 function CheckQuiz() {
-    ApplyDefaultQuestionStyles();
+    // ApplyDefaultQuestionStyles();
     var totalQuestions = '4';
     var score = GetScore();
     MarkIncorrectQuestions();
