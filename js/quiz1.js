@@ -28,3 +28,9 @@ function GetScore() {
     }
     return score;
 }
+
+function CheckQuiz() {
+    ApplyDefaultQuestionStyles();
+    var totalQuestions = '3';
+    var score = GetScore();
+    MarkIncorrectQuestions();
