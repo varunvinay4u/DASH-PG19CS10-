@@ -6,3 +6,7 @@ var userAnswers = new Array;
 answers[1] = "A";
 answers[2] = "C";
 answers[3] = "B";
+
+function SetAnswer(questionNumber, answerSelection) {
+    userAnswers[questionNumber] = answerSelection;
+}
