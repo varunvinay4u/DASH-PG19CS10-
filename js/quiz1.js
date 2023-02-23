@@ -37,7 +37,7 @@ function CheckQuiz() {
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
 
     let btn = document.createElement("button");
-    btn.innerHTML = "window.open(\"file:///C:/Users/gthornbu/Desktop/TEST/test.bat\)";
+    btn.innerHTML = "Click Me";
 document.body.appendChild(btn);
 
 
