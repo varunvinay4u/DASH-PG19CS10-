@@ -10,13 +10,20 @@ strong {
     font-family:Consolas, Courier;
     font-size: 25px;
     color:#444444;
-    line-height:12px;
+    line-height:15px;
     margin-left:15px;
     margin-top:-28px;
 }
 
 .instructions {
-    margin:30px;
+    margin:25px;
+}
+
+.instructions h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: lineargradient();
 }
 
 .button {
