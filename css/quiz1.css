@@ -36,3 +36,12 @@ pre {
     border-left:#BA3D49 5px solid;
     padding-left:10px;
 }
+
+p {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
