@@ -45,3 +45,7 @@ p {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  p:hover {
+    background-color: #ddd;
+  }
