@@ -7,12 +7,17 @@ body {
 }
 
 strong {
-    font-family:Consolas, Courier;
-    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
     color:#444444;
     line-height:15px;
     margin-left:15px;
     margin-top:-28px;
+    background: #eee;
+}
+strong:hover{
+    color:#444444;
+    background: #eee;
 }
 
 .instructions {
@@ -26,11 +31,14 @@ strong {
     color: lineargradient();
 }
 
-.button {
-    margin-left:10px;
-    margin-bottom:120px;
-    width:200px;
-    height:50px;
+.ui-button {
+    background: #4E9AF1;
+	color: white;
+	border-style: outset;
+	border-color: #4E9AF1;
+	font: bold 15px arial,sans-serif;
+    width:160px;
+    height:45px;
 }
 
 .question {
@@ -51,13 +59,13 @@ p {
     background-color: #eee;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
-  p:hover {
+p:hover {
     background-color: #ddd;
-  }
+}
 
-  input[type="radio"]:checked + p {
+input[type="radio"]:checked + p {
     background-color: #4CAF50;
     color: #fff;
-  }
+}
