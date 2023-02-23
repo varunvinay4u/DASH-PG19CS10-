@@ -42,3 +42,7 @@ document.body.appendChild(btn);
 
 
 }
+
+function result(score,totalQuestions){
+    document.write("Score" +score);
+  }
