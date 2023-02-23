@@ -49,13 +49,13 @@ function CheckQuiz() {
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
 
     var btn1 = document.createElement("a");
-    btn1.innerText = "Try Again";
+    btn1.innerText = " Try Again ";
     btn1.href = 'quiz1.html';
     document.body.appendChild(btn1);
 
 
     var btn2 = document.createElement("a");
-    btn2.innerText = "Go Home";
+    btn2.innerText = " Go Home ";
     btn2.href = 'index.html';
     document.body.appendChild(btn2);
     
