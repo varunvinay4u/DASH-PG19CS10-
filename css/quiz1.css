@@ -31,3 +31,8 @@ pre {
     padding:15px;
     margin:10px;
 }
+
+.wrong {
+    border-left:#BA3D49 5px solid;
+    padding-left:10px;
+}
