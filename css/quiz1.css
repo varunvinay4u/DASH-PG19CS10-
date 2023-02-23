@@ -69,3 +69,8 @@ input[type="radio"]:checked + p {
     background-color: #4CAF50;
     color: #fff;
 }
+
+input[type="radio"]:checked + p {
+    background: #20b8be;
+    border-radius: 4px;
+  }
