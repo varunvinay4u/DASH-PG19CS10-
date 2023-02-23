@@ -5,3 +5,12 @@ body {
     line-height:1.2em;
     color:#222222;
 }
+
+pre {
+    font-family:Consolas, Courier;
+    font-size: 12px;
+    color:#444444;
+    line-height:12px;
+    margin-left:30px;
+    margin-top:-28px;
+}
