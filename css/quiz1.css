@@ -13,11 +13,12 @@ strong {
     line-height:15px;
     margin-left:15px;
     margin-top:-28px;
-    background: #eee;
+    background: #ddd;
+    padding:15px;
 }
 strong:hover{
     color:#444444;
-    background: #eee;
+    background: #ddd;
 }
 
 .instructions {
@@ -42,9 +43,8 @@ strong:hover{
 }
 
 .question {
-    background:#F1E6D4;
+    background:#ddd;
     padding:15px;
-    margin:10px;
 }
 
 .wrong {
