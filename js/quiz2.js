@@ -39,3 +39,9 @@ function ApplyDefaultQuestionStyles() {
         }
     }
 }
+
+function CheckQuiz() {
+    ApplyDefaultQuestionStyles();
+    var totalQuestions = '4';
+    var score = GetScore();
+    MarkIncorrectQuestions();
