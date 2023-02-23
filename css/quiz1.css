@@ -25,3 +25,9 @@ pre {
     width:200px;
     height:50px;
 }
+
+.question {
+    background:#F1E6D4;
+    padding:15px;
+    margin:10px;
+}
