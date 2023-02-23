@@ -6,17 +6,16 @@ body {
     color:#222222;
 }
 
-strong {
+.qno {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
     color:#444444;
     line-height:15px;
-    margin-left:15px;
-    margin-top:-28px;
+    margin: 10px 0px;
     background: #ddd;
     padding:15px;
 }
-strong:hover{
+.qno:hover{
     color:#444444;
     background: #ddd;
 }
@@ -43,6 +42,7 @@ strong:hover{
 }
 
 .question {
+    font-size: 18px;
     background:#ddd;
     padding:15px;
 }
