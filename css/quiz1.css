@@ -18,3 +18,10 @@ pre {
 .instructions {
     margin-left:25px;
 }
+
+.button {
+    margin-left:10px;
+    margin-bottom:120px;
+    width:200px;
+    height:50px;
+}
