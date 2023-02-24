@@ -35,3 +35,9 @@ function CheckQuiz() {
     var score = GetScore();
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
+
+    var btn1 = document.createElement("a");
+    btn1.innerText = " Try Again ";
+    btn1.href = 'quiz2.html';
+    document.body.appendChild(btn1);
+
