@@ -27,11 +27,6 @@ header {
 	color: #fff;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
-}
-
 .nav-item {
 	margin-right: 20px;
 
@@ -40,9 +35,4 @@ nav ul {
 
 .nav-link:hover {
 	text-decoration: underline;
-}
-
-nav{
-	display: flex;
-	flex-wrap: wrap;
 }
