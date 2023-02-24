@@ -35,10 +35,17 @@ function CheckQuiz() {
     var score = GetScore();
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
-    let btn = document.createElement("button");
-    btn.innerHTML = "Click Me";
-    document.body.appendChild(btn);
+    
+    var btn1 = document.createElement("a");
+    btn1.innerText = " Try Again ";
+    btn1.href = 'quiz3.html';
+    document.body.appendChild(btn1);
 
+
+    var btn2 = document.createElement("a");
+    btn2.innerText = " Go Home ";
+    btn2.href = 'index.html';
+    document.body.appendChild(btn2);
 }
 
 
