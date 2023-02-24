@@ -53,7 +53,7 @@ nav{
 	margin-top: 20px;
 }
 
-.footer {
+footer {
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -70,11 +70,16 @@ nav{
 	text-align: center;
   	color: white;
 	border-radius: 6%;
-	padding: 15px;
+	padding: 15px 20px;
+}
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
 }
 
 .center{
 	text-align: center;
 	align-items: center;
-	margin: 15px;
+	margin: 20px;
 }
