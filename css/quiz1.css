@@ -73,4 +73,4 @@ input[type="radio"]:checked + p {
 input[type="radio"]:checked + p {
     background: #20b8be;
     border-radius: 4px;
-  }
+}

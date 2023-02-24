@@ -63,3 +63,18 @@ nav{
 	padding: 10px;
 	text-align: center;
 }
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 15px;
+}
+
+.center{
+	text-align: center;
+	align-items: center;
+	margin: 15px;
+}
