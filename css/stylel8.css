@@ -1,0 +1,16 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+      flex-wrap: wrap;
+  }
+  
+  body {
+      background-color: #F7CAC9;
+      font-family: Arial, sans-serif;
+  }
+  
+  .logo {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+  }
