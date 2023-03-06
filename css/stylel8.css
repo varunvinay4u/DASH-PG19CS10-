@@ -32,6 +32,9 @@ header {
 	font-size: 18px;
 	color: #fff;
 }
+.nav-link:hover {
+	text-decoration: underline;
+}
 
 nav ul {
 	list-style: none;
