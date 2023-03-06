@@ -1,0 +1,78 @@
+/* Lesson 5 Styles */
+
+body {
+	background-color: #F7CAC9;
+	font-family: Arial, sans-serif;
+}
+  
+  /* Navigation Bar */
+
+  
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  header {
+    background-color: #4E9AF1;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-link{
+    color: #fff;
+    display: flex;
+    background-color: #4E9AF1;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    color: white;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Main Content */
+  
+  .content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+  
+  h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+.footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
