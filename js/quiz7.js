@@ -25,3 +25,12 @@ function MarkIncorrectQuestions() {
         }
     }
 }
+
+function GetScore() {
+    var score = 0;
+    for(i = 1; i <= totalQuestions; i++) {
+        if(userAnswers[i] == answers[i])
+            score++;
+    }
+    return score;
+}
