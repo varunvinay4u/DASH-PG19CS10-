@@ -25,3 +25,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.nav-link{
+	display: flex;
+	background-color: #4E9AF1;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
