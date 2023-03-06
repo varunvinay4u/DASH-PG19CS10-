@@ -1,11 +1,13 @@
-/* Lesson 4 Styles */
+/* Navigation Bar */
+nav {
+  display: flex;
+	flex-wrap: wrap;
+}
 
 body {
 	background-color: #F7CAC9;
 	font-family: Arial, sans-serif;
 }
-
-/* Navigation Bar */
 
 .logo {
 	font-size: 24px;
@@ -53,44 +55,70 @@ nav{
 
 /* Main Content */
 
-.content {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
+  }
 
-h2 {
-    font-size: 30px;
-    margin-top: 50px;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-}
-
-.alphabet {
-  display: flex;
- flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  font-size: 50px;
+h1 {
+  font-size: 36px;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #33BBFF;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-footer {
+main p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Lesson Content */
+.lesson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.lesson img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+.lesson h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lesson p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer {
 	position: relative;
 	bottom: 0;
 	left: 0;
 	right: 0;
-  background-color: #4E9AF1;
-  color: white;
-  padding: 10px;
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+ul {
   text-align: center;
+  list-style-type: none;
 }

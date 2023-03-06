@@ -3,10 +3,10 @@ var totalQuestions = 4;
 var answers = new Array;
 var userAnswers = new Array;
 
-answers[1] = "A";
+answers[1] = "B";
 answers[2] = "C";
-answers[3] = "B";
-answers[4] = "B";
+answers[3] = "D";
+answers[4] = "A";
 
 function SetAnswer(questionNumber, answerSelection) {
     userAnswers[questionNumber] = answerSelection;
@@ -28,17 +28,6 @@ function GetScore() {
     }
     return score;
 }
-
-// function ApplyDefaultQuestionStyles() {
-//     for(i = 1; i <= totalQuestions; i++) {
-//         if(i % 2 == 0) {
-//             document.getElementById(i).className = "question";
-//         }
-//         else {
-//             document.getElementById(i).className = "question odd";
-//         }
-//     }
-// }
 
 function CheckQuiz() {
     // ApplyDefaultQuestionStyles();
@@ -63,3 +52,5 @@ function CheckQuiz() {
 function result(score,totalQuestions){
     document.write("Score" +score);
   }
+
+  

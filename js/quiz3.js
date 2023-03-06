@@ -4,8 +4,8 @@ var answers = new Array;
 var userAnswers = new Array;
 
 answers[1] = "A";
-answers[2] = "C";
-answers[3] = "B";
+answers[2] = "D";
+answers[3] = "C";
 answers[4] = "B";
 
 function SetAnswer(questionNumber, answerSelection) {
@@ -29,27 +29,16 @@ function GetScore() {
     return score;
 }
 
-// function ApplyDefaultQuestionStyles() {
-//     for(i = 1; i <= totalQuestions; i++) {
-//         if(i % 2 == 0) {
-//             document.getElementById(i).className = "question";
-//         }
-//         else {
-//             document.getElementById(i).className = "question odd";
-//         }
-//     }
-// }
-
 function CheckQuiz() {
     // ApplyDefaultQuestionStyles();
     var totalQuestions = '4';
     var score = GetScore();
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
-
+    
     var btn1 = document.createElement("a");
     btn1.innerText = " Try Again ";
-    btn1.href = 'quiz2.html';
+    btn1.href = 'quiz3.html';
     document.body.appendChild(btn1);
 
 
@@ -57,8 +46,8 @@ function CheckQuiz() {
     btn2.innerText = " Go Home ";
     btn2.href = 'index.html';
     document.body.appendChild(btn2);
-
 }
+
 
 function result(score,totalQuestions){
     document.write("Score" +score);
