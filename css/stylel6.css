@@ -56,4 +56,10 @@ nav ul {
 	text-decoration: underline;
 }
 
+nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 
