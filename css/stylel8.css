@@ -1,16 +1,26 @@
 /* Navigation Bar */
 nav {
     display: flex;
-      flex-wrap: wrap;
-  }
+    flex-wrap: wrap;
+}
   
-  body {
-      background-color: #F7CAC9;
-      font-family: Arial, sans-serif;
-  }
+body {
+    background-color: #F7CAC9;
+    font-family: Arial, sans-serif;
+}
   
-  .logo {
-      font-size: 24px;
-      color: #fff;
-      font-weight: bold;
-  }
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+header {
+	background-color: #4E9AF1;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
