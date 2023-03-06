@@ -24,3 +24,21 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.nav-link{
+	display: flex;
+	background-color: #4E9AF1;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	margin-right: 20px;
+    color: white;
+}
