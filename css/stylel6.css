@@ -45,3 +45,11 @@ nav ul {
 	display: flex;
 }
 
+.nav-item {
+	margin-right: 20px;
+
+	color: white;
+}
+
+
+
