@@ -13,3 +13,7 @@ answers[7] = "B";
 answers[8] = "C";
 answers[9] = "B";
 answers[10] = "D";
+
+function SetAnswer(questionNumber, answerSelection) {
+    userAnswers[questionNumber] = answerSelection;
+}
