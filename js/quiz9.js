@@ -51,3 +51,5 @@ function CheckQuiz() {
     btn2.innerText = " Go Home ";
     btn2.href = 'index.html';
     document.body.appendChild(btn2);
+
+}
