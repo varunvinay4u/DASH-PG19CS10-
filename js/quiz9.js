@@ -53,3 +53,7 @@ function CheckQuiz() {
     document.body.appendChild(btn2);
 
 }
+
+function result(score,totalQuestions){
+    document.write("Score" +score);
+  }
