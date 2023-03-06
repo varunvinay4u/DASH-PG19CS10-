@@ -9,3 +9,9 @@ body {
 	margin: 0 auto;
 	padding: 20px;
 }
+
+.logo {
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+}
