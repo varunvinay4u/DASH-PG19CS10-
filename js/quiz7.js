@@ -34,3 +34,10 @@ function GetScore() {
     }
     return score;
 }
+
+function CheckQuiz() {
+    // ApplyDefaultQuestionStyles();
+    var totalQuestions = '10';
+    var score = GetScore();
+    MarkIncorrectQuestions();
+    document.write("You scored: " + score + " out of " + totalQuestions + ".");
