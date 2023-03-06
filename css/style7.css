@@ -38,3 +38,9 @@ nav ul {
 	list-style: none;
 	display: flex;
 }
+
+.nav-item {
+	margin-right: 20px;
+
+	color: white;
+}
