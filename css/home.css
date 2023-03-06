@@ -94,3 +94,10 @@ p {
 .btn-primary:hover {
     background-color: #3e8e41;
 }
+
+/* About Us section styles */
+#aboutus {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
