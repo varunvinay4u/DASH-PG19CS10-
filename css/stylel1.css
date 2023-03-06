@@ -1,7 +1,11 @@
+/* Lesson 4 Styles */
+
 body {
 	background-color: #F7CAC9;
 	font-family: Arial, sans-serif;
 }
+
+/* Navigation Bar */
 
 .logo {
 	font-size: 24px;
@@ -47,10 +51,37 @@ nav{
 	flex-wrap: wrap;
 }
 
+/* Main Content */
+
 .content {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.alphabet {
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #33BBFF;
 }
 
 footer {
@@ -58,28 +89,8 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #4E9AF1;
-	color: white;
-	padding: 10px;
-	text-align: center;
-}
-
-.btn-quiz {
-	background-color: #199319;
-	text-decoration: none;
-	text-align: center;
-  	color: white;
-	border-radius: 6%;
-	padding: 15px 20px;
-}
-.btn-quiz:hover {
-	color: #fff;
-	font-weight: 600;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
-}
-
-.center{
-	text-align: center;
-	align-items: center;
-	margin: 20px;
+  background-color: #4E9AF1;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
