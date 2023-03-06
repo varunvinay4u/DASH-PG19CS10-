@@ -48,3 +48,10 @@ nav ul {
 .nav-link:hover {
 	text-decoration: underline;
 }
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
