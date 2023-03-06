@@ -25,6 +25,11 @@ header {
 	align-items: center;
 }
 
+nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .nav-link{
 	display: flex;
 	background-color: #4E9AF1;
