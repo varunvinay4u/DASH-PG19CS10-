@@ -3,9 +3,9 @@ var totalQuestions = 10;
 var answers = new Array;
 var userAnswers = new Array;
 
-answers[1] = "B";
-answers[2] = "C";
-answers[3] = "D";
+answers[1] = "A";
+answers[2] = "B";
+answers[3] = "C";
 answers[4] = "A";
 answers[5] = "B";
 answers[6] = "C";
@@ -37,16 +37,15 @@ function GetScore() {
 
 function CheckQuiz() {
     // ApplyDefaultQuestionStyles();
-    var totalQuestions = '4';
+    var totalQuestions = '10';
     var score = GetScore();
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
 
     var btn1 = document.createElement("a");
     btn1.innerText = " Try Again ";
-    btn1.href = 'quiz2.html';
+    btn1.href = 'quiz9.html';
     document.body.appendChild(btn1);
-
 
     var btn2 = document.createElement("a");
     btn2.innerText = " Go Home ";
@@ -55,8 +54,7 @@ function CheckQuiz() {
 
 }
 
+
 function result(score,totalQuestions){
     document.write("Score" +score);
   }
-
-  
