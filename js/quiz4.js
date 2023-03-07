@@ -1,4 +1,4 @@
-var totalQuestions = 4;
+var totalQuestions = 10;
 
 var answers = new Array;
 var userAnswers = new Array;
@@ -7,6 +7,12 @@ answers[1] = "B";
 answers[2] = "C";
 answers[3] = "D";
 answers[4] = "A";
+answers[5] = "B";
+answers[6] = "C";
+answers[7] = "B";
+answers[8] = "C";
+answers[9] = "B";
+answers[10] = "D";
 
 function SetAnswer(questionNumber, answerSelection) {
     userAnswers[questionNumber] = answerSelection;

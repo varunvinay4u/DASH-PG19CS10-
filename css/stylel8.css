@@ -1,0 +1,52 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+body {
+    background-color: #F7CAC9;
+    font-family: Arial, sans-serif;
+}
+  
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+header {
+	background-color: #4E9AF1;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-link{
+	display: flex;
+	background-color: #4E9AF1;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	margin-right: 20px;
+    color: white;
+}

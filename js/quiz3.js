@@ -1,4 +1,4 @@
-var totalQuestions = 4;
+var totalQuestions = 10;
 
 var answers = new Array;
 var userAnswers = new Array;
@@ -7,6 +7,12 @@ answers[1] = "A";
 answers[2] = "D";
 answers[3] = "C";
 answers[4] = "B";
+answers[5] = "B";
+answers[6] = "A";
+answers[7] = "B";
+answers[8] = "C";
+answers[9] = "D";
+answers[10] = "B";
 
 function SetAnswer(questionNumber, answerSelection) {
     userAnswers[questionNumber] = answerSelection;
@@ -31,7 +37,7 @@ function GetScore() {
 
 function CheckQuiz() {
     // ApplyDefaultQuestionStyles();
-    var totalQuestions = '4';
+    var totalQuestions = '10';
     var score = GetScore();
     MarkIncorrectQuestions();
     document.write("You scored: " + score + " out of " + totalQuestions + ".");
