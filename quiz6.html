@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Quiz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/quiz1.css" />
+    <script src="js/quiz6.js"></script>
+</head>
+<body>
+    
+    <div class="instructions">
+        <h1>
+            Shapes: Quiz
+        </h1>
+
+        <form action="">
+            <div id="1">
+                <p class="qno"><strong>Question 1</strong></p>
+                <p class="question">Which shape has three sides and looks like a slice of pizza?</p>
+                <p><input type="radio" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton1">Circle</p> 
+                <p><input type="radio" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton1">Square</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(1, this.value)" name="radiobutton1">Rectangle</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton1">Triangle</p>
+            </div>
+
+            <div id="2">
+                <p class="qno"><strong>Question 2</strong></p>
+                <p class="question">Which shape has five sides and looks like a house?</p>
+                <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Rectangle</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Square</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Pentagon</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">Triangle</p>
+            </div>
+
+            <div id="3">
+                <p class="qno"><strong>Question 2</strong></p>
+                <p class="question">Which shape is looks like a box?</p>
+                <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Rectangle</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Cube</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Circle</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">Square</p>
+            </div>
+
+            <div id="4">
+                <p class="qno"><strong>Question 2</strong></p>
+                <p class="question">Which shape has four sides that are all the same length?</p>
+                <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Rectangle</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Triangle</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Circle</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">Square</p>
+            </div>
+
+            <p>
+                <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button">
+            </p>
+
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
