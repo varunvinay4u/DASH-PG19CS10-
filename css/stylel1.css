@@ -61,6 +61,11 @@ nav{
     align-items: center;
 }
 
+p {
+	font-size: large;
+	
+}
+
 h2 {
     font-size: 30px;
     margin-top: 50px;

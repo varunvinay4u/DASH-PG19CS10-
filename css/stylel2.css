@@ -53,6 +53,11 @@ nav{
 	margin-top: 20px;
 }
 
+p {
+	font-size: large;
+	
+}
+
 footer {
 	position: relative;
 	bottom: 0;
