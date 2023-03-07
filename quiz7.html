@@ -22,11 +22,21 @@
          <form>
             <div id="1">
 
-             <div id="10">
+            <div id="10">
                     <p class="qno"><strong>Question 10</strong></p>
                     <p class="question">Which sense organ helps in vision?</p>
                     <p><input type="radio" value="A" onClick="SetAnswer(10, this.value)" name="radiobutton10">Ear</p>
                     <p><input type="radio" value="B" onClick="SetAnswer(10, this.value)" name="radiobutton10">Tongue</p>
                     <p><input type="radio" value="C" onClick="SetAnswer(10, this.value)" name="radiobutton10">Nose</p>
                     <p><input type="radio" value="D" onClick="SetAnswer(10, this.value)" name="radiobutton10">Eye</p>
-             </div>    
+            </div>   
+            
+            <p>
+                <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button">
+            </p>
+        </form>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
