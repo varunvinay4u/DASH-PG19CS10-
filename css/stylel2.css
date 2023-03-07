@@ -58,6 +58,18 @@ p {
 	
 }
 
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  .video {
+	margin: 0 auto;
+  }
+
 footer {
 	position: relative;
 	bottom: 0;
