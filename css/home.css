@@ -83,14 +83,32 @@ p {
 
 .btn-primary {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #4E9AF1;
     color: #fff;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 6px;
     transition: all 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
-    background-color: #3e8e41;
+    background-color: #4E9AF1;
+    box-shadow: 10px 10px 2px 1px #00000083;
+
+}
+
+/* About Us section styles */
+#aboutus {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.mission, .vision {
+    background-color: #4e9af184;
+    padding: 6px;
+    margin: 10px 3px;
+    border-radius: 10px;
 }
