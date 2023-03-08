@@ -19,7 +19,7 @@ for ($i = 1; $i <= 10; $i++) {
 
   
 
-$sql = "update data set l1=$score where id=6";
+$sql = "update data set alphabet=$score where id=6";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }
