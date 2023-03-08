@@ -96,3 +96,24 @@ p {
 	padding: 10px;
 	text-align: center;
 }
+
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 15px 20px;
+}
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.center{
+	text-align: center;
+	align-items: center;
+	margin: 20px;
+}
