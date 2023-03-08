@@ -22,3 +22,7 @@
             <td><input type="number" name="age" id="age" placeholder="your age"></td>
           </tr>
           <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" placeholder="your DOB"></td>
+          </tr>
+        <tr>
