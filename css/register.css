@@ -53,3 +53,15 @@
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 13px;
 }
+
+
+.registartion-form .submit {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px 0;
+    background-color: #503349;
+    border-radius: 5px;
+  }
