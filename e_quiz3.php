@@ -17,3 +17,13 @@ for ($i = 1; $i <= 10; $i++) {
     }
   }
   
+  $sql = "update data set arithmetic=$score where id=6";
+if ($con->query($sql) === TRUE) {
+  // echo "New record created successfully";
+}
+
+header("Location:" .$addr );
+die;
+
+}
+?>
