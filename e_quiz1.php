@@ -17,3 +17,16 @@ for ($i = 1; $i <= 10; $i++) {
       $score++; // increment score if user's answer is correct
     }
   }
+
+  
+
+$sql = "update data set l1=$score where id=6";
+if ($con->query($sql) === TRUE) {
+  // echo "New record created successfully";
+}
+
+header("Location:" .$addr );
+die;
+
+}
+?>
