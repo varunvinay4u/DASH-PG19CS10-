@@ -18,8 +18,23 @@
             <h1>
                 Emotions and Sensations: Quiz
             </h1>
-
-         <form>
+            <script> 
+                function redirectToDestination() {
+          var referringUrl = document.referrer;
+          var destinationUrl;
+          
+          if (referringUrl.includes('quiz6.html')) {
+            destinationUrl = 'quiz9.html';
+          } else {
+            destinationUrl = 'index.html';
+          }
+          
+          window.location.href = destinationUrl;
+        document.getElementById('addr').value = destinationUrl;
+        }
+                </script> 
+         <form method="post" action="e_quiz7.php">
+            <input type="hidden" id="addr" name="addr"> 
             <div id="1">
                 <p class="qno"><strong>Question 1</strong></p>
                 <p class="question">________ is an unpleasant emotion that is often caused by the perception of danger or a threat.</p>
@@ -112,7 +127,7 @@
             </div>   
             
             <p>
-                <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button">
+                <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
             </p>
         </form>
     </div>
