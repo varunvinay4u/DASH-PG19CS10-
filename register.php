@@ -30,3 +30,7 @@
           <td><input type="email" name="email" id="email" placeholder="your email"></td>
         </tr>
         <tr>
+        <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password" placeholder="password"></td>
+        </tr>
+        <tr>
