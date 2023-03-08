@@ -49,3 +49,8 @@
             Other: <input type="radio" name="gender" value="other">
           </td>
         </tr>
+
+        <tr>
+          <td><label for="zipcode">Zip Code:</label></td>
+          <td><input type="number" name="zipcode" id="zipcode"></td>
+        </tr>
