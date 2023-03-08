@@ -81,3 +81,18 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
+
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+
+	{
+		//something was posted
+		$name =$_POST['name'];
+		$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+		$email=$_POST['email'];
+		$phoneNumber=$_POST['phoneNumber'];
+		$gender=$_POST['gender'];
+		$zipcode=$_POST['zipcode'];
+		$location=$_POST['location'];
+		$dob=$_POST['dob'];
+		$age=$_POST['age'];
