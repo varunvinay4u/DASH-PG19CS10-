@@ -53,6 +53,39 @@ nav{
 	margin-top: 20px;
 }
 
+p {
+	font-size: large;
+	
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: large;
+  }
+  td {
+	padding: 10px;
+	border: 1px solid rgb(7, 18, 241);
+  }
+  .col1 {
+	width: 20%;
+  }
+  .col2 {
+	width: 20%;
+  }
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  .video {
+	margin: 0 auto;
+  }
+
 footer {
 	position: relative;
 	bottom: 0;
