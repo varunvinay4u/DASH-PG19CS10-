@@ -66,3 +66,12 @@ function formValidation() {
         alert("Please select your gender!");
         return false;
       }
+
+  // checking zip code
+  if (!zipcode.value.match(/^[0-9]{6}$/)) {
+    alert("Zip code must be 6 characters long number!");
+    zipcode.focus();
+    return false;
+  }
+  return true;
+}
