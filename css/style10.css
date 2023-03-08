@@ -50,3 +50,7 @@ nav{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+main {
+	margin-top: 20px;
+}
