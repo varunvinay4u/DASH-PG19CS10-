@@ -38,3 +38,7 @@
           <td><input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password"></td>
         </tr>
         <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+          <td><input type="numbers" name="phoneNumber" id="phoneNumber" placeholder="Phone number"></td>
+        </tr>
+        <tr>
