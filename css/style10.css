@@ -54,3 +54,19 @@ nav{
 main {
 	margin-top: 20px;
 }
+
+h1 {
+	font-size: 2em;
+	text-align: start;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+p {
+	font-size: large;
+	
+}
+
