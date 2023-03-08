@@ -58,7 +58,7 @@ nav{
   main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:start;
     margin: 50px;
     background-color: white;
     padding: 20px;
@@ -69,20 +69,20 @@ h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
+  text-align:start;
 }
 
 main p {
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align:start;
 }
 
 /* Lesson Content */
 .lesson {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:start;
   margin-bottom: 50px;
 }
 
@@ -98,12 +98,20 @@ main p {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
+  text-align:start;
 }
 
 .lesson p {
   font-size: 20px;
   margin-bottom: 10px;
+  text-align:start;
+}
+
+h2{
+  text-align: center;
+}
+
+h4{
   text-align: center;
 }
 
@@ -121,4 +129,24 @@ main p {
 ul {
   text-align: center;
   list-style-type: none;
+}
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 15px 20px;
+}
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.center{
+	text-align: center;
+	align-items: center;
+	margin: 20px;
 }
