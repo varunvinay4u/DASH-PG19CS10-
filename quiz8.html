@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8: Quiz</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/quiz1.css" />
+</head>
+<body>
+    <div class="instructions">
+        <h1>
+            Sounds: Quiz
+        </h1>
+
+        <script> 
+            function redirectToDestination() {
+      var referringUrl = document.referrer;
+      var destinationUrl;
+      
+      if (referringUrl.includes('quiz9.html')) {
+        destinationUrl = 'quiz5.html';
+      } else {
+        destinationUrl = 'index.html';
+      }
+      
+      window.location.href = destinationUrl;
+    document.getElementById('addr').value = destinationUrl;
+    }
+            </script> 
+    <form method="post" action="e_quiz8.php">
+        <input type="hidden" id="addr" name="addr"> 
+             <div id="1">
+                <p class="qno"><strong>Question 1</strong></p>
+                <p class="question">Identify the sound</p>
+                <audio controls>
+					<source src="audio/dog.wav" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton1">Cat</p> 
+                <p><input type="radio" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton1">Birds</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(1, this.value)" name="radiobutton1">Dog</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton1">Vehicle</p>
+            </div>
+
+            <div id="2">
+                <p class="qno"><strong>Question 2</strong></p>
+                <p class="question">Identify the sound</p>
+                <audio controls>
+					<source src="audio/horse.wav" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Cat</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Birds</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Dog</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">Vehicle</p>
+            </div>
+
+            <div id="3">
+                <p class="qno"><strong>Question 3</strong></p>
+                <p class="question">Identify the sound</p>
+                <audio controls>
+					<source src="audio/cat.wav" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(3, this.value)" name="radiobutton3">Cat</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(3, this.value)" name="radiobutton3">Birds</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(3, this.value)" name="radiobutton3">Dog</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(3, this.value)" name="radiobutton3">Vehicle</p>
+            </div>
+
+            <div id="4">
+                <p class="qno"><strong>Question 4</strong></p>
+                <p class="question">Identify the sound</p>
+                <audio controls>
+					<source src="audio/bird.wav" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(4, this.value)" name="radiobutton4">Cat</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(4, this.value)" name="radiobutton4">Birds</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(4, this.value)" name="radiobutton4">Dog</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton4">Vehicle</p>
+            </div>
+
+            <div id="5">
+                <p class="qno"><strong>Question 5</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(5, this.value)" name="radiobutton5">Ball</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(5, this.value)" name="radiobutton5">Apple</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(5, this.value)" name="radiobutton5">Orange</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(5, this.value)" name="radiobutton5">Angel</p>
+            </div>
+
+            <div id="6">
+                <p class="qno"><strong>Question 6</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(6, this.value)" name="radiobutton6">Cat</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(6, this.value)" name="radiobutton6">Apple</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(6, this.value)" name="radiobutton6">Cookie</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(6, this.value)" name="radiobutton6">Car</p>
+            </div>
+
+            <div id="7">
+                <p class="qno"><strong>Question 7</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(7, this.value)" name="radiobutton7">Cat</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(7, this.value)" name="radiobutton7">Dog</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(7, this.value)" name="radiobutton7">Apple</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(7, this.value)" name="radiobutton7">Elephant</p>
+            </div>
+
+            <div id="8">
+                <p class="qno"><strong>Question 8</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(8, this.value)" name="radiobutton8">Cookie</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(8, this.value)" name="radiobutton8">Egg</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(8, this.value)" name="radiobutton8">Apple</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(8, this.value)" name="radiobutton8">Elephant</p>
+            </div>
+
+            <div id="9">
+                <p class="qno"><strong>Question 9</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(9, this.value)" name="radiobutton9">Frog</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(9, this.value)" name="radiobutton9">Ant</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(9, this.value)" name="radiobutton9">Fish</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(9, this.value)" name="radiobutton9">Orange</p>
+            </div>
+
+            <div id="10">
+                <p class="qno"><strong>Question 10</strong></p>
+                <p class="question">Identify the word</p>
+                <audio controls>
+					<source src="" type="audio/mp3">
+				</audio>
+                <p><input type="radio" value="A" onClick="SetAnswer(10, this.value)" name="radiobutton10">Apple</p>
+                <p><input type="radio" value="B" onClick="SetAnswer(10, this.value)" name="radiobutton10">Girraf</p>
+                <p><input type="radio" value="C" onClick="SetAnswer(10, this.value)" name="radiobutton10">Elephant</p>
+                <p><input type="radio" value="D" onClick="SetAnswer(10, this.value)" name="radiobutton10">Orange</p>
+            </div>
+
+            <p>
+                <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

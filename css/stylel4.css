@@ -58,7 +58,7 @@ nav{
   main {
     display: flex;
     flex-direction: column;
-    align-items:start;
+  
     margin: 50px;
     background-color: white;
     padding: 20px;
@@ -108,7 +108,7 @@ main p {
 }
 
 h2{
-  text-align: center;
+  text-align:start;
 }
 
 h4{

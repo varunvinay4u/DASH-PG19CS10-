@@ -4,7 +4,8 @@
 include("connection.php");
 include("functions.php");
 
-$answers = array("D", "C", "B", "D", "C", "B","B","A","C","B"); // correct answers
+
+$answers = array("", "", "", "", "", "","","","",""); // correct answers
 $score = 0; // initialize score variable
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -18,7 +19,8 @@ for ($i = 1; $i <= 10; $i++) {
 }
 
 
-$sql = "update data set shapes=$score where id=6";
+
+$sql = "update data set audio=$score where id=6";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }
