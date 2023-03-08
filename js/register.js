@@ -18,3 +18,10 @@ function formValidation() {
       userName.focus();
       return false;
     }
+
+    
+  if (isNaN(age.value) || age.value < 3 || age.value > 100) {
+    alert("Age not in range");
+    age.focus();
+    return false;
+  }
