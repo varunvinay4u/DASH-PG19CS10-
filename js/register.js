@@ -25,3 +25,10 @@ function formValidation() {
     age.focus();
     return false;
   }
+
+  
+  if (dob.value === "")  {
+    alert("please provide Date of Birth");
+    dob.focus();
+    return false;
+  }
