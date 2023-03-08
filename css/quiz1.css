@@ -61,7 +61,7 @@ label {
     cursor: pointer;
 }
 
-p:hover {
+label:hover {
     background-color: #ddd;
 }
 
