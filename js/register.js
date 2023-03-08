@@ -46,3 +46,10 @@ function formValidation() {
         password.focus();
         return false;
       }
+
+
+      if (!(confirmpassword.value === password.value))  {
+        alert("passwords do not match");
+        password.focus();
+        return false;
+      }
