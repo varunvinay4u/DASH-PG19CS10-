@@ -34,3 +34,7 @@
           <td><input type="password" name="password" id="password" placeholder="password"></td>
         </tr>
         <tr>
+        <td><label for="confirmpassword">Confirm Password:</label></td>
+          <td><input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password"></td>
+        </tr>
+        <tr>
