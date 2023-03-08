@@ -59,3 +59,10 @@
           <td><textarea name="location" id="location" placeholder="Your location"></textarea></td>
         </tr>
         <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+        </tr>
+      </table>
+    </form>
+
+  </div>
+</body>
