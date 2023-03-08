@@ -100,6 +100,7 @@ session_start();
 
     //save to database
 		$user_id = random_num(20);
+     $_SESSION['code'] = $user_id;
 		$sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',0,0,0,0,0,0,0,0,0,0)";
 
         if ($con->query($sql) === TRUE) {
