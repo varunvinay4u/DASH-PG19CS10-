@@ -13,3 +13,9 @@
     height: 100vh;
     background: linear-gradient(120deg, #fcff40, #9caf0b, #9dc209);
   }
+
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+  }
