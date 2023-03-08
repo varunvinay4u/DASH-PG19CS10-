@@ -6,3 +6,8 @@ include("functions.php");
 
 $answers = array("B", "C", "D", "A", "B", "C","B","C","B","D"); // correct answers
 $score = 0; // initialize score variable
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+$addr=$_POST['addr'];
+// loop through all quest
