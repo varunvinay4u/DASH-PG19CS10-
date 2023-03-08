@@ -14,3 +14,7 @@
     <form method="post" name="registration" class="registartion-form" onsubmit="return formValidation()">
       <table>
         <tr>
+        <td><label for="name">Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="your name"></td>
+        </tr>
+        <tr>
