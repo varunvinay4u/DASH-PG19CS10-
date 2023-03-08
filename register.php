@@ -26,3 +26,7 @@
             <td><input type="date" name="dob" id="dob" placeholder="your DOB"></td>
           </tr>
         <tr>
+        <td><label for="email">Email:</label></td>
+          <td><input type="email" name="email" id="email" placeholder="your email"></td>
+        </tr>
+        <tr>
