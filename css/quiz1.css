@@ -65,11 +65,11 @@ label:hover {
     background-color: #ddd;
 }
 
-input[type="radio"]:checked + p {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
 input[type="radio"] {
     display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: #fff;
 }
