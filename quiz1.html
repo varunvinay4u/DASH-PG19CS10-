@@ -18,7 +18,21 @@
         <h1>
             Colors: Quiz
         </h1>
-
+        <script> 
+            function redirectToDestination() {
+      var referringUrl = document.referrer;
+      var destinationUrl;
+      
+      if (referringUrl.includes('register.php')) {
+        destinationUrl = 'quiz2.html';
+      } else {
+        destinationUrl = 'index.html';
+      }
+      
+      window.location.href = destinationUrl;
+    document.getElementById('addr').value = destinationUrl;
+    }
+            </script> 
     <form>
         <div id="1">
             <p class="qno"><strong>Question 1</strong></p>
