@@ -96,3 +96,8 @@ session_start();
 		$location=$_POST['location'];
 		$dob=$_POST['dob'];
 		$age=$_POST['age'];
+
+
+    //save to database
+		$user_id = random_num(20);
+		$sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',0,0,0,0,0,0,0,0,0,0)";
