@@ -18,6 +18,21 @@
             <h1>
                 Alphabets : Quiz
             </h1>
+            <script> 
+                function redirectToDestination() {
+          var referringUrl = document.referrer;
+          var destinationUrl;
+          
+          if (referringUrl.includes('quiz3.html')) {
+            destinationUrl = 'quiz5.html';
+          } else {
+            destinationUrl = 'index.html';
+          }
+          
+          window.location.href = destinationUrl;
+        document.getElementById('addr').value = destinationUrl;
+        }
+                </script> 
             <form>
                 <div id="1">
                     <p class="qno"><strong>Question 1</strong></p>
