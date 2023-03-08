@@ -32,3 +32,11 @@ function formValidation() {
     dob.focus();
     return false;
   }
+
+    // checking password character pattern
+
+    if (password.value === "")  {
+        alert("please provide a password");
+        password.focus();
+        return false;
+      }
