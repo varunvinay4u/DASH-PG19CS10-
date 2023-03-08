@@ -4,7 +4,7 @@
 include("connection.php");
 include("functions.php");
 
-$answers = array("D", "C", "B", "D", "", "","","","",""); // correct answers
+$answers = array("D", "C", "B", "D", "C", "","","","",""); // correct answers
 $score = 0; // initialize score variable
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
