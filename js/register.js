@@ -53,3 +53,10 @@ function formValidation() {
         password.focus();
         return false;
       }
+
+        // checking phone number
+  if (!phoneNumber.value.match(/^[1-9][0-9]{9}$/)) {
+    alert("Phone number must be 10 characters long number and first digit can't be 0!");
+    phoneNumber.focus();
+    return false;
+  }
