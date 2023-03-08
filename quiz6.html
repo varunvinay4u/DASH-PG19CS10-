@@ -18,7 +18,24 @@
             Shapes: Quiz
         </h1>
 
-        <form action="">
+        <script> 
+            function redirectToDestination() {
+      var referringUrl = document.referrer;
+      var destinationUrl;
+      
+      if (referringUrl.includes('quiz4.html')) {
+        destinationUrl = 'quiz7.html';
+      } else {
+        destinationUrl = 'index.html';
+      }
+      
+      window.location.href = destinationUrl;
+    document.getElementById('addr').value = destinationUrl;
+    }
+            </script> 
+
+        <form method="post" action="e_quiz6.php">
+            <input type="hidden" id="addr" name="addr"> 
             <div id="1">
                 <p class="qno"><strong>Question 1</strong></p>
                 <p class="question">Which shape has three sides and looks like a slice of pizza?</p>
@@ -38,7 +55,7 @@
             </div>
 
             <div id="3">
-                <p class="qno"><strong>Question 2</strong></p>
+                <p class="qno"><strong>Question 3</strong></p>
                 <p class="question">Which shape is looks like a box?</p>
                 <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Rectangle</p>
                 <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Cube</p>
@@ -47,7 +64,7 @@
             </div>
 
             <div id="4">
-                <p class="qno"><strong>Question 2</strong></p>
+                <p class="qno"><strong>Question 4</strong></p>
                 <p class="question">Which shape has four sides that are all the same length?</p>
                 <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Rectangle</p>
                 <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Triangle</p>
@@ -56,7 +73,7 @@
             </div>
 
             <p>
-                <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button">
+                <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
             </p>
 
         </form>
