@@ -25,3 +25,25 @@ function MarkIncorrectQuestions() {
         }
     }
 }
+
+function GetScore() {
+    var score = 0;
+    for(i = 1; i <= totalQuestions; i++) {
+        if(userAnswers[i] == answers[i])
+            score++;
+    }
+    return score;
+}
+
+function CheckQuiz() {
+    // ApplyDefaultQuestionStyles();
+    var totalQuestions = '10';
+    var score = GetScore();
+    MarkIncorrectQuestions();
+    document.write("You scored: " + score + " out of " + totalQuestions + ".");
+    
+    var btn1 = document.createElement("a");
+    btn1.innerText = " Try Again ";
+    btn1.href = 'quiz3.html';
+    document.body.appendChild(btn1);
+
