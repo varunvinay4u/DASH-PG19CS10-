@@ -43,3 +43,6 @@ nav ul {
 
 	color: white;
 }
+.nav-link:hover {
+	text-decoration: underline;
+}
