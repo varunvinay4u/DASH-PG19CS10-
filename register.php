@@ -54,3 +54,8 @@
           <td><label for="zipcode">Zip Code:</label></td>
           <td><input type="number" name="zipcode" id="zipcode"></td>
         </tr>
+        <tr>
+          <td><label for="location">Location:</label></td>
+          <td><textarea name="location" id="location" placeholder="Your location"></textarea></td>
+        </tr>
+        <tr>
