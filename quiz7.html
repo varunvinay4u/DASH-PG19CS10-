@@ -18,7 +18,21 @@
             <h1>
                 Emotions and Sensations: Quiz
             </h1>
-
+            <script> 
+                function redirectToDestination() {
+          var referringUrl = document.referrer;
+          var destinationUrl;
+          
+          if (referringUrl.includes('quiz6.html')) {
+            destinationUrl = 'quiz9.html';
+          } else {
+            destinationUrl = 'index.html';
+          }
+          
+          window.location.href = destinationUrl;
+        document.getElementById('addr').value = destinationUrl;
+        }
+                </script> 
          <form>
             <div id="1">
                 <p class="qno"><strong>Question 1</strong></p>
