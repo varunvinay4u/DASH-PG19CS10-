@@ -12,4 +12,4 @@ answers[6] = "C";
 answers[7] = "D";
 answers[8] = "B";
 answers[9] = "A";
-answers[10] = "C";
+answers[10] = "D";
