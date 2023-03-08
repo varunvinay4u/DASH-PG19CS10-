@@ -46,3 +46,10 @@
   font-family: sans-serif;
   border-radius: 3px;
 }
+
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 13px;
+}
