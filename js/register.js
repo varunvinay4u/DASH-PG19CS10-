@@ -8,3 +8,13 @@ const confirmpassword = document.getElementById("confirmpassword");
 const phoneNumber = document.getElementById("phoneNumber");
 const gender = document.registration;
 const zipcode = document.getElementById("zipcode");
+
+
+// function for form varification
+function formValidation() {
+    // checking length of name
+    if (userName.value.length < 2 || userName.value.length > 20) {
+      alert("Name length should be more than 2 and less than 21 charaters");
+      userName.focus();
+      return false;
+    }
