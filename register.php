@@ -101,3 +101,10 @@ session_start();
     //save to database
 		$user_id = random_num(20);
 		$sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',0,0,0,0,0,0,0,0,0,0)";
+
+        if ($con->query($sql) === TRUE) {
+            echo "New record created successfully";
+          } else {
+            echo "Error: " . $sql . "<br>" . $con->error;
+          }
+          
