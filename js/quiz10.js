@@ -5,7 +5,7 @@ var userAnswers = new Array;
 
 answers[1] = "B";
 answers[2] = "C";
-answers[3] = "B";
+answers[3] = "A";
 answers[4] = "B";
 answers[5] = "C";
 answers[6] = "B";
