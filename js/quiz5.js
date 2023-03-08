@@ -17,3 +17,11 @@ answers[10] = "B";
 function SetAnswer(questionNumber, answerSelection) {
     userAnswers[questionNumber] = answerSelection;
 }
+
+function MarkIncorrectQuestions() {
+    for(i = 1; i <= totalQuestions; i++) {
+        if(answers[i] != userAnswers[i]) {
+            document.getElementById(i).className += " wrong";
+        }
+    }
+}
