@@ -108,3 +108,9 @@ session_start();
             echo "Error: " . $sql . "<br>" . $con->error;
           }
           
+          header("Location: quiz1.html");
+          die;
+
+    }
+
+?>
