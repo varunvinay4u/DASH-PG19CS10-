@@ -40,3 +40,9 @@ function formValidation() {
         password.focus();
         return false;
       }
+
+      if (!password.value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/)) {
+        alert("Password must contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character, and must be between 8 and 15 characters long.");
+        password.focus();
+        return false;
+      }
