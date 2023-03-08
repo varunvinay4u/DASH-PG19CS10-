@@ -17,8 +17,22 @@
         <h1>
             Colors: Quiz
         </h1>
-    
-    <form>
+        <script> 
+            function redirectToDestination() {
+      var referringUrl = document.referrer;
+      var destinationUrl;
+      
+      if (referringUrl.includes('quiz1.html')) {
+        destinationUrl = 'quiz3.html';
+      } else {
+        destinationUrl = 'index.html';
+      }
+      
+      window.location.href = destinationUrl;
+    document.getElementById('addr').value = destinationUrl;
+    }
+            </script> 
+    <form method="post" action="e_quiz2.php">
         <div id="1">
             <p class="qno"><strong>Question 1</strong></p>
             <p class="question">What comes after the number 4?</p>
