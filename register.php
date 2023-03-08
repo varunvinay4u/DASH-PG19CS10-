@@ -18,3 +18,7 @@
           <td><input type="text" name="name" id="name" placeholder="your name"></td>
         </tr>
         <tr>
+        <td><label for="age">Age:</label></td>
+            <td><input type="number" name="age" id="age" placeholder="your age"></td>
+          </tr>
+          <tr>
