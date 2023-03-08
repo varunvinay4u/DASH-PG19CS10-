@@ -60,3 +60,9 @@ function formValidation() {
     phoneNumber.focus();
     return false;
   }
+
+    // checking gender
+    if (gender.gender.value === "") {
+        alert("Please select your gender!");
+        return false;
+      }
