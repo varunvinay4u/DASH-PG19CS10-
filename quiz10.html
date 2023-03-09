@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10: Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/quiz1.css" />
+    <script src="js/quiz10.js"></script>
+</head>
+<body>
+
+    <div class="instructions">
+            <h1>
+                Actions : Quiz
+            </h1>
+
+            <script> 
+                function redirectToDestination() {
+          var referringUrl = document.referrer;
+          var destinationUrl;
+          
+          if (referringUrl.includes('quiz5.html')) {
+            destinationUrl = 'index.html';
+          } else {
+            destinationUrl = 'index.html';
+          }
+          
+          window.location.href = destinationUrl;
+        document.getElementById('addr').value = destinationUrl;
+        }
+                </script> 
+            <form method="post" action="e_quiz10.php">
+                <input type="hidden" id="addr" name="addr"> 
+                <div id="1">
+                    <p class="qno"><strong>Question 1</strong></p>
+                    <p class="question">Identify the action</p>
+                    <div style="text-align: center;">
+                        <img src="image/Sing.jpg"  width="400" height="300">
+                        <br>
+                    </div> 
+                    <input type="radio" id="A1" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton1">
+                    <label for="A1">Cry</label>
+                    <input type="radio" id="B1" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton1">
+                    <label for="B1">Sing</label>
+                    <input type="radio" id="C1" value="C" onClick="SetAnswer(1, this.value)" name="radiobutton1">
+                    <label for="C1">Fight</label>
+                    <input type="radio" id="D1" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton1">
+                    <label for="D1">Drink</label>
+                </div>
+            <div id="2">
+                <p class="qno"><strong>Question 2</strong></p>
+                <p class="question">The action of bringing your hands together to make a loud noise is</p>
+                <input type="radio" id="A2" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">
+                <label for="A2">Cry</label>
+                <input type="radio" id="B2" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">
+                <label for="B2">Sing</label>
+                <input type="radio" id="C2" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">
+                <label for="C2">Clap</label>
+                <input type="radio" id="D2" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">
+                <label for="D2">Bath</label>
+            </div>
+            <div id="3">
+                <p class="qno"><strong>Question 3</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/bath.jpg"  width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A3" value="A" onClick="SetAnswer(3, this.value)" name="radiobutton3">
+                <label for="A3">Bath</label>
+                <input type="radio" id="B3" value="B" onClick="SetAnswer(3, this.value)" name="radiobutton3">
+                <label for="B3">Clap</label>
+                <input type="radio" id="C3" value="C" onClick="SetAnswer(3, this.value)" name="radiobutton3">
+                <label for="C3">Run</label>
+                <input type="radio" id="D3" value="D" onClick="SetAnswer(3, this.value)" name="radiobutton3">
+                <label for="D3">Sing</label>
+            </div>
+            <div id="4">
+                <p class="qno"><strong>Question 4</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/handshaking.jpg" width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A4" value="A" onClick="SetAnswer(4, this.value)" name="radiobutton4">
+                <label for="A4">Bath</label>
+                <input type="radio" id="B4" value="B" onClick="SetAnswer(4, this.value)" name="radiobutton4">
+                <label for="B4">Clap</label>
+                <input type="radio" id="C4" value="C" onClick="SetAnswer(4, this.value)" name="radiobutton4">
+                <label for="C4">Handshake</label>
+                <input type="radio" id="D4" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton4">
+                <label for="D4">Fight</label>
+            </div>
+            <div id="5">
+                <p class="qno"><strong>Question 5</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/eat.jpg" width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A5" value="A" onClick="SetAnswer(5, this.value)" name="radiobutton5">
+                <label for="A5">Eat</label>
+                <input type="radio" id="B5" value="B" onClick="SetAnswer(5, this.value)" name="radiobutton5">
+                <label for="B5">Run</label>
+                <input type="radio" id="C5" value="C" onClick="SetAnswer(5, this.value)" name="radiobutton5">
+                <label for="C5">Drink</label>
+                <input type="radio" id="D5" value="D" onClick="SetAnswer(5, this.value)" name="radiobutton5">
+                <label for="D5">Fight</label>
+            </div>
+            <div id="6">
+                <p class="qno"><strong>Question 6</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/drink.jpg" width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A6" value="A" onClick="SetAnswer(6, this.value)" name="radiobutton6">
+                <label for="A6">Eat</label>
+                <input type="radio" id="B6" value="B" onClick="SetAnswer(6, this.value)" name="radiobutton6">
+                <label for="B6">Run</label>
+                <input type="radio" id="C6" value="C" onClick="SetAnswer(6, this.value)" name="radiobutton6">
+                <label for="C6">Drink</label>
+                <input type="radio" id="D6" value="D" onClick="SetAnswer(6, this.value)" name="radiobutton6">
+                <label for="D6">Fight</label>
+            </div>
+            <div id="7">
+                <p class="qno"><strong>Question 7</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/Dance.jpg" width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A7" value="A" onClick="SetAnswer(7, this.value)" name="radiobutton7">
+                <label for="A7">Sleep</label>
+                <input type="radio" id="B7" value="B" onClick="SetAnswer(7, this.value)" name="radiobutton7">
+                <label for="B7">Jump</label>
+                <input type="radio" id="C7" value="C" onClick="SetAnswer(7, this.value)" name="radiobutton7">
+                <label for="C7">Sing</label>
+                <input type="radio" id="D7" value="D" onClick="SetAnswer(7, this.value)" name="radiobutton7">
+                <label for="D7">Dance</label>
+            </div>
+            <div id="8">
+                <p class="qno"><strong>Question 8</strong></p>
+                <p class="question">Identify the action</p>
+                <div style="text-align: center;">
+                    <img src="image/jump.jpg" width="400" height="300">
+                    <br>
+                </div> 
+                <input type="radio" id="A8" value="A" onClick="SetAnswer(8, this.value)" name="radiobutton8">
+                <label for="A8">Sleep</label>
+                <input type="radio" id="B8" value="B" onClick="SetAnswer(8, this.value)" name="radiobutton8">
+                <label for="B8">Jump</label>
+                <input type="radio" id="C8" value="C" onClick="SetAnswer(8, this.value)" name="radiobutton8">
+                <label for="C8">Sing</label>
+                <input type="radio" id="D8" value="D" onClick="SetAnswer(8, this.value)" name="radiobutton8">
+                <label for="D8">Dance</label>
+            </div>
+            
+            
+        <div id="9">
+            <p class="qno"><strong>Question 9</strong></p>
+            <p class="question">Identify the action</p>
+            <div style="text-align: center;">
+                <img src="image/cry.jpg" width="400" height="300">
+                <br>
+            </div> 
+            <input type="radio" id="A9" value="A" onClick="SetAnswer(9, this.value)" name="radiobutton9">
+            <label for="A9">Cry</label>
+            <input type="radio" id="B9" value="B" onClick="SetAnswer(9, this.value)" name="radiobutton9">
+            <label for="B9">Run</label>
+            <input type="radio" id="C9" value="C" onClick="SetAnswer(9, this.value)" name="radiobutton9">
+            <label for="C9">Jump</label>
+            <input type="radio" id="D9" value="D" onClick="SetAnswer(9, this.value)" name="radiobutton9">
+            <label for="D9">Dance</label>
+        </div>
+        <div id="10">
+            <p class="qno"><strong>Question 10</strong></p>
+            <p class="question">Identify the action</p>
+            <div style="text-align: center;">
+                <img src="image/fight.jpg" width="400" height="300">
+                <br>
+            </div> 
+            <input type="radio" id="A10" value="A" onClick="SetAnswer(10, this.value)" name="radiobutton10">
+            <label for="A10">Cry</label>
+            <input type="radio" id="B10" value="B" onClick="SetAnswer(10, this.value)" name="radiobutton10">
+            <label for="B10">Jump</label>
+            <input type="radio" id="C10" value="C" onClick="SetAnswer(10, this.value)" name="radiobutton10">
+            <label for="C10">Run</label>
+            <input type="radio" id="D10" value="D" onClick="SetAnswer(10, this.value)" name="radiobutton10">
+            <label for="D10">Fight</label>
+        </div> 
+        <p>
+            <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
+        </p>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
