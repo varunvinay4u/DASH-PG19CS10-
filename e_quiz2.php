@@ -1,8 +1,10 @@
 <?php
 
-//  session_start();
+session_start();
 include("connection.php");
 include("functions.php");
+
+$user_data = check_login($con);
 
 $answers = array("A", "C", "B", "B", "C", "B","B","A","C","A"); // correct answers
 $score = 0; // initialize score variable
@@ -18,7 +20,9 @@ for ($i = 1; $i <= 10; $i++) {
 }
 
 
-$sql = "update data set digits=$score where id=6";
+$c=$user_data['code'];
+
+$sql = "update data set digits=$score where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }

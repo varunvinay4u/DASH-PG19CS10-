@@ -6,7 +6,7 @@ include("functions.php");
 
 $user_data = check_login($con);
 
-$answers = array("A", "B", "C", "A", "B", "C","B","C","B","D"); // correct answers
+$answers = array("B", "C", "A", "C", "A", "C","D","B","A","D"); // correct answers
 $score = 0; // initialize score variable
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -21,7 +21,7 @@ for ($i = 1; $i <= 10; $i++) {
 
 $c=$user_data['code'];
 
-$sql = "update data set emotions=$score where code=$c";
+$sql = "update data set actions=$score where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }
