@@ -52,7 +52,7 @@ body {
     padding-left:10px;
 } */
 
-p {
+label {
     display: block;
     margin-bottom: 10px;
     padding: 10px;
@@ -61,16 +61,15 @@ p {
     cursor: pointer;
 }
 
-p:hover {
+label:hover {
     background-color: #ddd;
 }
 
-input[type="radio"]:checked + p {
-    background-color: #4CAF50;
-    color: #fff;
+input[type="radio"] {
+    display: none;
 }
 
-input[type="radio"]:checked + p {
-    background: #20b8be;
-    border-radius: 4px;
+input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: #fff;
 }
