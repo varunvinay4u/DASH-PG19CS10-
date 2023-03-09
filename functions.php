@@ -1,5 +1,28 @@
 <?php
 
+function check_login($con)
+{
+
+	if(isset($_SESSION['code']))
+	{
+
+		$name = $_SESSION['code'];
+		$query = "select * from data where code = $name limit 1";
+
+		$result = mysqli_query($con,$query);
+		if($result && mysqli_num_rows($result) > 0)
+		{
+
+			$user_data = mysqli_fetch_assoc($result);
+			return $user_data;
+		}
+	}
+
+// 	//redirect to login
+// 	header("Location: login.php");
+// 	die;
+
+ }
 function random_num($length)
 {
 
@@ -19,3 +42,5 @@ function random_num($length)
 
 	return $text;
 }
+
+?>
