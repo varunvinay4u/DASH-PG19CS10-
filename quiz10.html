@@ -16,7 +16,24 @@
             <h1>
                 Actions : Quiz
             </h1>
-            <form>
+
+            <script> 
+                function redirectToDestination() {
+          var referringUrl = document.referrer;
+          var destinationUrl;
+          
+          if (referringUrl.includes('quiz5.html')) {
+            destinationUrl = 'index.html';
+          } else {
+            destinationUrl = 'index.html';
+          }
+          
+          window.location.href = destinationUrl;
+        document.getElementById('addr').value = destinationUrl;
+        }
+                </script> 
+            <form method="post" action="e_quiz10.php">
+                <input type="hidden" id="addr" name="addr"> 
                 <div id="1">
                     <p class="qno"><strong>Question 1</strong></p>
                     <p class="question">Identify the action</p>
@@ -176,7 +193,7 @@
             <label for="D10">Fight</label>
         </div> 
         <p>
-            <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button">
+            <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
         </p>
     </form>
 </div>
