@@ -96,3 +96,9 @@ p {
 	border-radius: 6%;
 	padding: 15px 20px;
 }
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
