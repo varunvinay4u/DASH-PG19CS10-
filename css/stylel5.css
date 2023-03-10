@@ -102,3 +102,10 @@ p {
 	font-weight: 600;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
 }
+
+
+.center{
+	text-align: center;
+	align-items: center;
+	margin: 20px;
+}
