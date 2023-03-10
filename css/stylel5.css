@@ -86,3 +86,13 @@ p {
 	padding: 10px;
 	text-align: center;
 }
+
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 15px 20px;
+}
