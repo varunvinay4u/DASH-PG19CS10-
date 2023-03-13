@@ -29,3 +29,15 @@ echo $abc;
 // file_put_contents("my_text.txt", " ");
 
 ?>
+
+<html>
+    <head>
+        <title>
+        Recommendations
+        </title>
+    </head>
+<body>
+    <br>
+    <a href="index.html">GO Back To Home</a>
+</body>
+</html>
