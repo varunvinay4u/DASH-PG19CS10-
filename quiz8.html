@@ -31,6 +31,8 @@
     document.getElementById('addr').value = destinationUrl;
     }
             </script> 
+
+            
     <form method="post" action="e_quiz8.php">
         <input type="hidden" id="addr" name="addr"> 
              <div id="1">
@@ -49,6 +51,7 @@
                 <label for="D1">Vehicle</label>
             </div>
 
+
             <div id="2">
                 <p class="qno"><strong>Question 2</strong></p>
                 <p class="question">Identify the sound</p>
@@ -64,6 +67,7 @@
                 <input type="radio" id="D2" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">
                 <label for="D2">Vehicle</label>
             </div>
+
 
             <div id="3">
                 <p class="qno"><strong>Question 3</strong></p>
@@ -81,6 +85,7 @@
                 <label for="D3">Vehicle</label>
             </div>
 
+
             <div id="4">
                 <p class="qno"><strong>Question 4</strong></p>
                 <p class="question">Identify the sound</p>
@@ -96,6 +101,7 @@
                 <input type="radio" id="D4" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton4">
                 <label for="D4">Vehicle</label>
             </div>
+
 
             <div id="5">
                 <p class="qno"><strong>Question 5</strong></p>
@@ -113,6 +119,7 @@
                 <label for="D5">Angel</label>
             </div>
 
+
             <div id="6">
                 <p class="qno"><strong>Question 6</strong></p>
                 <p class="question">Identify the word</p>
@@ -129,11 +136,12 @@
                 <label for="D6">Car</label>
             </div>
 
+
             <div id="7">
                 <p class="qno"><strong>Question 7</strong></p>
                 <p class="question">Identify the word</p>
                 <audio controls>
-					<source src="audio/dog.mp3" type="audio/mp3">
+					<source src="audio/dogword.mp3" type="audio/mp3">
 				</audio>
                 <input type="radio" id="A7" value="A" onClick="SetAnswer(7, this.value)" name="radiobutton7">
                 <label for="A7">Cat</label>
@@ -144,6 +152,7 @@
                 <input type="radio" id="D7" value="D" onClick="SetAnswer(7, this.value)" name="radiobutton7">
                 <label for="D7">Elephant</label>
             </div>
+
 
             <div id="8">
                 <p class="qno"><strong>Question 8</strong></p>
@@ -161,6 +170,7 @@
                 <label for="D8">Elephant</label>
             </div>
 
+
             <div id="9">
                 <p class="qno"><strong>Question 9</strong></p>
                 <p class="question">Identify the word</p>
@@ -177,6 +187,7 @@
                 <label for="D9">Orange</label>
             </div>
 
+
             <div id="10">
                 <p class="qno"><strong>Question 10</strong></p>
                 <p class="question">Identify the word</p>
@@ -192,6 +203,7 @@
                 <input type="radio" id="D10" value="D" onClick="SetAnswer(10, this.value)" name="radiobutton10">
                 <label for="D10">Orange</label>
             </div>
+
 
             <p>
                 <input type="submit" class="ui-button" onclick=redirectToDestination() value="Submit Answers" name="submitButton" class="button">
