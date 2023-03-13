@@ -16,7 +16,7 @@ session_start();
 		{
 
 			//read from database
-			$query = "select * from dash where email = '$email' limit 1";
+			$query = "select * from data where email = '$email' limit 1";
 			$result = mysqli_query($con, $query);
 
 			if($result)
