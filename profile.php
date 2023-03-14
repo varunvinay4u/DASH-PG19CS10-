@@ -91,6 +91,7 @@ session_start();
               <a href="resetpwd.php">Change Password? </a>
             </div>
             <br>
+            <a href="home.html">Logout </a>
             <!-- <button type="button" id="edit-profile-btn">Edit Profile</button> -->
             <br>
             <!-- <button type="submit" id="save-profile-btn">Save Profile</button> -->
