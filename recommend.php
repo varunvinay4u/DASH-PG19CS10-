@@ -4,7 +4,7 @@ session_start();
 
 	include("connection.php");
 	include("functions.php");
-    $_SESSION['code'] = 1937;
+    // $_SESSION['code'] = 1937;
     
 	$user_data = check_login($con);
 
