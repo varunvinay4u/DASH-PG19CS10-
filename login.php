@@ -30,16 +30,16 @@ session_start();
 					{
 
 						$_SESSION['code'] = $user_data['code'];
-						header("Location: index.html");
+						 header("Location: index.html");
 						die;
 					}
 				}
 			}
 			
-			echo "wrong username or password!";
+			 echo "wrong username or password!";
 		}else
 		{
-			echo "wrong username or password!";
+			 echo "wrong username or password!";
 		}
 	}
 

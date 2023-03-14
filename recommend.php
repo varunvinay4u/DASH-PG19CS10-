@@ -25,8 +25,37 @@ $python_path = 'C:\Users\varun\AppData\Local\Programs\Python\Python310\python.ex
 
 shell_exec("$python_path decisiontree.py");
 $abc=file_get_contents("my_var.txt");
-echo $abc;
+// echo $abc;
 // file_put_contents("my_text.txt", " ");
+$array=explode(" ",$abc);
+$arr = array_slice($array, 1, -1);
+foreach($arr as $rec)
+{
+    if($rec=="Alphabets")
+        $links= array( "Alphabets" => "lesson1.html" );
+    if($rec=="Colors")
+        $links["Colors"]="lesson2.html";
+    if($rec=="Numbers")
+        $links["Numbers"]="lesson3.html";
+    if($rec=="Arithmetic")
+        $links["Arithmetic"]="lesson4.html";
+    if($rec=="Shapes")
+        $links["Shapes"]="lesson5.html";
+    if($rec=="Objects")
+        $links["Objects"]="lesson6.html";
+    if($rec=="Emotions")
+        $links["Emotions"]="lesson7.html";
+    if($rec=="Sound")
+        $links["Sound"]="lesson8.html";
+    if($rec=="Communication")
+        $links["Communication"]="lesson9.html";
+    if($rec=="Actions")
+        $links["Actions"]="lesson10.html";
+}
+echo "<h1> Recommended Lessons: </h1><br>";
+foreach($links as $name => $url){
+    echo "<a href='$url'><h2>$name</h2></a>";
+}
 
 ?>
 
