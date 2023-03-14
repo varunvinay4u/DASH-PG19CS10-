@@ -28,7 +28,8 @@ $abc=file_get_contents("my_var.txt");
 // echo $abc;
 // file_put_contents("my_text.txt", " ");
 $array=explode(" ",$abc);
-$arr = array_slice($array, 1, -1);
+$arr = str_replace(array('[', ']', "'"), '', $array);
+// $arr = array_slice($array, 1, -1);
 foreach($arr as $rec)
 {
     if($rec=="Alphabets")
