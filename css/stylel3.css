@@ -52,6 +52,19 @@ nav{
 	flex-wrap: wrap;
 } 
 
+/* Main Content */
+
+p {
+	font-size: 25px;
+	text-align: center;
+}
+
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
+}
+
 /* Quiz button */
 
 .btn-quiz {
