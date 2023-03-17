@@ -51,3 +51,20 @@ nav{
 	display: flex;
 	flex-wrap: wrap;
 } 
+
+/* Quiz button */
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
