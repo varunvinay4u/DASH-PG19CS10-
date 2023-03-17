@@ -65,6 +65,20 @@ p {
 	margin: 30px 100px;
 }
 
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
+}
+iframe{
+	margin-top: -100px;
+}ed
+
 /* Quiz button */
 
 .btn-quiz {
