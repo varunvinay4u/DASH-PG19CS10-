@@ -1,3 +1,10 @@
+/* Lesson 4 Styles */
+
+* {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
 /* Navigation Bar */
 nav {
   display: flex;
