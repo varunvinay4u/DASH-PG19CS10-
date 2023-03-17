@@ -6,15 +6,6 @@
 }
 
 /* Navigation Bar */
-nav {
-  display: flex;
-	flex-wrap: wrap;
-}
-
-body {
-	background-color: #F7CAC9;
-	font-family: Arial, sans-serif;
-}
 
 .logo {
 	font-size: 24px;
@@ -56,9 +47,10 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
-}
+} 
 
 /* Main Content */
 
