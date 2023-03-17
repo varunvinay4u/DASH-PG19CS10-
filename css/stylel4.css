@@ -54,69 +54,15 @@ nav{
 
 /* Main Content */
 
-  main {
-    display: flex;
-    flex-direction: column;
-  
-    margin: 50px;
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align:start;
+p {
+	font-size: 25px;
+	text-align: center;
 }
 
-main p {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align:start;
-}
-
-/* Lesson Content */
-.lesson {
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  margin-bottom: 50px;
-}
-
-.lesson img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-  border: 2px solid #4caf50;
-  border-radius: 5px;
-}
-
-.lesson h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align:start;
-}
-
-.lesson p {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align:start;
-}
-
-h2{
-  text-align:start;
-}
-
-h4{
-  text-align: center;
-}
-
-ul {
-  text-align: center;
-  list-style-type: none;
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
 }
 
 /* Quiz button */
