@@ -83,10 +83,6 @@ iframe{
 	list-style-type: none;
 }
 
-.container {
-	margin: -270px;
-} 
-
 .col {
 	align-items: center;
 	height: 40px;
