@@ -65,6 +65,21 @@ p {
 	margin: 30px 100px;
 }
 
+.box {
+	text-align: center;
+}
+
+.list-obj {
+	display: inline-block; 
+	text-align: left;
+	font-size: 20px;
+	list-style-type: none;
+}
+
+.container .row .col {
+	padding: 30px 0;
+}
+
 /* Quiz button */
 
 .btn-quiz {
@@ -87,7 +102,7 @@ p {
 	align-items: center;
 }
 
-footer {
+.footer {
 	position: relative;
 	bottom: 0;
 	left: 0;
