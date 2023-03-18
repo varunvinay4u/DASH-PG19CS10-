@@ -65,6 +65,14 @@ p {
 	margin: 30px 100px;
 }
 
+.container {
+	margin: 50px 0;
+}
+
+.row .col-7 {
+	margin: auto 0;
+}
+
 .container-video {
 	display: flex;
 	justify-content: center;
@@ -74,9 +82,6 @@ p {
 
 .video {
 	margin: 0 auto;
-}
-iframe{
-	margin: -100px 0;
 }
 
 /* Quiz button */
