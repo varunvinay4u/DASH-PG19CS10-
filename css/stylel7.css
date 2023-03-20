@@ -1,19 +1,12 @@
-body {
-	font-family: Arial, sans-serif;
+/* Lesson 5 Styles */
+
+* {
 	margin: 0;
-	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
-h2 {
-	
-	margin-top: 20px;
-	text-align: center;
-}
-.container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
+/* navbar styles */
+
 
 .logo {
 	font-size: 24px;
@@ -55,10 +48,16 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
 
 
 main {
