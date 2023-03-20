@@ -65,12 +65,33 @@ p {
 	margin: 30px 100px;
 }
 
+.box {
+	text-align: center;
+}
+
+.list-obj {
+	display: inline-block; 
+	text-align: left;
+	font-size: 22px;
+}
+
 .env-sound {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 20px;
+}
+
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
 }
 
 /* Quiz button */
