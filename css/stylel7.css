@@ -82,6 +82,12 @@ p {
 	justify-content: space-between;
 }
 
+.images img {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+
 /* Quiz button */
 
 .center{
