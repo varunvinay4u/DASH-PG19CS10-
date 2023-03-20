@@ -55,35 +55,21 @@ nav{
 
 /* content styles */
 
+p {
+	font-size: 25px;
+	text-align: center;
+}
+
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
+}
+
 .container {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
-}
-
-
-main {
-	margin-top: 20px;
-}
-
-
-h1 {
-	font-size: 2em;
-	text-align: start;
-}
-
-h2 {
-	font-size: 1.5em;
-	margin-top: 20px;
-}
-
-h3{
-	text-align: center;
-}
-
-p {
-	font-size: large;
-	
 }
 
 
