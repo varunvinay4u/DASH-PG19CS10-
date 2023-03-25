@@ -65,6 +65,23 @@ p {
 	margin: 30px 100px;
 }
 
+.container {
+	margin: 50px 0;
+}
+
+.row {
+	margin: 25px 0;
+}
+
+.row .col-7 {
+	margin: auto 0;
+}
+
+.row .col-5 img {
+	width: 350px;
+	height: 350px;
+}
+
 .container-video {
 	display: flex;
 	justify-content: center;
