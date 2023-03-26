@@ -1,7 +1,7 @@
-/* Lesson 4 Styles */
+/* Lesson 2 Styles */
 
-body {
-	background-color: #F7CAC9;
+* {
+	margin: 0;
 	font-family: Arial, sans-serif;
 }
 
@@ -47,59 +47,124 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
-}
+} 
 
 /* Main Content */
 
-.content {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
 p {
-	font-size: large;
-	
+	font-size: 25px;
+	text-align: center;
 }
 
-h2 {
-    font-size: 30px;
-    margin-top: 50px;
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
 }
 
-video {
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
+}
+iframe{
+	margin-top: -100px;
+}
+
+.list-obj {
+	list-style-type: none;
+}
+
+.col {
+	align-items: center;
+	height: 40px;
+	width: 2rem;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 25px 25px;
+}
+
+.color-col{
+	flex-basis: 25%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-col img{
     width: 100%;
-    height: auto;
-    margin-top: 50px;
+    display: block;
 }
 
-.alphabet {
-  display: flex;
- flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #33BBFF;
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer-1:hover{
+    background-color: blue;
+}
+.layer-2:hover{
+    background-color: yellow;
+}
+.layer-3:hover{
+    background-color: green;
+}
+.layer-4:hover{
+    background-color: red;
 }
 
-footer {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  background-color: #4E9AF1;
-  color: white;
-  padding: 10px;
-  text-align: center;
+.layer h3 {
+	width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    position: absolute;
+	top: 150px;
+	left: 125px;
+    opacity: 1;
+	text-shadow: 0 0 3px #fff;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 0;
 }
 
+.layer p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+	color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer-2 p {
+    color: #000;
+}
+.layer:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Quiz button */
 
 .btn-quiz {
 	background-color: #199319;
@@ -107,8 +172,9 @@ footer {
 	text-align: center;
   	color: white;
 	border-radius: 6%;
-	padding: 15px 20px;
+	padding: 20px 30px;
 }
+
 .btn-quiz:hover {
 	color: #fff;
 	font-weight: 600;
@@ -118,5 +184,15 @@ footer {
 .center{
 	text-align: center;
 	align-items: center;
-	margin: 20px;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	text-align: center;
 }

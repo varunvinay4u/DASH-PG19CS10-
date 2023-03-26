@@ -1,4 +1,4 @@
-/* Lesson 5 Styles */
+/* Lesson 3 Styles */
 
 * {
 	margin: 0;
@@ -50,9 +50,9 @@ nav{
 	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
-}
+} 
 
-/* content styles */
+/* Main Content */
 
 p {
 	font-size: 25px;
@@ -65,14 +65,6 @@ p {
 	margin: 30px 100px;
 }
 
-.container {
-	margin: 50px 0;
-}
-
-.row .col-7 {
-	margin: auto 0;
-}
-
 .container-video {
 	display: flex;
 	justify-content: center;
@@ -83,13 +75,11 @@ p {
 .video {
 	margin: 0 auto;
 }
+iframe{
+	margin-top: -100px;
+}
 
 /* Quiz button */
-
-.center{
-	text-align: center;
-	align-items: center;
-}
 
 .btn-quiz {
 	background-color: #199319;
@@ -106,9 +96,14 @@ p {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
 }
 
-/* footer */
+/* footer styles */
 
-.footer {
+.center{
+	text-align: center;
+	align-items: center;
+}
+
+footer {
 	position: relative;
 	bottom: 0;
 	left: 0;

@@ -1,7 +1,11 @@
-body {
-	background-color: #F7CAC9;
+/* Lesson 1 Styles */
+
+* {
+	margin: 0;
 	font-family: Arial, sans-serif;
 }
+
+/* navbar styles */
 
 .logo {
 	font-size: 24px;
@@ -43,48 +47,68 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
+} 
+
+
+/* content styles */
+
+p {
+	font-size: 25px;
+	text-align: center;
 }
 
 .content {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
 }
 
-p {
-	font-size: large;
-	
-}
-
-table {
-	border-collapse: collapse;
-	width: 100%;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: large;
-  }
-  td {
-	padding: 10px;
-	border: 1px solid rgb(7, 18, 241);
-  }
-  .col1 {
-	width: 20%;
-  }
-  .col2 {
-	width: 20%;
-  }
-
-.container {
+.container-video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-  }
-  .video {
+}
+
+.video {
 	margin: 0 auto;
-  }
+}
+iframe{
+	margin-top: -100px;
+}
+
+.col {
+	align-items: center;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 25px 25px;
+}
+
+
+/* Quiz button */
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.center{
+	text-align: center;
+	align-items: center;
+}
 
 footer {
 	position: relative;
@@ -95,24 +119,4 @@ footer {
 	color: white;
 	padding: 10px;
 	text-align: center;
-}
-
-.btn-quiz {
-	background-color: #199319;
-	text-decoration: none;
-	text-align: center;
-  	color: white;
-	border-radius: 6%;
-	padding: 15px 20px;
-}
-.btn-quiz:hover {
-	color: #fff;
-	font-weight: 600;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
-}
-
-.center{
-	text-align: center;
-	align-items: center;
-	margin: 20px;
 }
