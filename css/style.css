@@ -1,13 +1,11 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+/* Lesson 10 Styles */
 
-body {
-	background-color: #F7CAC9;
+* {
+	margin: 0;
 	font-family: Arial, sans-serif;
 }
+
+/* Navigation Bar */
 
 .logo {
 	font-size: 24px;
@@ -49,25 +47,12 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-/* 
-
-.nav-item {
-	margin-right: 20px;
-}
-
-.nav-link {
-	color: white;
-	text-decoration: none;
-	font-size: 18px;
-}
-
-.nav-link:hover {
-	text-decoration: underline;
-} */
+/* main content styles */
 
 .content {
 	padding: 20px;
