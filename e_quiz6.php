@@ -21,8 +21,12 @@ for ($i = 1; $i <= 10; $i++) {
 
 
 $c=$user_data['code'];
-
-$sql = "update data set shapes=$score where code=$c";
+$shapes1=$user_data['shapes'];
+$shapes2=$user_data['shapes2'];
+$sAvg=$user_data['shapesAvg'];
+$sAttempts=$user_data['shapesAttempts'];
+$average=(($sAvg*$sAttempts)+$score)/($sAttempts+1);
+$sql = "update data set shapes=$score,shapes2=$shapes1,shapes3=$shapes2,shapesAvg=$average,shapesAttempts=$sAttempts+1 where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }

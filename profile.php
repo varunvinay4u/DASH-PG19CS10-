@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+  $user_data = check_login($con);
+
+  ?>
+  
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -63,25 +74,27 @@
         <h2>Profile Information</h2>
         <form id="profile-form">
             <div>
-              <label for="username">Username:</label>
-              <input type="text" id="username" name="username" value="john doe" readonly >
+              <label for="username">Name:</label>
+              <input type="text" id="username" name="username" value="<?php echo $user_data['name']; ?>" readonly >
             </div>
             <div>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" value="johndoe@gmail.com" readonly >
-            </div>
-            <div>
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" value="********" readonly>
+              <input type="email" id="email" name="email" value="<?php echo $user_data['email']; ?>" readonly >
             </div>
             <div>
               <label for="age">Age:</label>
-              <input type="number" id="age" name="age" value="8" readonly >
+              <input type="number" id="age" name="age" value="<?php echo $user_data['age']; ?>" readonly >
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <!-- <input type="password" id="password" name="password" value="********" readonly> -->
+              <a href="resetpwd.php">Change Password? </a>
             </div>
             <br>
-            <button type="button" id="edit-profile-btn">Edit Profile</button>
+            <a href="home.html">Logout </a>
+            <!-- <button type="button" id="edit-profile-btn">Edit Profile</button> -->
             <br>
-            <button type="submit" id="save-profile-btn">Save Profile</button>
+            <!-- <button type="submit" id="save-profile-btn">Save Profile</button> -->
         </form>
     </div>
 
