@@ -67,8 +67,7 @@ p {
 
 /* Animations */
 
-section h1,
-section p {
+.content {
 	animation-name: fade-in;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
@@ -78,7 +77,7 @@ section p {
 /* footer */
 
 .footer {
-	position: relative;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -87,8 +86,6 @@ section p {
 	padding: 10px;
 	text-align: center;
 }
-
-/* media */
 
 @keyframes fade-in {
 	0% { opacity: 0; }
