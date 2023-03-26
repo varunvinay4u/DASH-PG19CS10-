@@ -1,11 +1,11 @@
-/* Lesson 5 Styles */
+/* Lesson 9 Styles */
 
 * {
 	margin: 0;
 	font-family: Arial, sans-serif;
 }
 
-/* navbar styles */
+/* Navigation Bar */
 
 .logo {
 	font-size: 24px;
@@ -52,7 +52,7 @@ nav{
 	flex-wrap: wrap;
 }
 
-/* content styles */
+/* main content styles */
 
 p {
 	font-size: 25px;
@@ -65,12 +65,14 @@ p {
 	margin: 30px 100px;
 }
 
-.container {
-	margin: 50px 0;
+.box {
+	text-align: center;
 }
 
-.row .col-7 {
-	margin: auto 0;
+.list-obj {
+	display: inline-block; 
+	text-align: left;
+	font-size: 22px;
 }
 
 .container-video {

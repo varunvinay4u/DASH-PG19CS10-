@@ -1,13 +1,11 @@
-/* Navigation Bar */
-nav {
-  display: flex;
-	flex-wrap: wrap;
-}
+/* Lesson 4 Styles */
 
-body {
-	background-color: #F7CAC9;
+* {
+	margin: 0;
 	font-family: Arial, sans-serif;
 }
+
+/* Navigation Bar */
 
 .logo {
 	font-size: 24px;
@@ -49,70 +47,59 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
-}
+} 
 
 /* Main Content */
 
-  main {
-    display: flex;
-    flex-direction: column;
-  
-    margin: 50px;
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align:start;
+p {
+	font-size: 25px;
+	text-align: center;
 }
 
-main p {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align:start;
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
 }
 
-/* Lesson Content */
-.lesson {
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  margin-bottom: 50px;
+.box {
+	text-align: center;
 }
 
-.lesson img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-  border: 2px solid #4caf50;
-  border-radius: 5px;
+.list-obj {
+	display: inline-block; 
+	text-align: left;
+	font-size: 20px;
+	list-style-type: none;
 }
 
-.lesson h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align:start;
+.container .row .col {
+	padding: 30px 0;
 }
 
-.lesson p {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align:start;
+/* Quiz button */
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
 }
 
-h2{
-  text-align:start;
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
 }
 
-h4{
-  text-align: center;
+.center{
+	text-align: center;
+	align-items: center;
 }
 
 .footer {
@@ -124,29 +111,4 @@ h4{
 	color: white;
 	padding: 10px;
 	text-align: center;
-}
-
-ul {
-  text-align: center;
-  list-style-type: none;
-}
-
-.btn-quiz {
-	background-color: #199319;
-	text-decoration: none;
-	text-align: center;
-  	color: white;
-	border-radius: 6%;
-	padding: 15px 20px;
-}
-.btn-quiz:hover {
-	color: #fff;
-	font-weight: 600;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
-}
-
-.center{
-	text-align: center;
-	align-items: center;
-	margin: 20px;
 }

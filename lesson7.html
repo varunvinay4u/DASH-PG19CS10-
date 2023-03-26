@@ -6,246 +6,209 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<style>
-        .nav-link{
+        body {
+			background-image: url(image/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.nav-link{
 			display: flex;
 			background-color: #4E9AF1;
 			text-decoration: none;
 			font-size: 18px;
 			color: #fff;
 		}
-
+		
       	.dropdown-menu .nav-link{
         	color: #000;
       	}
 		
-        .dropdown-toggle {
+		.dropdown-toggle {
 			display: inline-block;
 	   		margin-left: 0.255em;
 			vertical-align: 0.255em;
 			content: "";
 			border-top: 0.3em solid;
-            border-right: 0.3em solid transparent;
+			border-right: 0.3em solid transparent;
 			border-bottom: 0;
 			border-left: 0.3em solid transparent;
 		}
+
+		h1 {
+			font-size: 45px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 35px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 35px 0;
+		}
+    
+    	h3 {
+      		font-size: 30px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 25px 0;
+    	}
+
 	</style>
 </head>
 <body>
-	<body>
-		<header>
-			<div class="logo">DASH Learning Platform</div>
-			<nav class="navbar" fixed-top>
-				<ul class="nav nav-pills">
-					<li class="nav-item"><a class="nav-link" active href="index.html">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lessons</a>
-						<ul class="dropdown-menu">
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson1.html">Lesson 1</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson2.html">Lesson 2</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson3.html">Lesson 3</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson4.html">Lesson 4</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson5.html">Lesson 5</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson6.html">Lesson 6</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson7.html">Lesson 7</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson8.html">Lesson 8</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson9.html">Lesson 9</a></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson10.html">Lesson 10</a></li>
-						  <li class="nav-item"><hr class="dropdown-divider"></li>
-						  <li class="nav-item"><a class="dropdown-item nav-link" href="#">Extra Activities</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="profile.html"><i class="bi bi-person-fill"></i>Profile</a></li>
-				</ul>
-			</nav>
-		</header>
-	<main>
+	<header>
+		<div class="logo">DASH Learning Platform</div>
+		<nav class="navbar" fixed-top>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a class="nav-link" active href="index.html">Home</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lessons</a>
+					<ul class="dropdown-menu">
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson1.html">Lesson 1</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson2.html">Lesson 2</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson3.html">Lesson 3</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson4.html">Lesson 4</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson5.html">Lesson 5</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson6.html">Lesson 6</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson7.html">Lesson 7</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson8.html">Lesson 8</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson9.html">Lesson 9</a></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson10.html">Lesson 10</a></li>
+					  <li class="nav-item"><hr class="dropdown-divider"></li>
+					  <li class="nav-item"><a class="dropdown-item nav-link" href="#">Extra Activities</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="profile.html"><i class="bi bi-person-fill"></i>Profile</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content">
 
 		<h1>Lesson 7 - Emotions and Sensations</h1>
 		<p>An emotion is a complex psychological state that involves three distinct components: a subjective experience, a physiological response, and a behavioral or expressive response.</p>
-		
+		<br>
+
 		<h2>EMOTIONS</h2>
-		<p>Emotions are reactions that human beings experience in response to events or situations. The type of emotion a person experiences is determined by the circumstance that triggers the emotion. For instance, a person experiences joy when they receive good news. A person experiences fear when they are threatened </p>
-
+		<p>Emotions are reactions that human beings experience in response to events or situations. The type of emotion a person experiences is determined by the circumstance that triggers the emotion. For instance, a person experiences joy when they receive good news. A person experiences fear when they are threatened.</p>
 		<p>Emotions are a fundamental part of the human experience. We all experience a range of emotions throughout our lives, from happiness and joy to sadness and anger. Some of the most common emotions include love, fear, excitement, sadness, anger, and happiness.</p>
-		<p></p>
-
-		<div style="display: flex; justify-content: space-between;">
-			<div style="float: left; width: 48%;">
-		<h3>Happy</h3> 
-		<p>Happiness is perhaps the most desirable emotion, and it is often associated with feelings of contentment, pleasure, and satisfaction.</p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/happy.jpeg" alt="Happy" width="400" height="300">
-			<br>
-			<br>
-			<br>
-			<img src="image/ehappy.jpeg" alt="Happy Emoji" width="350" height="350">
-			</div>
-		</div>
-		<div style="float: right; width: 48%;">
-		<h3>Sad</h3> 
-		<p>Sadness is a difficult emotion that can be caused by a range of experiences, from minor disappointments to major losses.</p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/sad.jpeg" alt="Sad" width="300" height="355">
-			<br>
-			<br>
-			<img src="image/esad.jpeg" alt="Sad Emoji" width="300" height="355">
-			</div>
-		</div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		
-		<div style="display: flex; justify-content: space-between;">
-			<div style="float: left; width: 48%;">
-		<h3>Scared</h3>
-		<p>Fear is an unpleasant emotion that is often caused by the perception of danger or a threat. It is a natural human response that prepares the body to respond to potential danger or harm. </p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/scared.jpeg" alt="Scared" width="300" height="350">
-			<br>
-			<br>
-			<img src="image/eafraid.jpeg" alt="Scared Emoji" width="300" height="350">
-			</div> 
-			</div>
-			
-			<div style="float: right; width: 48%;">
-		<h3>Angry</h3> 
-		<p>Anger is a strong emotion that is often triggered by feelings of frustration or injustice. It can be expressed in many different ways, from mild irritation to full-blown rage.</p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/angry.jpeg" alt="Angry" width="300" height="355">
-			<br>
-			<br>
-			<img src="image/eangry.jpeg" alt="Angry Emoji" width="300" height="355">
-			</div>
-		</div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		
-		<div style="display: flex; justify-content: space-between;">
-			<div style="float: left; width: 48%;">
-		<h3>Surprised</h3>
-		<p>Surprised is an emotion that occurs when something unexpected happens or when we are caught off guard. It is characterized by a sudden feeling of astonishment, amazement, or disbelief. The experience of being surprised can vary widely from person to person, ranging from pleasant surprise or excitement to negative surprise or shock.</p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/surprised.jpeg" alt="Surprised" width="275" height="275">
-			<br>
-			<br>
-			<img src="image/esurprised.jpeg" alt="Surprised Emoji" width="300" height="350">
-			</div>
-		</div>
-		</div>
-		<br>
-		<br>
-		<br>
 		<br>
 
-		
+		<div class="container text-center">
+			<div class="row row-cols-2">
+				<div class="col">
+					<h3>Happy</h3> 
+					<p>Happiness is perhaps the most desirable emotion, and it is often associated with feelings of contentment, pleasure, and satisfaction.</p>
+					<div class="images">
+						<img src="image/happy.jpeg" alt="Happy">
+						<img src="image/ehappy.jpeg" alt="Happy Emoji">
+					</div>
+				</div>
+	
+				<div class="col">
+					<h3>Sad</h3> 
+					<p>Sadness is a difficult emotion that can be caused by a range of experiences, from minor disappointments to major losses.</p>
+					<div class="images">
+						<img src="image/sad.jpeg" alt="Sad">
+						<img src="image/esad.jpeg" alt="Sad Emoji">
+					</div>
+				</div>
+				<hr><hr>
+
+				<div class="col">
+					<h3>Scared</h3>
+					<p>Fear is an unpleasant emotion that is often caused by the perception of danger or a threat. It is a natural human response that prepares the body to respond to potential danger or harm. </p>
+					<div class="images">
+						<img src="image/scared.jpeg" alt="Scared">
+						<img src="image/eafraid.jpeg" alt="Scared Emoji">
+					</div> 
+				</div>
+				
+				<div class="col">
+					<h3>Angry</h3> 
+					<p>Anger is a strong emotion that is often triggered by feelings of frustration or injustice. It can be expressed in many different ways, from mild irritation to full-blown rage.</p>
+					<div class="images">
+						<img src="image/angry.jpeg" alt="Angry">
+						<img src="image/eangry.jpeg" alt="Angry Emoji">
+					</div>
+				</div>
+
+				<div class="col-12">
+					<h3>Surprised</h3>
+					<p>Surprised is an emotion that occurs when something unexpected happens or when we are caught off guard. It is characterized by a sudden feeling of astonishment, amazement, or disbelief. The experience of being surprised can vary widely from person to person, ranging from pleasant surprise or excitement to negative surprise or shock.</p>
+					<div  class="images">
+						<img src="image/surprised.jpeg" alt="Surprised">
+						<img src="image/esurprised.jpeg" alt="Surprised Emoji">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
 
 		<h2>BODY PARTS</h2>
 		<p>The human body is a complex system that is made up of many different parts, each with its own unique function. Some of the most important body parts include the brain, heart, lungs, and stomach. Other important body parts include the arms, legs, hands, feet, and fingers, which allow us to move and interact with the world around us. Learning about our body parts is important for understanding how our bodies work, and it can help us to stay healthy and take care of ourselves.</p>
-		<p></p>
-		<br>
-		<div style="text-align: center;">
+		<div class="text-center">
 			<img src="image/body parts.jpeg" alt="Body Parts" width="400" height="550">
-			</div>
-		<br>
+		</div>
 		<p>Let us go through the following video to learn the functions of these body parts.</p>
-		<style>
-		.container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		  }
 		  
-		  .video {
-			margin: 0 auto;
-		  }
-	  </style>
-		  
-		  <div class="container">
+		<div class="container-video">
 			<div class="video">
 			  <iframe width="860" height="515" src="https://www.youtube.com/embed/OErgsaBWUC4" frameborder="0" allowfullscreen></iframe>
 			</div>
-		  </div>
-		<br>
-		<br>
+		</div>
 
 
 		<h2>SENSORY ORGANS</h2>
 		<p>Sense organs are specialised structures in the body that detect different forms of stimuli and convert them into electrical signals that can be interpreted by the brain.</p>
 		<p>Our sense organs are essential for our survival and ability to navigate the world around us. They allow us to perceive and interpret the various forms of stimuli that we encounter on a daily basis, such as light, sound, temperature, taste, and smell. The function of sense organs is that they play an important role in our physical and emotional well-being.</p>
-		<br>
-		<div style="text-align: center;">
-			<img src="image/sensoryorgans.jpeg" alt="Sensory Organs" width="450" height="405">
-			</div>
-		<br>
+		<div class="text-center">
+			<img src="image/sensoryorgans.jpeg" alt="Sensory Organs" width="600" height="300">
+		</div>
 		<p>Let us go through the following video to learn the 5 different sense organs.</p>
-		<style>
-		.container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		  }
 		  
-		  .video {
-			margin: 0 auto;
-		  }
-	  </style>
-		  
-		  <div class="container">
+		<div class="container-video">
 			<div class="video">
 			  <iframe width="860" height="515" src="https://www.youtube.com/embed/PL2rBHhQ_go" frameborder="0" allowfullscreen></iframe>
 			</div>
-		  </div>
-		<br>
-		<br>
-
+		</div>
 
 		<h3>Eye</h3>
 		<p>The eyes detect light and convert it into electrical signals that the brain can interpret as visual information. The eyes vary in colour depending upon the amount of melanin present in our body. It helps in the sense of sight by detecting and focussing on the light images.</p>
-		<div style="text-align: center;">
-			<img src="image/eyes.jpeg" alt="Eye" width="450" height="405">
-			</div>
-		<br>
+		<div class="text-center">
+			<img src="image/eyes.jpeg" alt="Eye" width="400" height="250">
+		</div>
 
 		<h3>Ear</h3>
 		<p>Ears are the auditory sense organs of our body. They help us to perceive sounds. Our auditory system detects vibrations in the air and this is how we hear sounds. This is known as hearing or audio caption</p>
-		<div style="text-align: center;">
+		<div class="text-center">
 			<img src="image/ear.jpeg" alt="Ear" width="350" height="305">
-			</div>
-		<br>
+		</div>
 
 		<h3>Nose</h3>
 		<p>The nose is an olfactory organ. Our olfactory system helps us to perceive different smells. This sense of organ also aids our sense of taste. The sense of smell is also known as olfaction.</p>
-		<div style="text-align: center;">
-			<img src="image/nose.jpg" alt="Nose" width="350" height="305">
-			</div>
-		<br>
+		<div class="text-center">
+			<img src="image/nose.jpg" alt="Nose" width="350" height="300">
+		</div>
 
 		<h3>Tongue</h3>
 		<p>The tongue helps in perceiving various tastes and flavours. The taste buds are present between the papillae on the tongue—these help in sensing different tastes.</p>
-		<div style="text-align: center;">
+		<div class="text-center">
 			<img src="image/tongue.jpeg" alt="Tongue" width="350" height="305">
-			</div>
-		<br>
-			<br>
-	<br>
+		</div>
+		<br><br>
 
 		<div class="center">
 			<a class="btn-quiz" href="quiz7.html">TRY QUIZ</a>
 		</div>
-	</main>
-</body>
+	</div>
 
 <div class="footer">
 	<p>DASH © 2023</p>
