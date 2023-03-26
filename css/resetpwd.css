@@ -1,0 +1,44 @@
+*, body{
+    top:0;
+    left:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-position:bottom center;
+    background-size: contain;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container .logo img{
+    max-width:30%;
+    transform: translate(100px,0);
+}
+.container input{
+    margin: 10px 0;
+    border-radius: 13px;
+}
+.container input:focus{
+    box-shadow: none;
+}
+
+.text-center{
+    border: 1px solid #000;
+    border-radius: 13px;
+    padding: 30px 30px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.submit{
+    padding: 10px 30px;
+    background-color: #999092;
+    border: none;
+    font-weight:500;
+    transform: translate(63px,0);
+}
+.submit:hover{
+    color: #fff;
+    background: #503349;
+}

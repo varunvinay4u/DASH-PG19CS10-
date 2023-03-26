@@ -6,8 +6,8 @@ function check_login($con)
 	if(isset($_SESSION['code']))
 	{
 
-		$name = $_SESSION['code'];
-		$query = "select * from data where code = $name limit 1";
+		$code = $_SESSION['code'];
+		$query = "select * from data where code = $code limit 1";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)

@@ -2,10 +2,17 @@
 <html>
 <head>
 	<title>Lesson 9: Communication</title>
-	<link rel="stylesheet" type="text/css" href="css/stylel1.css">
+	<link rel="stylesheet" type="text/css" href="css/stylel9.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<style>
+		body {
+			background-image: url(image/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
 		.nav-link{
 			display: flex;
 			background-color: #4E9AF1;
@@ -13,9 +20,10 @@
 			font-size: 18px;
 			color: #fff;
 		}
-        .dropdown-menu .nav-link{
-        	color: #000;
-      	}
+		
+    	.dropdown-menu .nav-link{
+      		color: #000;
+    	}
 		
 		.dropdown-toggle {
 			display: inline-block;
@@ -27,6 +35,31 @@
 			border-bottom: 0;
 			border-left: 0.3em solid transparent;
 		}
+
+		h1 {
+			font-size: 45px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 35px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 35px 0;
+		}
+    
+    	h3 {
+      		font-size: 30px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 25px 0;
+    	}
+
 	</style>
 </head>
 <body>
@@ -56,6 +89,7 @@
 			</ul>
 		</nav>
     </header>
+
     <div class="content">
 
 		<h1>Lesson 9: Communication</h1>
@@ -63,56 +97,47 @@
 
 		<h2>Communication</h2>
         <p>Let's learn about communication:</p>
-		<video controls>
-			<source src="comm_song.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video>
+
+		<div class="container-video">
+			<div class="video">
+			  <iframe width="860" height="515" src="videos/comm_song.mp4" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 
         <h2>Examples of Communication</h2>
         <p>Here are some real-world examples of communication:</p>
-        <ul>
-          <li>Having a conversation with a friend</li>
-          <li>Ordering food at a restaurant</li>
-          <li>Asking for help when you need it</li>
-          <li>Explaining something to someone</li>
-          <li>Writing an email or text message</li>
-          <li>Making a phone call</li>
-        </ul>
-<br>
-<br>
 
-<p>some of the basic good manners that we need to practice inorder to develop a good communications are be kind, accept our mistakes etc...</p> 
-<p>The following video gives some examples for good communication</p>
-<style>
-	.container {
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  height: 100vh;
-	}
-	
-	.video {
-			  margin: 0 auto;
-			}
-</style>
-			
-<div class="container">
-	<div class="video">
-	  <iframe width="860" height="515" src="https://www.youtube.com/embed/upbUXV3lUWc" frameborder="0" allowfullscreen></iframe>
-	</div>
-  </div>
+        <div class="box">
+			<ul class="list-obj">
+				<li>Having a conversation with a friend</li>
+				<li>Ordering food at a restaurant</li>
+				<li>Asking for help when you need it</li>
+				<li>Explaining something to someone</li>
+				<li>Writing an email or text message</li>
+				<li>Making a phone call</li>
+			</ul>
+		</div>
+
+		<p>some of the basic good manners that we need to practice inorder to develop a good communications are be kind, accept our mistakes etc...</p> 
+		<p>The following video gives some examples for good communication</p>
+
+		<div class="container-video">
+			<div class="video">
+	  			<iframe width="860" height="515" src="https://www.youtube.com/embed/upbUXV3lUWc" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="center">
+			<a class="btn-quiz" href="quiz9.html">TRY QUIZ</a>
+		</div>
   
+	</div>
 
 
-</div>
 
-<div class="center">
-	<a class="btn-quiz" href="quiz9.html">TRY QUIZ</a>
-</div>
-
-	<footer>
+	<div class="footer">
 		<p>DASH © 2023</p>
-	</footer>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

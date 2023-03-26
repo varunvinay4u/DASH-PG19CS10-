@@ -20,8 +20,12 @@ for ($i = 1; $i <= 10; $i++) {
   }
 
   $c=$user_data['code'];
-
-$sql = "update data set colour=$score where code=$c";
+  $colour1=$user_data['colour'];
+  $colour2=$user_data['colour2'];
+  $cAvg=$user_data['colourAvg'];
+  $cAttempts=$user_data['colourAttempts'];
+  $average=(($cAvg*$cAttempts)+$score)/($cAttempts+1);
+$sql = "update data set colour=$score,colour2=$colour1,colour3=$colour2,colourAvg=$average,colourAttempts=$cAttempts+1 where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }
