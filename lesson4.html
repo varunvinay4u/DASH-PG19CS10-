@@ -9,6 +9,13 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<style>
+		body {
+			background-image: url(image/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
 		.nav-link{
 			display: flex;
 			background-color: #4E9AF1;
@@ -16,11 +23,11 @@
 			font-size: 18px;
 			color: #fff;
 		}
-
+		
       	.dropdown-menu .nav-link{
         	color: #000;
       	}
-
+		
 		.dropdown-toggle {
 			display: inline-block;
 	   		margin-left: 0.255em;
@@ -31,7 +38,22 @@
 			border-bottom: 0;
 			border-left: 0.3em solid transparent;
 		}
-	</style></head>
+
+		h1 {
+			font-size: 45px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+		}
+
+		h2 {
+			font-size: 35px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+		}
+	</style>
+</head>
 <body>
 	<header>
 		<div class="logo">DASH Learning Platform</div>
@@ -59,125 +81,154 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<div class="content">
 		<h1>Lesson 4: Basic Arithmetics</h1>
+		<br>
 		<p>In this lesson, students will learn and practice important counting and basic math skills. They will begin by reviewing counting numbers, and then move on to addition and subtraction.Students will learn basic math facts, such as addition and subtraction facts up to 10, and multiplication tables up to 5 or 10.</p>
 		<p>They will also learn about place value, which is the value of a digit based on its position in a number, as well as telling time and counting money. </p>
 		<p>By the end of this lesson, students will have a solid foundation in counting and basic math, which will serve them well as they continue to build their math skills.</p>
-		
+		<br><br>
 		<h2>Counting</h2>
+		<br>
 		<p>Counting is an important skill to learn. Let's practice counting to 10:</p>
-		<p></p>
 		
-		<table>
-			<td>
-			  <tr>1 - One</tr><br>
-			  <tr>2 - Two</tr><br>
-			  <tr>3 - Three</tr><br>
-			  <tr>4 - Four</tr><br>
-			  <tr>5 - Five</tr><br>
-			  <tr>6 - Six</tr><br>
-			  <tr>7 - Seven</tr><br>
-			  <tr>8 - Eight</tr><br>
-			  <tr>9 - Nine</tr><br>
-			  <tr>10 - Ten</tr><br>
-			</td>
-		  </table>
+
+		<div class="box">
+			<ul class="list-obj">
+				<li>1 - One</li>
+				<li>2 - Two</li>
+				<li>3 - Three</li>
+				<li>4 - Four</li>
+				<li>5 - Five</li>
+				<li>6 - Six</li>
+				<li>7 - Seven</li>
+				<li>8 - Eight</li>
+				<li>9 - Nine</li>
+				<li>10 - Ten</li>
+			</ul>
+		</div>
+		<br><br>
 		
 		<h2>Basic Math</h2>
-		<p></p>
+		<br>
 		<p>Let's try some basic math problems:</p>
-		<ul>
-			<li>2 + 2 = <input type="text"></li>
-			<li>5 - 3 = <input type="text"></li>
-			<li>4 x 3 = <input type="text"></li>
-			<li>6 ÷ 2 = <input type="text"></li>
-		</ul>
 
-		<h2>Multiplication table</h2>
+		<div class="box">
+			<ul class="list-obj">
+				<li>2 + 2 = <input type="text"></li><br>
+				<li>5 - 3 = <input type="text"></li><br>
+				<li>4 x 3 = <input type="text"></li><br>
+				<li>6 ÷ 2 = <input type="text"></li><br>
+			</ul>
+		</div>
+
+		<h2>Multiplication tables</h2>
+		<br>
 		<p>Let us familiarise with the multiplication table till the number 5.</p>
-		<h4>Multiplication table of 1</h4>
-		<ul>
-			<li>1*1=1</li>
-			<li>1*2=2</li>
-			<li>1*3=3</li>
-			<li>1*4=4</li>
-			<li>1*5=5</li>
-			<li>1*6=6</li>
-			<li>1*7=7</li>
-			<li>1*8=8</li>
-			<li>1*9=9</li>
-			<li>1*10=10</li>
-		</ul>
+		<br>
+		
+		<div class="container text-center">
+			<div class="row row-cols-3">
+			  <div class="col">
+				<h4>Multiplication table of 1</h4>
+				<hr />
+				<ul class="list-obj">
+					<li>1*1=1</li>
+					<li>1*2=2</li>
+					<li>1*3=3</li>
+					<li>1*4=4</li>
+					<li>1*5=5</li>
+					<li>1*6=6</li>
+					<li>1*7=7</li>
+					<li>1*8=8</li>
+					<li>1*9=9</li>
+					<li>1*10=10</li>
+				</ul>
+			  </div>
 
-		<h4>Multiplication table of 2</h4>
-		<ul>
-			<li>2*1=2</li>
-			<li>2*2=4</li>
-			<li>2*3=6</li>
-			<li>2*4=8</li>
-			<li>2*5=10</li>
-			<li>2*6=12</li>
-			<li>2*7=14</li>
-			<li>2*8=16</li>
-			<li>2*9=18</li>
-			<li>2*10=20</li>
-		</ul>
+			  <div class="col">
+				<h4>Multiplication table of 2</h4>
+				<hr>
+				<ul class="list-obj">
+					<li>2*1=2</li>
+					<li>2*2=4</li>
+					<li>2*3=6</li>
+					<li>2*4=8</li>
+					<li>2*5=10</li>
+					<li>2*6=12</li>
+					<li>2*7=14</li>
+					<li>2*8=16</li>
+					<li>2*9=18</li>
+					<li>2*10=20</li>
+				</ul>
+			  </div>
+			  
+			  <div class="col">
+				<h4>Multiplication table of 3</h4>
+				<hr>
+				<ul class="list-obj">
+					<li>3*1=3</li>
+					<li>3*2=6</li>
+					<li>3*3=9</li>
+					<li>3*4=12</li>
+					<li>3*5=15</li>
+					<li>3*6=18</li>
+					<li>3*7=21</li>
+					<li>3*8=24</li>
+					<li>3*9=27</li>
+					<li>3*10=30</li>
+				</ul>
+			  </div>
 
-		<h4>Multiplication table of 3</h4>
-		<ul>
-			<li>3*1=3</li>
-			<li>3*2=6</li>
-			<li>3*3=9</li>
-			<li>3*4=12</li>
-			<li>3*5=15</li>
-			<li>3*6=18</li>
-			<li>3*7=21</li>
-			<li>3*8=24</li>
-			<li>3*9=27</li>
-			<li>3*10=30</li>
-		</ul>
+			  <div class="col">
+				<h4>Multiplication table of 4</h4>
+				<hr>
+				<ul class="list-obj">
+					<li>4*1=4</li>
+					<li>4*2=8</li>
+					<li>4*3=12</li>
+					<li>4*4=16</li>
+					<li>4*5=20</li>
+					<li>4*6=24</li>
+					<li>4*7=28</li>
+					<li>4*8=32</li>
+					<li>4*9=36</li>
+					<li>4*10=40</li>
+				</ul>
+			  </div>
 
-		<h4>Multiplication table of 4</h4>
-		<ul>
-			<li>4*1=4</li>
-			<li>4*2=8</li>
-			<li>4*3=12</li>
-			<li>4*4=16</li>
-			<li>4*5=20</li>
-			<li>4*6=24</li>
-			<li>4*7=28</li>
-			<li>4*8=32</li>
-			<li>4*9=36</li>
-			<li>4*10=40</li>
-		</ul>
-
-		<h4>Multiplication table of 5</h4>
-		<ul>
-			<li>5*1=5</li>
-			<li>5*2=10</li>
-			<li>5*3=15</li>
-			<li>5*4=20</li>
-			<li>5*5=25</li>
-			<li>5*6=30</li>
-			<li>5*7=35</li>
-			<li>5*8=40</li>
-			<li>5*9=45</li>
-			<li>5*10=50</li>
-		</ul>
-
+			  <div class="col">
+				<h4>Multiplication table of 5</h4>
+				<hr>
+				<ul class="list-obj">
+					<li>5*1=5</li>
+					<li>5*2=10</li>
+					<li>5*3=15</li>
+					<li>5*4=20</li>
+					<li>5*5=25</li>
+					<li>5*6=30</li>
+					<li>5*7=35</li>
+					<li>5*8=40</li>
+					<li>5*9=45</li>
+					<li>5*10=50</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
 
 		<h2>Conclusion</h2>
+		<br>
 		<p>Congratulations, you've completed the lesson about Counting Numbers! Remember to keep practicing more of such problems.</p>
-		<p></p>	 
 		<p>In the next lesson, we'll learn about Alphabets. </p>
-
+		<br><br>
+		
 		<div class="center">
 			<a class="btn-quiz" href="quiz3.html">TRY QUIZ</a>
 		</div>
 	
 
-	</main>
+	</div>
+	
 	<div class="footer">
 		<p>DASH © 2023</p>
 	</div>

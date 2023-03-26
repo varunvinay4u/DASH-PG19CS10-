@@ -10,6 +10,13 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <style>
+		body {
+			background-image: url(image/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
 		.nav-link{
 			display: flex;
 			background-color: #4E9AF1;
@@ -17,11 +24,11 @@
 			font-size: 18px;
 			color: #fff;
 		}
-
-      	.dropdown-menu .nav-link{
-        	color: #000;
-      	}
-
+		
+    	.dropdown-menu .nav-link{
+      		color: #000;
+    	}
+		
 		.dropdown-toggle {
 			display: inline-block;
 	   		margin-left: 0.255em;
@@ -32,8 +39,32 @@
 			border-bottom: 0;
 			border-left: 0.3em solid transparent;
 		}
-	</style>
+
+		h1 {
+			font-size: 45px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 35px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 35px 0;
+		}
     
+    	h3 {
+      		font-size: 30px;
+			text-align: center;
+			font-weight: 600;
+			color: #063c7a;
+			margin: 25px 0;
+    	}
+
+	</style>
 </head>
 <body>
 	<header>
@@ -63,57 +94,71 @@
 		</nav>
 	</header>
 
-	<main>
-		<h1>Lesson 8: Sounds Lesson</h1><br>
+	<div class="content">
 		<section>
-			<h3>Introduction</h3>
+			<h1>Lesson 8: Sounds Lesson</h1>
 			<p>In this lesson, we will explore different sounds and learn how to identify them. We will also learn about pronunciation and how to correctly say different words. 
 				Also we will practice making our own sounds and matching them to the sounds we hear.
 			</p>
 		</section>
 
 		<section>
-			<h3>Learning Objectives</h3>
-			<ul>
-				<li>Identify different sounds</li>
-				<li>Match sounds to corresponding objects or actions</li>
-				<li>Create and produce sounds</li>
-				<li>Learn how to correctly pronounce words</li>
-				<li>Improve overall communication skills</li>
-			</ul>
+			<h2>Learning Objectives</h2>
+			<div class="box">
+				<ul class="list-obj">
+					<li>Identify different sounds</li>
+					<li>Match sounds to corresponding objects or actions</li>
+					<li>Create and produce sounds</li>
+					<li>Learn how to correctly pronounce words</li>
+					<li>Improve overall communication skills</li>
+				</ul>
+			</div>
 		</section>
 
-		<section id="env-sounds">
-			<h3>Recognition of Environmental Sounds</h3>
+		<section>
+			<h2>Recognition of Environmental Sounds</h2>
 			<p>Listen the following Audio to learn about different sounds:</p>
-			<div class="cat env-sound">
-				<audio controls>
-					<source src="audio/cat.wav" type="audio/mp3">
-				</audio>
-				<ul>
-					<li>Close your eyes and listen to the audio. This is the sound of a cat</li>
-					<!-- <li>Now try to meow like a cat.</li> -->
-				</ul>
+
+			<div class="container text-center">
+				<h3>Cat</h3>
+				<hr>
+				<div class="row row-cols-2">
+					<div class="col-7">
+						<audio controls>
+							<source src="audio/cat.wav" type="audio/mp3">
+						</audio>
+						<p>Close your eyes and listen to the audio. This is the sound of a cat.</p>
+					</div>
+					<img class="col-5" src="image/cats.jpg" alt="">
+				</div>
 			</div>
 
-			<div class="dog env-sound">
-				<audio controls>
-					<source src="audio/dog.wav" type="audio/mp3">
-				</audio>
-				<ul>
-					<li>Close your eyes and listen to the audio. This is the sound of a Dog</li>
-					<!-- <li>Now try to bark like a Dog.</li> -->
-				</ul>
+			<div class="container text-center">
+				<h3>Dog</h3>
+				<hr>
+				<div class="row row-cols-2">
+					<div class="col-7">
+						<audio controls>
+							<source src="audio/dog.wav" type="audio/mp3">
+						</audio>
+						<p>Close your eyes and listen to the audio. This is the sound of a Dog.</p>
+					</div>
+					<img class="col-5" src="image/dogs.jpg" alt="">
+				</div>
 			</div>
 
-			<div class="horse env-sound">
-				<audio controls>
-					<source src="audio/horse.wav" type="audio/mp3">
-				</audio>
-				<ul>
-					<li>Close your eyes and listen to the audio. This is the sound of a horse</li>
-					<!-- <li>Now try to make horse neigh.</li> -->
-				</ul>
+			<div class="container text-center">
+				<h3>Horse</h3>
+				<hr>
+				<div class="row row-cols-2">
+					<div class="col-7">
+						<audio controls>
+							<source src="audio/horse.wav" type="audio/mp3">
+						</audio>
+						<p>Close your eyes and listen to the audio. This is the sound of a horse.</p>
+					</div>
+					<img class="col-5" src="image/horses.jpg" alt="">
+				</div>
 			</div>
 
 			<!-- <div class="cow env-sound">
@@ -126,39 +171,55 @@
 				</ul>
 			</div> -->
 
-			<div class="birds env-sound">
-				<audio controls>
-					<source src="audio/bird.wav" type="audio/mp3">
-				</audio>
-				<ul>
-					<li>Close your eyes and listen to the audio. This is the sound of birds singing</li>
-					<!-- <li>Now try to chirp like bird.</li> -->
-				</ul>
+			<div class="container text-center">
+				<h3>Birds</h3>
+				<hr>
+				<div class="row row-cols-2">
+					<div class="col-7">
+						<audio controls>
+							<source src="audio/bird.wav" type="audio/mp3">
+						</audio>
+						<p>Close your eyes and listen to the audio. This is the sound of birds singing.</p>
+					</div>
+					<img class="col-5" src="image/birds.jpg" alt="">
+				</div>
 			</div>
 
-			<div class="vehicle env-sound">
-				<audio controls>
-					<source src="audio/vehicle.wav" type="audio/mp3">
-				</audio>
-				<ul>
-					<li>Close your eyes and listen to the audio. This is the sound of a vehicle</li>
-				</ul>
+			<div class="container text-center">
+				<h3>Vehicle</h3>
+				<hr>
+				<div class="row row-cols-2">
+					<div class="col-7">
+						<audio controls>
+							<source src="audio/vehicle.wav" type="audio/mp3">
+						</audio>
+						<p>Close your eyes and listen to the audio. This is the sound of a vehicle.</p>			
+					</div>
+					<img class="col-5" src="image/vehicles.jpg" alt="">
+				</div>
 			</div>
 		</section>
 
 		<section id="prncn-sounds">
-			<h3>Pronunciation & Articulation</h3>
+			<h2>Pronunciation & Articulation</h2>
 			<p>Listen the following Audio to Improve Pronunciation & Articulation.</p>
-			<iframe class="vdeo" width="860" height="515" src="https://www.youtube.com/embed/5EYnyT-y-Yo" frameborder="0" allowfullscreen></iframe>
+			
+			<div class="container-video">
+				<div class="video">
+				  <iframe width="860" height="515" src="https://www.youtube.com/embed/5EYnyT-y-Yo" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
 			<p> After watching the video, try the following activities:</p>
 			<p>Practice saying words out loud and listening to the sound you are making.</p>
 			<p>Play a game of "word association". Say a word, and have someone else say a word that is associated with it.</p>
 		</section>
-	</main>
 
 
-	<div class="center">
-		<a class="btn-quiz" href="quiz8.html">TRY QUIZ</a>
+		<div class="center">
+			<a class="btn-quiz" href="quiz8.html">TRY QUIZ</a>
+		</div>
+		
 	</div>
 
 
