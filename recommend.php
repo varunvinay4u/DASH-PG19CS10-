@@ -8,6 +8,7 @@ session_start();
     
 	$user_data = check_login($con);
 
+$id=$user_data['id'];
 $alphabet=$user_data['alphabet'];
 $colour=$user_data['colour'];
 $digits=$user_data['digits'];
@@ -18,13 +19,21 @@ $emotions=$user_data['emotions'];
 $audio=$user_data['audio'];
 $comm=$user_data['comm'];
 $actions=$user_data['actions'];
-$my_var = "$alphabet,$colour,$digits,$arithmetic,$shapes,$objects,$emotions,$audio,$comm,$actions";
-file_put_contents("my_var.txt", $my_var);
+// $my_var = "$alphabet,$colour,$digits,$arithmetic,$shapes,$objects,$emotions,$audio,$comm,$actions";
+// file_put_contents("my_var.txt", $my_var);
 // echo "hiiiiiiii \n";
 $python_path = 'C:\Users\varun\AppData\Local\Programs\Python\Python310\python.exe'; // replace this with the path to your Python executable (run where python in cmd)
 
-shell_exec("$python_path decisiontree.py");
-$abc=file_get_contents("my_var.txt");
+shell_exec("$python_path decisiontree.py $id");
+$query = "select recommendations from data where id=$id";
+$result = mysqli_query($con,$query);
+if($result && mysqli_num_rows($result) > 0)
+{
+    $u_data = mysqli_fetch_assoc($result);
+}
+$abc=$u_data['recommendations'];
+
+// $abc=file_get_contents("my_var.txt");
 // echo $abc;
 // file_put_contents("my_text.txt", " ");
 $array=explode(" ",$abc);

@@ -1,7 +1,25 @@
-with open("my_var.txt", "r") as f:
-    my_var = f.read().strip()
-# print(my_var) # Output: "hello world"
-num_array = [int(num) for num in my_var.split(",")]
+# with open("my_var.txt", "r") as f:
+#     my_var = f.read().strip()
+# # print(my_var) # Output: "hello world"
+# num_array = [int(num) for num in my_var.split(",")]
+
+
+import mysql.connector
+import sys
+id=sys.argv[1]
+cnx = mysql.connector.connect(user='root', password="",
+                              host='localhost',
+                              database='dash')
+cursor = cnx.cursor()
+sql1="SELECT alphabet,colour,digits,arithmetic,shapes,objects,emotions,audio,comm,actions FROM data where id= (%s)"
+cursor.execute(sql1, (id, ))
+# cnx.commit()
+my_var = cursor.fetchone()
+# my_var2 = cursor.fetchone()[1]
+print(my_var) #, my_var2) # Output: "hello world"
+# num_array = [int(num) for num in my_var.split(",")]
+num_array=my_var
+print(num_array)
 
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
@@ -28,12 +46,25 @@ print("Accuracy:", accuracy)
 # Predict the label for a given input
 input_data = [num_array]
 prediction = clf.predict(input_data)
-print("Prediction:", prediction)
+# print("Prediction:", prediction)
 
 import numpy
-file = open("my_var.txt", "w")
-file.write(numpy.array_str(prediction))
-file.close()
+str1=numpy.array_str(prediction)
+# print(str1)
+# print(type(str1))
+str1 = str1.replace("]",'')
+my_string = str1.replace("[",'')
+# print(str1)
+sql = "update data set recommendations = (%s) where id=(%s)"
+
+# Execute the SQL INSERT statement with the string variable
+cursor.execute(sql, (my_string, id, ))
+cnx.commit()
+
+
+# file = open("my_var.txt", "w")
+# file.write(numpy.array_str(prediction))
+# file.close()
 
 
 
