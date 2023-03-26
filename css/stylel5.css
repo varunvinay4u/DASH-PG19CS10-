@@ -1,14 +1,11 @@
-body {
-	font-family: Arial, sans-serif;
+/* Lesson 5 Styles */
+
+* {
 	margin: 0;
-	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
-.container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
+/* navbar styles */
 
 .logo {
 	font-size: 24px;
@@ -50,31 +47,66 @@ nav ul {
 }
 
 nav{
+	position: sticky;
 	display: flex;
 	flex-wrap: wrap;
 }
 
+/* content styles */
 
-
-main {
-	margin-top: 20px;
-}
-
-h1 {
-	font-size: 2em;
+p {
+	font-size: 25px;
 	text-align: center;
 }
 
-h2 {
-	font-size: 1.5em;
-	margin-top: 20px;
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
 }
 
-p {
-	font-size: large;
-	
+.container {
+	margin: 50px 0;
 }
 
+.row .col-7 {
+	margin: auto 0;
+}
+
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
+}
+
+/* Quiz button */
+
+.center{
+	text-align: center;
+	align-items: center;
+}
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+/* footer */
 
 .footer {
 	position: relative;

@@ -1,18 +1,16 @@
+/* Lesson 8 Styles */
+
+* {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
 /* Navigation Bar */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-body {
-    background-color: #F7CAC9;
-    font-family: Arial, sans-serif;
-}
-  
+
 .logo {
-    font-size: 24px;
-    color: #fff;
-    font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
 }
 
 header {
@@ -25,20 +23,12 @@ header {
 	align-items: center;
 }
 
-nav{
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .nav-link{
 	display: flex;
 	background-color: #4E9AF1;
 	text-decoration: none;
 	font-size: 18px;
 	color: #fff;
-}
-.nav-link:hover {
-	text-decoration: underline;
 }
 
 nav ul {
@@ -48,19 +38,107 @@ nav ul {
 
 .nav-item {
 	margin-right: 20px;
-    color: white;
+
+	color: white;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+nav{
+	position: sticky;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /* main content styles */
-.env-sound {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
+
+p {
+	font-size: 25px;
+	text-align: center;
 }
 
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
+}
 
+section {
+	margin: 5rem 0;
+}
+
+.box {
+	text-align: center;
+}
+
+.list-obj {
+	display: inline-block; 
+	text-align: left;
+	font-size: 22px;
+}
+
+.container {
+	border: 3px solid #fff;
+	border-radius: 10px;
+	background-color: #ffffffa7;
+	margin: 3rem 0;
+	padding-bottom: 15px;
+}
+
+.container hr {
+	border-top: 1px solid #4E9AF1;
+}
+
+.row .col-7 {
+	margin: auto 0;
+	padding: 0 3rem;
+}
+
+.row p {
+	margin: 15px 0;
+}
+
+img {
+	width: 400px;
+	height: 350px;
+}
+
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
+}
+
+/* Quiz button */
+
+.center{
+	text-align: center;
+	align-items: center;
+}
+
+.btn-quiz {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+/* footer */
 
 .footer {
 	position: relative;
