@@ -64,19 +64,20 @@ foreach($arr as $rec)
 }
 echo "<h1> Recommended Lessons: </h1><br>";
 foreach($links as $name => $url){
-    echo "<a href='$url'><h2>$name</h2></a>";
+    echo "<a class='btn-links' href='$url'><h2>$name</h2></a>";
 }
 
 ?>
 
 <html>
-    <head>
-        <title>
-        Recommendations
-        </title>
-    </head>
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="css/recommend.css">
+</head>
 <body>
+    <div class="center">
+        <a class="btn-back" href="index.html">GO Back To Home</a>
+    </div>
     <br>
-    <a href="index.html">GO Back To Home</a>
 </body>
 </html>
