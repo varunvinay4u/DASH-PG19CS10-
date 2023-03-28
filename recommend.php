@@ -22,7 +22,7 @@ $actions=$user_data['actions'];
 // $my_var = "$alphabet,$colour,$digits,$arithmetic,$shapes,$objects,$emotions,$audio,$comm,$actions";
 // file_put_contents("my_var.txt", $my_var);
 // echo "hiiiiiiii \n";
-$python_path = 'C:\Users\varun\AppData\Local\Programs\Python\Python310\python.exe'; // replace this with the path to your Python executable (run where python in cmd)
+$python_path = 'C:\Users\user\AppData\Local\Programs\Python\Python311\python.exe'; // replace this with the path to your Python executable (run where python in cmd)
 
 shell_exec("$python_path decisiontree.py $id");
 $query = "select recommendations from data where id=$id";
