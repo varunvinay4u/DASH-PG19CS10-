@@ -32,33 +32,11 @@ $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotio
     <title>
         Score Card
     </title>
-    <style>
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			text-align: center;
-		}
-		
-		th, td {
-			border: 1px solid #ddd;
-			padding: 8px;
-		}
-		
-		th {
-			background-color: #f2f2f2;
-			font-size: 20px;
-		}
-		
-		tr:nth-child(even) {
-			background-color: #f2f2f2;
-		}
-	</style>
+	<link rel="stylesheet" href="css/scorecard.css">
 </head>
 <body>
-<h1 style="text-align: center;">SCORECARD</h1>
-<br>
+<h1>SCORECARD</h1>
+
 <table border="1">
 		<thead>
 			<tr>
@@ -83,8 +61,10 @@ $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotio
 			?>
 		</tbody>
 	</table>
-<br>
-    <a href="index.html"><h2>Back to Home</h2></a>
-    <br>
+	<br>
+
+	<div class="center">
+        <a class="button" href="index.html">Back to Home</a>
+    </div>
 </body>
 </html>
