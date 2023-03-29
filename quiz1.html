@@ -30,9 +30,10 @@
       
       window.location.href = destinationUrl;
     document.getElementById('addr').value = destinationUrl;
+    document.getElementById('time').value = 600-total_seconds-1;
     }
             </script> 
-    <form  method="post" action="e_quiz1.php"></form>
+    
     <div class="sidebar">
       <!-- Sidebar content -->
 
@@ -59,7 +60,9 @@
     </div>
     
     <div class="question-container">
+      <form  method="post" action="e_quiz1.php">
         <input type="hidden" id="addr" name="addr"> 
+        <input type="hidden" id="time" name="time"> 
         <!-- Question content -->
 
         <div class="question active" id="1">
@@ -276,9 +279,9 @@
           }
           timer = setTimeout(CheckTime, 1000);
         
-          submitBtn.addEventListener("click", () => {
-            alert(`Time taken: ${600-total_seconds-1} seconds`);
-          });
+          // submitBtn.addEventListener("click", () => {
+          //   alert(`Time taken: ${600-total_seconds-1} seconds`);
+          // });
         
           
         //active question-links
