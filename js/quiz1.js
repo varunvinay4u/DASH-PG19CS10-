@@ -26,33 +26,33 @@ submitBtn.addEventListener("click", () => {
 });
 
    
-//active question-links
+// //active question-links
 
-    // Get all question links
-    const questionLinks = document.querySelectorAll(".question-link");
+//     // Get all question links
+//     const questionLinks = document.querySelectorAll(".question-link");
 
-    // Get all questions
-    const questions = document.querySelectorAll(".question");
+//     // Get all questions
+//     const questions = document.querySelectorAll(".question");
 
-    // Show the first question by default
-    questions[0].classList.add('active');
+//     // Show the first question by default
+//     questions[0].classList.add('active');
 
-    // Add click event listener to each question link
-    questionLinks.forEach((questionLink, index) => {
-      questionLink.addEventListener('click', () => {
-        // Remove active class from all question links
-        questionLinks.forEach(questionLink => questionLink.classList.remove('active'));
+//     // Add click event listener to each question link
+//     questionLinks.forEach((questionLink, index) => {
+//       questionLink.addEventListener('click', () => {
+//         // Remove active class from all question links
+//         questionLinks.forEach(questionLink => questionLink.classList.remove('active'));
 
-        // Add active class to clicked question link
-        questionLink.classList.add('active');
+//         // Add active class to clicked question link
+//         questionLink.classList.add('active');
 
-        // Remove active class from all questions
-        questions.forEach(question => question.classList.remove('active'));
+//         // Remove active class from all questions
+//         questions.forEach(question => question.classList.remove('active'));
 
-        // Add active class to corresponding question
-        questions[index].classList.add('active');
-      });
-    });
+//         // Add active class to corresponding question
+//         questions[index].classList.add('active');
+//       });
+//     });
 
 
 // next and previous buttons
