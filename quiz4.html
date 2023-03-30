@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/quiz1.css" />
-    <script src="js/quiz4.js"></script>
+    <!--<script src="js/quiz4.js"></script> -->
 </head>
 
 <body>
@@ -31,13 +31,40 @@
           
           window.location.href = destinationUrl;
         document.getElementById('addr').value = destinationUrl;
+        document.getElementById('time').value = 600-total_seconds-1;
         }
                 </script> 
+
+<div class="sidebar">
+    <div id="timer"></div>
+
+    <a href="#" class="question-link active">Question 1</a>
+    <a href="#" class="question-link">Question 2</a>
+    <a href="#" class="question-link">Question 3</a>
+    <a href="#" class="question-link">Question 4</a>
+    <a href="#" class="question-link">Question 5</a>
+    <a href="#" class="question-link">Question 6</a>
+    <a href="#" class="question-link">Question 7</a>
+    <a href="#" class="question-link">Question 8</a>
+    <a href="#" class="question-link">Question 9</a>
+    <a href="#" class="question-link">Question 10</a>
+
+    <!-- <div class="center">
+        <button id="previous-btn" disabled>Previous</button>
+        <button id="next-btn">Next</button>
+      </div> -->
+</div>
+
+<div class="question-container">
+
             <form method="post" action="e_quiz4.php">
                 <input type="hidden" id="addr" name="addr"> 
+                <input type="hidden" id="time" name="time"> 
+
                 <div id="1">
+                <div class="question active" id="1">
                     <p class="qno"><strong>Question 1</strong></p>
-                    <p class="question">How many letters are there in english alphabet ?</p>
+                    <p class="qsn">How many letters are there in english alphabet ?</p>
                     <input type="radio" id="A1" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton1">
                     <label for="A1">27</label> 
                     <input type="radio" id="B1" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton1">
@@ -48,9 +75,9 @@
                     <label for="D1">24</label> 
                 </div>
 
-                <div id="2">
+                <div class="question" id="2">
                     <p class="qno"><strong>Question 2</strong></p>
-                    <p class="question">What comes before the letter U?</p>
+                    <p class="qsn">What comes before the letter U?</p>
                     <input type="radio" id="A2" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">
                     <label for="A2">V</label>
                     <input type="radio" id="B2" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">
@@ -61,9 +88,9 @@
                     <label for="D2">S</label>
                 </div>
 
-                <div id="3">
+                <div class="question" id="3">
                     <p class="qno"><strong>Question 3</strong></p>
-                    <p class="question">Which letter is in between B and D?</p>
+                    <p class="qsn">Which letter is in between B and D?</p>
                     <input type="radio" id="A3" value="A" onClick="SetAnswer(3, this.value)" name="radiobutton3">
                     <label for="A3">B</label>
                     <input type="radio" id="B3" value="B" onClick="SetAnswer(3, this.value)" name="radiobutton3">
@@ -74,9 +101,9 @@
                     <label for="D3">C</label>
                 </div>
 
-                <div id="4">
+                <div class="question" id="4">
                     <p class="qno"><strong>Question 4</strong></p>
-                    <p class="question">Which letter is in between N and P ?</p>
+                    <p class="qsn">Which letter is in between N and P ?</p>
                     <input type="radio" id="A4" value="A" onClick="SetAnswer(4, this.value)" name="radiobutton4">
                     <label for="A4">O</label>
                     <input type="radio" id="B4" value="B" onClick="SetAnswer(4, this.value)" name="radiobutton4">
@@ -87,9 +114,9 @@
                     <label for="D4">Q</label>
                 </div>
 
-                <div id="5">
+                <div class="question" id="5">
                     <p class="qno"><strong>Question 5</strong></p>
-                    <p class="question">Which is the 10th letter of english alphabets?</p>
+                    <p class="qsn">Which is the 10th letter of english alphabets?</p>
                     <input type="radio" id="A5" value="A" onClick="SetAnswer(5, this.value)" name="radiobutton5">
                     <label for="A5">E</label>
                     <input type="radio" id="B5" value="B" onClick="SetAnswer(5, this.value)" name="radiobutton5">
@@ -100,9 +127,9 @@
                     <label for="D5">Y</label>
                 </div>
 
-                <div id="6">
+                <div class="question" id="6">
                     <p class="qno"><strong>Question 6</strong></p>
-                    <p class="question">Which is the last letter of english alphabets?</p>
+                    <p class="qsn">Which is the last letter of english alphabets?</p>
                     <input type="radio" id="A6" value="A" onClick="SetAnswer(6, this.value)" name="radiobutton6">
                     <label for="A6">H</label>
                     <input type="radio" id="B6" value="B" onClick="SetAnswer(6, this.value)" name="radiobutton6">
@@ -113,9 +140,9 @@
                     <label for="D6">E</label>
                 </div>
                 
-                <div id="7">
+                <div class="question" id="7">
                     <p class="qno"><strong>Question 7</strong></p>
-                    <p class="question">Which is the first letter in english alphabet?</p>
+                    <p class="qsn">Which is the first letter in english alphabet?</p>
                     <input type="radio" id="A7" value="A" onClick="SetAnswer(7, this.value)" name="radiobutton7">
                     <label for="A7">Z</label>
                     <input type="radio" id="B7" value="B" onClick="SetAnswer(7, this.value)" name="radiobutton7">
@@ -126,9 +153,9 @@
                     <label for="D7">M</label>
                 </div>
 
-                <div id="8">
+                <div class="question" id="8">
                     <p class="qno"><strong>Question 8</strong></p>
-                    <p class="question">Which letter comes after "D" in the English alphabet?</p>
+                    <p class="qsn">Which letter comes after "D" in the English alphabet?</p>
                     <input type="radio" id="A8" value="A" onClick="SetAnswer(8, this.value)" name="radiobutton8">
                     <label for="A8">F</label>
                     <input type="radio" id="B8" value="B" onClick="SetAnswer(8, this.value)" name="radiobutton8">
@@ -139,9 +166,9 @@
                     <label for="D8">B</label>
                 </div>
     
-                <div id="9">
+                <div class="question" id="9">
                     <p class="qno"><strong>Question 9</strong></p>
-                    <p class="question">Which letter comes after "P" in the English alphabet?</p>
+                    <p class="qsn">Which letter comes after "P" in the English alphabet?</p>
                     <input type="radio" id="A9" value="A" onClick="SetAnswer(9, this.value)" name="radiobutton9">
                     <label for="A9">S</label>
                     <input type="radio" id="B9" value="B" onClick="SetAnswer(9, this.value)" name="radiobutton9">
@@ -152,9 +179,9 @@
                     <label for="D9">O</label>
                 </div>  
                 
-                <div id="10">
+                <div class="question" id="10">
                     <p class="qno"><strong>Question 10</strong></p>
-                    <p class="question">Which letter comes after "U" in the English alphabet?</p>
+                    <p class="qsn">Which letter comes after "U" in the English alphabet?</p>
                     <input type="radio" id="A10" value="A" onClick="SetAnswer(10, this.value)" name="radiobutton10">
                     <label for="A10">W</label>
                     <input type="radio" id="B10" value="B" onClick="SetAnswer(10, this.value)" name="radiobutton10">
@@ -173,8 +200,40 @@
             
             </form>
         </div>
+    </div>
         
+        <script>
+            // Get all question links
+            const questionLinks = document.querySelectorAll(".question-link");
+        
+            // Get all questions
+            const questions = document.querySelectorAll(".question");
+        
+            // Show the first question by default
+            questions[0].classList.add('active');
+        
+            // Add click event listener to each question link
+            questionLinks.forEach((questionLink, index) => {
+              questionLink.addEventListener('click', () => {
+                // Remove active class from all question links
+                questionLinks.forEach(questionLink => questionLink.classList.remove('active'));
+        
+                // Add active class to clicked question link
+                questionLink.classList.add('active');
+        
+                // Remove active class from all questions
+                questions.forEach(question => question.classList.remove('active'));
+        
+                // Add active class to corresponding question
+                questions[index].classList.add('active');
+              });
+            });
+        
+        </script>
 
+<script src="js/quiz1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

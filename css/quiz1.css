@@ -6,6 +6,73 @@ body {
     color:#222222;
 }
 
+/* Style for sidebar */
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.question-container {
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+#timer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100px;
+    padding: 35px 0;
+    color: #fff;
+    background-color: #4E9AF1;
+    margin-bottom: 2px;
+}
+
+.center {
+    margin: 30px auto;
+    width: 60%;
+    /* border: 0.5px #333 solid; */
+}
+
+#previous-btn, #next-btn {
+    width: 49%;
+    height: 3.7rem;
+    border-radius: 6px;
+    background: #4CAF50;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* styles for questions section */
+
 .qno {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
@@ -32,16 +99,19 @@ body {
 }
 
 .ui-button {
+    position: fixed;
+    left: 6.5%;
+    bottom: 10%;
     background: #4E9AF1;
 	color: white;
 	border-style: outset;
 	border-color: #4E9AF1;
 	font: bold 15px arial,sans-serif;
-    width:160px;
-    height:45px;
+    width: 12%;
+    height: 45px;
 }
 
-.question {
+.qsn {
     font-size: 18px;
     background:#ddd;
     padding:15px;
@@ -54,8 +124,10 @@ body {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    width: 100%;
     padding: 10px;
+    margin: 5px 0;
+    font-size: 17px;
     background-color: #eee;
     border-radius: 5px;
     cursor: pointer;
