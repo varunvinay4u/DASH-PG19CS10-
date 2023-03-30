@@ -58,7 +58,8 @@
 
          <form method="post" action="e_quiz7.php">
             <input type="hidden" id="addr" name="addr"> 
-            <div class="question-container" id="1">
+           
+            <div class="question active" id="1">
                 <p class="qno"><strong>Question 1</strong></p>
                 <p class="qsn">________ is an unpleasant emotion that is often caused by the perception of danger or a threat.</p>
                 <input type="radio" id="A1" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton1">
@@ -195,6 +196,7 @@
         </form>
     </div>
 </div>
+
 <script>
   // Get all question links
   const questionLinks = document.querySelectorAll(".question-link");
