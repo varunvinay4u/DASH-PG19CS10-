@@ -5,36 +5,59 @@
 
 body {
     font-family: Lato, sans-serif;
-    display: grid;
-    justify-content: center;
-    color: #4f546c;
-    font-size: 0.9rem;
-    background-color: #f3f8fe;
+    background-color: #fff;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: -70px;
-}
-
-.btn-links {
-    text-align: center;
-    width: 40rem;
-    height: 1.5rem;
-    background: #a7bad3;
-    color: #fff;
-    border-radius: 7px;
-    font-size: 15px;
-    padding: 15px 0;
-    margin: -15px 0;
+.navbar {
+    width: 100%;
+    color: white;
     text-decoration: none;
-    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    padding: 20px 250px;
+    margin: 0 30px;
+    text-align: center;
+    background-color: #4E9AF1;
+}
+
+.navbar a.active {
+    background-color: #4E9AF1;
+    color: white;
+}
+
+.question-container {
+    align-items: center;
+}
+
+.question {
+    background-color: #fff;
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.btn-links h2 {
+    background-color: #ddd;
+    width: 50%;
+    padding: 20px 60px ;
+    margin: 15px auto;
+    border-radius: 10px;
+	text-align: center;
+	font-size: 25px;
 }
 
 .center {
-    position: fixed;
+    text-align: center;
+    margin: 50px 0;
     bottom: 32px;
     left: 41rem;
 }
