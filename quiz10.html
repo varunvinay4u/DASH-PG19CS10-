@@ -32,11 +32,34 @@
         document.getElementById('addr').value = destinationUrl;
         }
                 </script> 
+
+<div class="sidebar">
+    <div id="timer"></div>
+
+    <a href="#" class="question-link active">Question 1</a>
+    <a href="#" class="question-link">Question 2</a>
+    <a href="#" class="question-link">Question 3</a>
+    <a href="#" class="question-link">Question 4</a>
+    <a href="#" class="question-link">Question 5</a>
+    <a href="#" class="question-link">Question 6</a>
+    <a href="#" class="question-link">Question 7</a>
+    <a href="#" class="question-link">Question 8</a>
+    <a href="#" class="question-link">Question 9</a>
+    <a href="#" class="question-link">Question 10</a>
+
+    <!-- <div class="center">
+      <button id="previous-btn" disabled>Previous</button>
+      <button id="next-btn">Next</button>
+    </div> -->
+  </div>
+  
+  <div class="question-container">
+
             <form method="post" action="e_quiz10.php">
                 <input type="hidden" id="addr" name="addr"> 
-                <div id="1">
+                <div class="question action" id="1">
                     <p class="qno"><strong>Question 1</strong></p>
-                    <p class="question">Identify the action</p>
+                    <p class="qsn">Identify the action</p>
                     <div style="text-align: center;">
                         <img src="image/Sing.jpg"  width="400" height="300">
                         <br>
@@ -50,9 +73,9 @@
                     <input type="radio" id="D1" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton1">
                     <label for="D1">Drink</label>
                 </div>
-            <div id="2">
+            <div class="question" id="2">
                 <p class="qno"><strong>Question 2</strong></p>
-                <p class="question">The action of bringing your hands together to make a loud noise is</p>
+                <p class="qsn">The action of bringing your hands together to make a loud noise is</p>
                 <input type="radio" id="A2" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">
                 <label for="A2">Cry</label>
                 <input type="radio" id="B2" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">
@@ -62,9 +85,9 @@
                 <input type="radio" id="D2" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">
                 <label for="D2">Bath</label>
             </div>
-            <div id="3">
+            <div class="question" id="3">
                 <p class="qno"><strong>Question 3</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/bath.jpg"  width="400" height="300">
                     <br>
@@ -78,9 +101,9 @@
                 <input type="radio" id="D3" value="D" onClick="SetAnswer(3, this.value)" name="radiobutton3">
                 <label for="D3">Sing</label>
             </div>
-            <div id="4">
+            <div class="question" id="4">
                 <p class="qno"><strong>Question 4</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/handshaking.jpg" width="400" height="300">
                     <br>
@@ -94,9 +117,9 @@
                 <input type="radio" id="D4" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton4">
                 <label for="D4">Fight</label>
             </div>
-            <div id="5">
+            <div class="question" id="5">
                 <p class="qno"><strong>Question 5</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/eat.jpg" width="400" height="300">
                     <br>
@@ -110,9 +133,9 @@
                 <input type="radio" id="D5" value="D" onClick="SetAnswer(5, this.value)" name="radiobutton5">
                 <label for="D5">Fight</label>
             </div>
-            <div id="6">
+            <div class="question" id="6">
                 <p class="qno"><strong>Question 6</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/drink.jpg" width="400" height="300">
                     <br>
@@ -126,9 +149,9 @@
                 <input type="radio" id="D6" value="D" onClick="SetAnswer(6, this.value)" name="radiobutton6">
                 <label for="D6">Fight</label>
             </div>
-            <div id="7">
+            <div class="question" id="7">
                 <p class="qno"><strong>Question 7</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/Dance.jpg" width="400" height="300">
                     <br>
@@ -142,9 +165,9 @@
                 <input type="radio" id="D7" value="D" onClick="SetAnswer(7, this.value)" name="radiobutton7">
                 <label for="D7">Dance</label>
             </div>
-            <div id="8">
+            <div class="question" id="8">
                 <p class="qno"><strong>Question 8</strong></p>
-                <p class="question">Identify the action</p>
+                <p class="qsn">Identify the action</p>
                 <div style="text-align: center;">
                     <img src="image/jump.jpg" width="400" height="300">
                     <br>
@@ -160,9 +183,9 @@
             </div>
             
             
-        <div id="9">
+        <div class="question" id="9">
             <p class="qno"><strong>Question 9</strong></p>
-            <p class="question">Identify the action</p>
+            <p class="qsn">Identify the action</p>
             <div style="text-align: center;">
                 <img src="image/cry.jpg" width="400" height="300">
                 <br>
@@ -176,9 +199,9 @@
             <input type="radio" id="D9" value="D" onClick="SetAnswer(9, this.value)" name="radiobutton9">
             <label for="D9">Dance</label>
         </div>
-        <div id="10">
+        <div class="question" id="10">
             <p class="qno"><strong>Question 10</strong></p>
-            <p class="question">Identify the action</p>
+            <p class="qsn">Identify the action</p>
             <div style="text-align: center;">
                 <img src="image/fight.jpg" width="400" height="300">
                 <br>
