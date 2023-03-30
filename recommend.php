@@ -19,25 +19,29 @@ $emotions=$user_data['emotions'];
 $audio=$user_data['audio'];
 $comm=$user_data['comm'];
 $actions=$user_data['actions'];
+
+$scores_str="$alphabet,$colour,$digits,$arithmetic,$shapes,$objects,$emotions,$audio,$comm,$actions";
+$escaped_str = escapeshellarg($scores_str);
 // $my_var = "$alphabet,$colour,$digits,$arithmetic,$shapes,$objects,$emotions,$audio,$comm,$actions";
 // file_put_contents("my_var.txt", $my_var);
 // echo "hiiiiiiii \n";
 $python_path = 'C:\Users\varun\AppData\Local\Programs\Python\Python310\python.exe'; // replace this with the path to your Python executable (run where python in cmd)
 
-shell_exec("$python_path decisiontree.py $id");
-$query = "select recommendations from data where id=$id";
-$result = mysqli_query($con,$query);
-if($result && mysqli_num_rows($result) > 0)
-{
-    $u_data = mysqli_fetch_assoc($result);
-}
-$abc=$u_data['recommendations'];
+$pred=shell_exec("$python_path RFmodel.py $escaped_str");
+// $query = "select recommendations from data where id=$id";
+// $result = mysqli_query($con,$query);
+// if($result && mysqli_num_rows($result) > 0)
+// {
+//     $u_data = mysqli_fetch_assoc($result);
+// }
+// $abc=$u_data['recommendations'];
+$pred=substr($pred,0,-1);
 
 // $abc=file_get_contents("my_var.txt");
 // echo $abc;
 // file_put_contents("my_text.txt", " ");
-$array=explode(" ",$abc);
-$arr = str_replace(array('[', ']', "'"), '', $array);
+$array=explode(" ",$pred);
+$arr = str_replace(array("'"," '","' "," ",' ','[',']'), '', $array);
 // $arr = array_slice($array, 1, -1);
 foreach($arr as $rec)
 {
