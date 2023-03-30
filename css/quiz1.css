@@ -57,11 +57,12 @@ body {
 .center {
     margin: 30px auto;
     width: 60%;
+    /* border: 0.5px #333 solid; */
 }
 
 #previous-btn, #next-btn {
     width: 49%;
-    height: 3rem;
+    height: 3.7rem;
     border-radius: 6px;
     background: #4CAF50;
     color: white;
