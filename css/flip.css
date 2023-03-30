@@ -10,8 +10,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: linear-gradient(red,green,yellow);*/
-    background-color: rgb(255, 254, 253);
+    background: linear-gradient(rgb(117, 38, 246),rgb(58, 70, 236),rgb(92, 143, 220));
+    /*background-color: rgb(233, 56, 180);*/
 }
 
 img{
@@ -21,7 +21,7 @@ img{
 .game{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid rgb(5, 5, 5);
+   /* border: 2px solid rgb(5, 5, 5);*/
     width: 640px;
     height: 640px;
     perspective: 1000px;
@@ -31,7 +31,7 @@ img{
     width: 25%;
     height: 33.33%;
     position: relative;
-    border: 2px solid rgb(254, 252, 252);
+    /*border: 2px solid rgb(254, 252, 252);*/
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -46,10 +46,10 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    border: 2px solid olive;
+    /*border: 2px solid olive;*/
     padding: 20px;
-    border-radius: 5px;
-    background-color: rgb(120, 174, 225);
+    /*border-radius: 5px;
+    background-color: rgb(120, 174, 225);*/
     backface-visibility: hidden;
 
 
