@@ -31,6 +31,7 @@
           
           window.location.href = destinationUrl;
         document.getElementById('addr').value = destinationUrl;
+        document.getElementById('time').value = 600-total_seconds-1;
         }
                 </script> 
 
@@ -58,6 +59,9 @@
 
         <form method="post" action="e_quiz9.php">
             <input type="hidden" id="addr" name="addr">
+            <input type="hidden" id="time" name="time"> 
+
+            <div id="1">
             <div class="question active" id="1">
                 <p class="qno"><strong>Question 1</strong></p>
                 <p class="qsn">What do you say to greet someone when you meet them?</p>

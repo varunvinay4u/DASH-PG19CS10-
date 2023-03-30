@@ -30,6 +30,7 @@
           
           window.location.href = destinationUrl;
         document.getElementById('addr').value = destinationUrl;
+        document.getElementById('time').value = 600-total_seconds-1;
         }
                 </script> 
 
@@ -55,6 +56,9 @@
 <div class="question-container">
             <form method="post" action="e_quiz3.php">
                 <input type="hidden" id="addr" name="addr"> 
+                <input type="hidden" id="time" name="time"> 
+
+                <div id="1">
                 <div class="question active" id="1">
                     <p class="qno"><strong>Question 1</strong></p>
                     <p class="qsn">What is the sum of 2 and 3?</p>

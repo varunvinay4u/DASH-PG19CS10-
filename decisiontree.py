@@ -27,7 +27,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load the dataset
-df = pd.read_csv('TrialDataset.csv')
+df = pd.read_csv('WeightedRec.csv')
 
 # Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(df.iloc[:,:-1], df.iloc[:,-1], test_size=0.2, random_state=42)
