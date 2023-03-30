@@ -44,6 +44,7 @@ session_start();
     </style>
   </head>
   <body>
+
   <header>
 		<div class="logo">DASH Learning Platform</div>
 		<nav class="navbar" fixed-top>
@@ -70,6 +71,7 @@ session_start();
 			</ul>
 		</nav>
 	</header>
+
 
     <div class="container">
     <div class="profile">

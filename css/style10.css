@@ -90,6 +90,10 @@ p {
 }
 
 .video {
+	height="auto" 
+	controls="controls" 
+	preload="none" 
+	onclick="this.play()"
 	margin: 0 auto;
 }
 

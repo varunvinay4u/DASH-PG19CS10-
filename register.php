@@ -44,9 +44,9 @@
         <tr>
         <td><label for="gender">Gender:</label></td>
           <td>
-            Male: <input type="radio" name="gender" value="male">
-            Female: <input type="radio" name="gender" value="female">
-            Other: <input type="radio" name="gender" value="other">
+          <input type="radio" name="gender" value="male">Male</input><br>
+             <input type="radio" name="gender" value="female">Female</input><br>
+             <input type="radio" name="gender" value="other">Other</input>
           </td>
         </tr>
 
