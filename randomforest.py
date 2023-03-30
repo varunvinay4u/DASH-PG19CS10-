@@ -30,9 +30,12 @@ def predict(input_values):
 
 # Example usage:
 # input_values2 = [9.95,9.00, 7.00, 1.00, 0.00, 10.00, 7.00, 0.00, 0.00, 10.00]
-import pickle
-with open('model.pickle','wb') as f:
-        pickle.dump(clf,f)
+import gzip, pickle, pickletools
+filepath = "model.pickle"
+with gzip.open(filepath, "wb") as f:
+    pickled = pickle.dumps(clf)
+    optimized_pickle = pickletools.optimize(pickled)
+    f.write(optimized_pickle)
 
 
 # prediction = predict(num_array)
