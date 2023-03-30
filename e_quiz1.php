@@ -19,7 +19,12 @@ for ($i = 1; $i <= 10; $i++) {
       $score++; // increment score if user's answer is correct
     }
   }
-
+if($time>180){
+  $score=$score-0.01*($time-180);
+}
+if($score<0){
+  $score=0;
+}
   $c=$user_data['code'];
   $colour1=$user_data['colour'];
   $colour2=$user_data['colour2'];
