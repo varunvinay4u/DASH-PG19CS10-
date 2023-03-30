@@ -1,74 +1,105 @@
-var totalQuestions = 10;
+//timer
 
-var answers = new Array;
-var userAnswers = new Array;
+var total_seconds = 60 * 10;
+var c_minutes = parseInt(total_seconds / 60);
+var c_seconds = parseInt(total_seconds % 60);
+var timer;
+var submitBtn = document.getElementById("submit-btn");
 
-answers[1] = "A";
-answers[2] = "C";
-answers[3] = "B";
-answers[4] = "B";
-answers[5] = "C";
-answers[6] = "B";
-answers[7] = "C";
-answers[8] = "D";
-answers[9] = "B";
-answers[10] = "C";
+function CheckTime() {
+document.getElementById("timer").innerHTML = 'Time Left: ' + c_minutes + ' minutes ' + c_seconds + ' seconds ';
 
-function SetAnswer(questionNumber, answerSelection) {
-    userAnswers[questionNumber] = answerSelection;
+if (total_seconds <= 0) {
+  score();
+} 
+else {
+  total_seconds = total_seconds - 1;
+  c_minutes = parseInt(total_seconds / 60);
+  c_seconds = parseInt(total_seconds % 60);
+  timer = setTimeout(CheckTime, 1000);
 }
-
-// applies the .wrong class styling to any question div that is incorrect
-function MarkIncorrectQuestions() {
-    for(i = 1; i <= totalQuestions; i++) {
-        if(answers[i] != userAnswers[i]) {
-            document.getElementById(i).className += " wrong";
-        }
-    }
 }
+timer = setTimeout(CheckTime, 1000);
 
-function GetScore() {
-    var score = 0;
-    for(i = 1; i <= totalQuestions; i++) {
-        if(userAnswers[i] == answers[i])
-            score++;
-    }
-    return score;
-}
+submitBtn.addEventListener("click", () => {
+  alert(`Time taken: ${600-total_seconds-1} seconds`);
+});
+
+   
+//active question-links
+
+    // Get all question links
+    const questionLinks = document.querySelectorAll(".question-link");
+
+    // Get all questions
+    const questions = document.querySelectorAll(".question");
+
+    // Show the first question by default
+    questions[0].classList.add('active');
+
+    // Add click event listener to each question link
+    questionLinks.forEach((questionLink, index) => {
+      questionLink.addEventListener('click', () => {
+        // Remove active class from all question links
+        questionLinks.forEach(questionLink => questionLink.classList.remove('active'));
+
+        // Add active class to clicked question link
+        questionLink.classList.add('active');
+
+        // Remove active class from all questions
+        questions.forEach(question => question.classList.remove('active'));
+
+        // Add active class to corresponding question
+        questions[index].classList.add('active');
+      });
+    });
 
 
-// function ApplyDefaultQuestionStyles() {
-//     for(i = 1; i <= totalQuestions; i++) {
-//         if(i % 2 == 0) {
-//             document.getElementById(i).className = "question";
-//         }
-//         else {
-//             document.getElementById(i).className = "question odd";
-//         }
-//     }
-// }
+// next and previous buttons
+        
+    // // DOM elements
+    // const quizElement = document.getElementsByClassName("question-container");
+    // const questionElements = document.querySelectorAll(".question");
+    // const previousButton = document.getElementById("previous-btn");
+    // const nextButton = document.getElementById("next-btn");
 
-function CheckQuiz() {
-    // ApplyDefaultQuestionStyles();
-    var totalQuestions = '10';
-    var score = GetScore();
-    MarkIncorrectQuestions();
-    document.write("You scored: " + score + " out of " + totalQuestions + ".");
+    // // Current question index
+    // let currentQuestionIndex = 0;
 
-    var btn1 = document.createElement("a");
-    btn1.innerText = " Try Again ";
-    btn1.href = 'quiz1.html';
-    document.body.appendChild(btn1);
+    // // Show the current question
+    // function showQuestion() {
+    //   questionElements.forEach((questionElement, index) => {
+    //     if (index === currentQuestionIndex) {
+    //       questionElement.style.display = "block";
+    //     } else {
+    //       questionElement.style.display = "none";
+    //     }
+    //   });
 
+    //   // Enable or disable the previous button
+    //   if (currentQuestionIndex === 0) {
+    //     previousButton.disabled = true;
+    //   } else {
+    //     previousButton.disabled = false;
+    //   }
 
-    var btn2 = document.createElement("a");
-    btn2.innerText = " Go Home ";
-    btn2.href = 'index.html';
-    document.body.appendChild(btn2);
-    
+    //   // Enable or disable the next button
+    //   if (currentQuestionIndex === questionElements.length - 1) {
+    //     nextButton.disabled = true;
+    //   } else {
+    //     nextButton.disabled = false;
+    //   }
+    // }
 
-}
+    // // Show the first question
+    // showQuestion();
 
-function result(score,totalQuestions){
-    document.write("Score" +score);
-  }
+    // previousButton.addEventListener("click", () => {
+    //   currentQuestionIndex--;
+    //   showQuestion();
+    // });
+
+    // nextButton.addEventListener("click", () => {
+    //   currentQuestionIndex++;
+    //   showQuestion();
+    // });
