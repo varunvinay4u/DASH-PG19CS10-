@@ -198,7 +198,40 @@
 
         </form>
     </div>
+</div>
 
+    <script>
+        // Get all question links
+        const questionLinks = document.querySelectorAll(".question-link");
+      
+        // Get all questions
+        const questions = document.querySelectorAll(".question");
+      
+        // Show the first question by default
+        questions[0].classList.add('active');
+      
+        // Add click event listener to each question link
+        questionLinks.forEach((questionLink, index) => {
+          questionLink.addEventListener('click', () => {
+            // Remove active class from all question links
+            questionLinks.forEach(questionLink => questionLink.classList.remove('active'));
+      
+            // Add active class to clicked question link
+            questionLink.classList.add('active');
+      
+            // Remove active class from all questions
+            questions.forEach(question => question.classList.remove('active'));
+      
+            // Add active class to corresponding question
+            questions[index].classList.add('active');
+          });
+        });
+      
+      </script>
+      
+      <script src="js/quiz1.js"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 
