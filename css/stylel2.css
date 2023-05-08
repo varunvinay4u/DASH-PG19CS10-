@@ -71,14 +71,10 @@ p {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	preload: "none";
 }
 
 .video {
-	controls:"controls" ;
-	preload: "none" ;
-	onclick:"this.play()" ;
-	margin: 0 auto ;
+	margin: 0 auto;
 }
 iframe{
 	margin-top: -100px;
