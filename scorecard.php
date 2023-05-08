@@ -64,7 +64,9 @@ $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotio
 	<br>
 
 	<div class="center">
-        <a class="button" href="index.html">Back to Home</a>
+        <a class="button" href="index.html"> Back to Home </a>
+		<a class="button" href="scoreanalysis.php">Score Analysis</a>
     </div>
+	
 </body>
 </html>

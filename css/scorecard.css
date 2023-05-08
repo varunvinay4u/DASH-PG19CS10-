@@ -17,7 +17,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: -35px;
+    margin: 15px 0 -10px 0;
     font-size: 35px;
 }
 
@@ -50,18 +50,18 @@ table tr:nth-child(even) {
 /* button */
 
 .center {
-    position: fixed;
-    left: 42.5rem;
-    bottom: 30px;
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .button {
-    text-align: center;
+    align-items: center;
     background: #4f546c;
     color: white;
     border-radius: 7px;
     font-size: 20px;
     padding: 20px 25px;
+    margin: 0 10px;
     text-decoration: none;
     transition: all 0.2s;
 }  

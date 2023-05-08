@@ -132,6 +132,7 @@ $jsonDataBar = json_encode([
 <body>
 
 <div class="container"><br><br>
+  <canvas id="myChartMain"></canvas>
   <div class="row" style="width: 100%;">
     <div class="col">
         <canvas id="myChart1"></canvas>
