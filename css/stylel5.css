@@ -81,9 +81,9 @@ p {
 }
 
 .video {
-	controls:"controls" 
-	preload: "none" 
-	onclick:"this.play()"
+	controls:"controls" ;
+	preload: "none" ;
+	onclick:"this.play()";
 	margin: 0 auto;
 }
 
