@@ -44,7 +44,7 @@ $labels = ['Alphabet', 'Colour', 'Digits', 'Arithmetic', 'Shapes', 'Objects', 'E
 
 // pie chart for average marks
 $jsonData = json_encode([
-    'labels' => $labels,
+    // 'labels' => $labels,
     'datasets' => [
       [
         'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
@@ -55,8 +55,7 @@ $jsonData = json_encode([
 
 // pie chart for first try marks
 $jsonData1 = json_encode([
-
-    'labels' => $labels,
+    // 'labels' => $labels,
     'datasets' => [
       [
         'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
@@ -67,7 +66,7 @@ $jsonData1 = json_encode([
 
 // pie chart for second try marks
 $jsonData2 = json_encode([
-    'labels' => $labels,
+    // 'labels' => $labels,
     'datasets' => [
       [
         'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
@@ -78,7 +77,7 @@ $jsonData2 = json_encode([
 
 // pie chart for third try marks
 $jsonData3 = json_encode([
-    'labels' => $labels,
+    // 'labels' => $labels,
     'datasets' => [
       [
         'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
@@ -131,28 +130,48 @@ $jsonDataBar = json_encode([
 </head>
 <body>
 
-<div class="container"><br><br>
-  <canvas id="myChartMain"></canvas>
-  <div class="row" style="width: 100%;">
+<div class="container">
+  <div class="row pie">
+    <div class="col-8">
+      <canvas id="myChartMain"></canvas>
+    </div>
+    <div class="col-2">
+      <canvas id="myChart1"></canvas>
+      <canvas id="myChart2"></canvas>
+    </div>
+    <div class="col-2">
+      <canvas id="myChart3"></canvas>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <div class="row">
     <div class="col">
-        <canvas id="myChart1"></canvas>
+      <canvas id="myChartLine"></canvas>
     </div>
     <div class="col">
-        <canvas id="myChart2"></canvas>
+      <canvas id="myChartBar"></canvas>
     </div>
-    <div class="col">
-        <canvas id="myChart3"></canvas>
-    </div>
-    <div class="col">
-        <canvas id="myChart"></canvas>
-    </div>
-  </div><br><br>
-  <canvas id="myChartBar"></canvas><br><br>
-  <canvas id="myChartLine"></canvas>
+  </div>
 </div>
 
 
 <script>
+  // aster plot
+  var ctx6 = document.getElementById("myChartMain").getContext("2d");
+		var myChartMain = new Chart(ctx6, {
+			type: 'polarArea',
+			data: {
+				labels: <?php echo json_encode($lessons); ?>,
+				datasets: [{
+					label: 'lesson scores',
+					data: <?php echo json_encode($scores); ?>,
+					backgroundColor: ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
+					borderWidth: 1,
+					fill: false
+				}]
+      }
+    });
+
   // pie chart for average marks
   var ctx = document.getElementById('myChart').getContext('2d');
   var chartData = <?php echo $jsonData; ?>;
@@ -277,7 +296,7 @@ $jsonDataBar = json_encode([
       });
 
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
