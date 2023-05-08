@@ -64,3 +64,23 @@ img{
 .card.flip{
     transform: rotateY(180deg);
 }
+
+.center{
+	text-align: center;
+	align-items: center;
+}
+
+.btn-flip {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-flip:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}

@@ -1,0 +1,248 @@
+/* Lesson 2 Styles */
+
+* {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+.logo {
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+}
+
+header {
+	background-color: #4E9AF1;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link{
+	display: flex;
+	background-color: #4E9AF1;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	margin-right: 20px;
+
+	color: white;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+nav{
+	position: sticky;
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+
+
+p {
+	font-size: 25px;
+	text-align: center;
+}
+
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
+}
+
+.row {
+	display: flex; 
+	justify-content: space-between;
+}
+
+.row .col {
+	padding: 0 20px;
+}
+
+.row .col1 {
+	padding: 0 20px;
+}
+
+.col1 p {
+	height: 10rem;
+}
+
+.col1 .btn-game{
+align-items: center;
+}
+
+
+.col p {
+	height: 10rem;
+}
+
+.images img {
+	width: 300px;
+	height: 300px;
+	margin: 15px;
+}
+
+.text-center img {
+	margin: 30px 0;
+}
+
+/* Main Content 
+
+p {
+	font-size: 25px;
+	text-align: center;
+}
+
+.content {
+	background-color: #ffffffa9;
+	padding: 130px 80px;
+	margin: 30px 100px;
+}
+
+.container-video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.video {
+	margin: 0 auto;
+}
+iframe{
+	margin-top: -100px;
+}
+
+.list-obj {
+	list-style-type: none;
+}
+
+.col {
+	align-items: center;
+	height: 40px;
+	width: 2rem;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 25px 25px;
+}
+
+.color-col{
+	flex-basis: 25%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer-1:hover{
+    background-color: blue;
+}
+.layer-2:hover{
+    background-color: yellow;
+}
+.layer-3:hover{
+    background-color: green;
+}
+.layer-4:hover{
+    background-color: red;
+}
+
+.layer h3 {
+	width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    position: absolute;
+	top: 150px;
+	left: 125px;
+    opacity: 1;
+	text-shadow: 0 0 3px #fff;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 0;
+}
+
+.layer p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+	color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer-2 p {
+    color: #000;
+}
+.layer:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+*/
+
+/* Quiz button */
+
+.btn-game {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
+
+.btn-quiz:hover {
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.center{
+	text-align: center;
+	align-items: center;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #4E9AF1;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
