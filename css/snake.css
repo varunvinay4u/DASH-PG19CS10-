@@ -1,0 +1,23 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    display: flex;
+    flex-wrap: wrap;
+   /* border: 2px solid rgb(5, 5, 5);*/
+    width: 640px;
+    height: 640px;
+    perspective: 1000px;
+}
+.btn-game {
+	background-color: #199319;
+	text-decoration: none;
+	text-align: center;
+  	color: white;
+	border-radius: 6%;
+	padding: 20px 30px;
+}
