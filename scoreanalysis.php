@@ -42,16 +42,16 @@ $lesson10=[$user_data['actionsAvg'],$user_data['actions'],$user_data['actions2']
 // labels
 $labels = ['Alphabet', 'Colour', 'Digits', 'Arithmetic', 'Shapes', 'Objects', 'Emotions', 'Audio', 'Communications', 'Actions'];
 
-// pie chart for average marks
-$jsonData = json_encode([
-    // 'labels' => $labels,
-    'datasets' => [
-      [
-        'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
-        'data' => array_values($avg)
-      ]
-    ]
-]);
+// // pie chart for average marks
+// $jsonData = json_encode([
+//     // 'labels' => $labels,
+//     'datasets' => [
+//       [
+//         'backgroundColor' => ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
+//         'data' => array_values($avg)
+//       ]
+//     ]
+// ]);
 
 // pie chart for first try marks
 $jsonData1 = json_encode([
@@ -127,28 +127,39 @@ $jsonDataBar = json_encode([
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/scoreanalysis.css">
+    <style>
+      h2 {
+        margin-bottom: 30px;
+      }
+    </style>
 </head>
 <body>
 
 <div class="container">
   <div class="row pie">
-    <div class="col-8">
+    <div class="col-6">
+      <h2>Latest Score</h2>
       <canvas id="myChartMain"></canvas>
     </div>
-    <div class="col-2">
+    <div class="col-6">
+      <h2>Average Score</h2>
+      <canvas id="myChart"></canvas>
+    </div>
+    <!-- <div class="col-2">
       <canvas id="myChart1"></canvas>
       <canvas id="myChart2"></canvas>
     </div>
     <div class="col-2">
       <canvas id="myChart3"></canvas>
       <canvas id="myChart"></canvas>
-    </div>
+    </div> -->
   </div>
   <div class="row">
-    <div class="col">
+    <h2>Score Analysis</h2>
+    <div class="col-6">
       <canvas id="myChartLine"></canvas>
     </div>
-    <div class="col">
+    <div class="col-6">
       <canvas id="myChartBar"></canvas>
     </div>
   </div>
@@ -156,7 +167,7 @@ $jsonDataBar = json_encode([
 
 
 <script>
-  // aster plot
+  // aster plot for scores
   var ctx6 = document.getElementById("myChartMain").getContext("2d");
 		var myChartMain = new Chart(ctx6, {
 			type: 'polarArea',
@@ -169,40 +180,75 @@ $jsonDataBar = json_encode([
 					borderWidth: 1,
 					fill: false
 				}]
+      },
+      options: {
+        scale:{
+          ticks:{
+            beginAtZero: true,
+            max: 10
+          }
+        }
+      }
+    });
+    
+
+   // aster plot for average scores
+   var ctx = document.getElementById("myChart").getContext("2d");
+		var myChart = new Chart(ctx, {
+			type: 'polarArea',
+			data: {
+				labels: <?php echo json_encode($lessons); ?>,
+				datasets: [{
+					label: 'lesson average scores',
+					data: <?php echo json_encode($avg); ?>,
+					backgroundColor: ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red', 'black', 'pink', 'brown'],
+					borderWidth: 1,
+					fill: false
+				}]
+      }
+      ,
+      options: {
+        scale:{
+          ticks:{
+            beginAtZero: true,
+            max: 10
+          },
+          r:10,
+          angleLines: {
+            display: false
+          }
+        },
+        elements: {
+          arc: {
+            maxSize: 10
+          }
+        }
       }
     });
 
-  // pie chart for average marks
-  var ctx = document.getElementById('myChart').getContext('2d');
-  var chartData = <?php echo $jsonData; ?>;
-  var myChart = new Chart(ctx, {
-    type: 'pie',
-    data: chartData
-  });
+  // // pie chart for first try marks
+  // var ctx1 = document.getElementById('myChart1').getContext('2d');
+  // var chartData1 = <?php echo $jsonData1; ?>;
+  // var myChart1 = new Chart(ctx1, {
+  //   type: 'pie',
+  //   data: chartData1
+  // });
 
-  // pie chart for first try marks
-  var ctx1 = document.getElementById('myChart1').getContext('2d');
-  var chartData1 = <?php echo $jsonData1; ?>;
-  var myChart1 = new Chart(ctx1, {
-    type: 'pie',
-    data: chartData1
-  });
+  // // pie chart for second try marks
+  // var ctx2 = document.getElementById('myChart2').getContext('2d');
+  // var chartData2 = <?php echo $jsonData2; ?>;
+  // var myChart2 = new Chart(ctx2, {
+  //   type: 'pie',
+  //   data: chartData2
+  // });
 
-  // pie chart for second try marks
-  var ctx2 = document.getElementById('myChart2').getContext('2d');
-  var chartData2 = <?php echo $jsonData2; ?>;
-  var myChart2 = new Chart(ctx2, {
-    type: 'pie',
-    data: chartData2
-  });
-
-  // pie chart for third try marks
-  var ctx3 = document.getElementById('myChart3').getContext('2d');
-  var chartData3 = <?php echo $jsonData3; ?>;
-  var myChart3 = new Chart(ctx3, {
-    type: 'pie',
-    data: chartData3
-  });
+  // // pie chart for third try marks
+  // var ctx3 = document.getElementById('myChart3').getContext('2d');
+  // var chartData3 = <?php echo $jsonData3; ?>;
+  // var myChart3 = new Chart(ctx3, {
+  //   type: 'pie',
+  //   data: chartData3
+  // });
 
   // bar diagram comparing all attempts and average mark
   var ctx4 = document.getElementById('myChartBar').getContext('2d');
