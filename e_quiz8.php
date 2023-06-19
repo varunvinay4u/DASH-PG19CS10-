@@ -6,7 +6,7 @@ include("functions.php");
 
 $user_data = check_login($con);
 
-$answers = array("", "", "", "", "", "","","","",""); // correct answers
+$answers = array("C", "D", "A", "B", "B", "C","B","C","D","B"); // correct answers
 $score = 0; // initialize score variable
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
