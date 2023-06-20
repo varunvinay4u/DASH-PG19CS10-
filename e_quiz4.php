@@ -32,7 +32,7 @@ for ($i = 1; $i <= 10; $i++) {
   $aAvg=$user_data['alphabetAvg'];
   $aAttempts=$user_data['alphabetAttempts'];
   $average=(($aAvg*$aAttempts)+$score)/($aAttempts+1);
-$sql = "update data set alphabet=$score,alphabet2=$alphabet1,alphabet3=$alphabet2,alphabetAvg=$average,alphabetAttempts=$aAttempts+1 where code=$c";
+$sql = "update score set alphabet=$score,alphabet2=$alphabet1,alphabet3=$alphabet2,alphabetAvg=$average,alphabetAttempts=$aAttempts+1 where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }
