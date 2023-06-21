@@ -32,7 +32,7 @@ $comm2=$user_data['comm2'];
 $cAvg=$user_data['commAvg'];
 $cAttempts=$user_data['commAttempts'];
 $average=(($cAvg*$cAttempts)+$score)/($cAttempts+1);
-$sql = "update data set comm=$score,comm2=$comm1,comm3=$comm2,commAvg=$average,commAttempts=$cAttempts+1 where code=$c";
+$sql = "update score set comm=$score,comm2=$comm1,comm3=$comm2,commAvg=$average,commAttempts=$cAttempts+1 where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }

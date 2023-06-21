@@ -8,16 +8,16 @@ session_start();
     
 	$user_data = check_login($con);
 
-$alphabet=$user_data['alphabet'];
-$colour=$user_data['colour'];
-$digits=$user_data['digits'];
-$arithmetic=$user_data['arithmetic'];
-$shapes=$user_data['shapes'];
-$objects=$user_data['objects'];
-$emotions=$user_data['emotions'];
-$audio=$user_data['audio'];
-$comm=$user_data['comm'];
-$actions=$user_data['actions'];
+// $alphabet=$user_data['alphabet'];
+// $colour=$user_data['colour'];
+// $digits=$user_data['digits'];
+// $arithmetic=$user_data['arithmetic'];
+// $shapes=$user_data['shapes'];
+// $objects=$user_data['objects'];
+// $emotions=$user_data['emotions'];
+// $audio=$user_data['audio'];
+// $comm=$user_data['comm'];
+// $actions=$user_data['actions'];
 
 $scores=[$user_data['alphabet'],$user_data['colour'],$user_data['digits'],$user_data['arithmetic'],$user_data['shapes'],$user_data['objects'],$user_data['emotions'],$user_data['audio'],$user_data['comm'],$user_data['actions']];
 $scores2=[$user_data['alphabet2'],$user_data['colour2'],$user_data['digits2'],$user_data['arithmetic2'],$user_data['shapes2'],$user_data['objects2'],$user_data['emotions2'],$user_data['audio2'],$user_data['comm2'],$user_data['actions2']];
@@ -33,6 +33,8 @@ $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotio
         Score Card
     </title>
 	<link rel="stylesheet" href="css/scorecard.css">
+	<link rel="icon" href="image/logo1.png" type="image/png">
+
 </head>
 <body>
 <h1>SCORECARD</h1>

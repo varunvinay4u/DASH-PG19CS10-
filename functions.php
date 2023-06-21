@@ -7,6 +7,32 @@ function check_login($con)
 	{
 
 		$code = $_SESSION['code'];
+		$query = "select * from score where code = $code limit 1";
+
+		$result = mysqli_query($con,$query);
+		if($result && mysqli_num_rows($result) > 0)
+		{
+
+			$user_data = mysqli_fetch_assoc($result);
+			return $user_data;
+		}
+	}
+
+// 	//redirect to login
+// 	header("Location: login.php");
+// 	die;
+
+ }
+
+
+
+ function check_detail($con)
+{
+
+	if(isset($_SESSION['code']))
+	{
+
+		$code = $_SESSION['code'];
 		$query = "select * from data where code = $code limit 1";
 
 		$result = mysqli_query($con,$query);
@@ -23,6 +49,9 @@ function check_login($con)
 // 	die;
 
  }
+
+
+
 function random_num($length)
 {
 

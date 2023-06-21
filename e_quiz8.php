@@ -32,7 +32,7 @@ $audio2=$user_data['audio2'];
 $aAvg=$user_data['audioAvg'];
 $aAttempts=$user_data['audioAttempts'];
 $average=(($aAvg*$aAttempts)+$score)/($aAttempts+1);
-$sql = "update data set audio=$score,audio2=$audio1,audio3=$audio2,audioAvg=$average,audioAttempts=$aAttempts+1 where code=$c";
+$sql = "update score set audio=$score,audio2=$audio1,audio3=$audio2,audioAvg=$average,audioAttempts=$aAttempts+1 where code=$c";
 if ($con->query($sql) === TRUE) {
   // echo "New record created successfully";
 }

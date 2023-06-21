@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
   <link rel="stylesheet" href="css/register.css">
+  <link rel="icon" href="image/logo1.png" type="image/png">
+
 </head>
 
 <body>
@@ -49,7 +51,10 @@
              <input type="radio" name="gender" value="other">Other</input>
           </td>
         </tr>
-
+        <tr>
+        <td><label for="autscore">Autism Score:</label></td>
+            <td><input type="number" name="autscore" id="autscore" placeholder="Autism Score:"></td>
+          </tr>
         <tr>
           <td><label for="zipcode">Zip Code:</label></td>
           <td><input type="number" name="zipcode" id="zipcode"></td>
@@ -96,19 +101,28 @@ session_start();
 		$location=$_POST['location'];
 		$dob=$_POST['dob'];
 		$age=$_POST['age'];
+    $autscore=$_POST['autscore'];
 
 
     //save to database
 		$user_id = random_num(6);
      $_SESSION['code'] = $user_id;
-     $sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'-')";
+     $sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',$autscore)";
 
         if ($con->query($sql) === TRUE) {
             echo "New record created successfully";
           } else {
             echo "Error: " . $sql . "<br>" . $con->error;
           }
-          
+     
+     $sql2 = "insert into score values ('',$user_id,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";
+
+     if ($con->query($sql2) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql2 . "<br>" . $con->error;
+    }
+
           header("Location: quiz1.html");
           die;
 

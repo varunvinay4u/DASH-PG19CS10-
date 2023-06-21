@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASH</title>
     <link rel="stylesheet" href="css/resetpwd.css">
-    <link rel="icon" type="image/png" href="image/logo.png">
- 
+    <!-- <link rel="icon" type="image/png" href="image/logo.png"> -->
+    <link rel="icon" href="image/logo1.png" type="image/png">
+
  
 </head>
 <body>
@@ -15,7 +16,7 @@
     <div class="container">
         <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-center rounded bg-white p-5">
             <div class="logo">
-                <img src="image/logo.png" class="img-fluid" style="width: 9rem;" alt="logo">
+                <img src="image/logo1.png" class="img-fluid" style="width: 9rem;" alt="logo">
             </div>
             <h3 style="text-align: center; font-size:30px;">Change Password</h3>
             <form method="post" name="reset">  <!--action="login.php"> -->
