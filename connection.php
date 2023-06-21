@@ -1,8 +1,8 @@
 <?php
 
 $dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
+$dbuser = "dashDB";
+$dbpass = "password";
 $dbname = "dash";
 
 

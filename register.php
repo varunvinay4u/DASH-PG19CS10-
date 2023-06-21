@@ -49,7 +49,10 @@
              <input type="radio" name="gender" value="other">Other</input>
           </td>
         </tr>
-
+        <tr>
+        <td><label for="autscore">Autism Score:</label></td>
+            <td><input type="number" name="autscore" id="autscore" placeholder="Autism Score:"></td>
+          </tr>
         <tr>
           <td><label for="zipcode">Zip Code:</label></td>
           <td><input type="number" name="zipcode" id="zipcode"></td>
@@ -96,12 +99,13 @@ session_start();
 		$location=$_POST['location'];
 		$dob=$_POST['dob'];
 		$age=$_POST['age'];
+    $autscore=$_POST['autscore'];
 
 
     //save to database
 		$user_id = random_num(6);
      $_SESSION['code'] = $user_id;
-     $sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender')";
+     $sql = "insert into data values ('',$user_id,'$name','$email','$password',$age,'$dob',$zipcode,'$location',$phoneNumber,'$gender',$autscore)";
 
         if ($con->query($sql) === TRUE) {
             echo "New record created successfully";

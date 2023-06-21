@@ -72,13 +72,13 @@ session_start();
 	<span class="heading-underline solid">
 		<span></span>
 	</span>
-	<div class="social-container">
+	<!-- <div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
 		<a href="#" class="social"><i class="fa fa-google"></i></a>
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-	</div>
+	</div> -->
     <br>
-	<span>or register by filling your details in the form on the next page</span>
+	<span>Register by filling your details in the form on the next page</span>
     <br>
 	<button><a href="register.php">SignUp</a></button>
 </form>
@@ -89,12 +89,13 @@ session_start();
 		<span class="heading-underline solid">
             <span></span>
         </span>
-		<div class="social-container">
+		<!-- <div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
 		<a href="#" class="social"><i class="fa fa-google"></i></a>
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-	</div>
-	<span>or use your account</span>
+	</div> -->
+	<!-- <span>or use your account</span> -->
+	<br>
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
 	<a href="forgotpwd.html">Forgot Password ?</a>
