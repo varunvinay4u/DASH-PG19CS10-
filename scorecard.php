@@ -33,6 +33,8 @@ $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotio
         Score Card
     </title>
 	<link rel="stylesheet" href="css/scorecard.css">
+	<link rel="icon" href="image/logo1.png" type="image/png">
+
 </head>
 <body>
 <h1>SCORECARD</h1>
