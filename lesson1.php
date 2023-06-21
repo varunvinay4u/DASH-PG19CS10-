@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-	<!--
-		 <meta charset="UTF-8">
-  <title>Example Page</title>
+	<!--	 
   <script>
     var startTime = new Date();
     window.addEventListener("unload", function() {
@@ -15,11 +11,10 @@
     });
   </script>
 	-->
-
-
-	
+	<meta charset="UTF-8">
 	<title>Lesson 1: Alphabets</title>
 	<link rel="stylesheet" type="text/css" href="css/stylel2.css">
+	<script src="js/lesson.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<style>
@@ -28,29 +23,6 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-attachment: fixed;
-		}
-
-		.nav-link{
-			display: flex;
-			background-color: #4E9AF1;
-			text-decoration: none;
-			font-size: 18px;
-			color: #fff;
-		}
-		
-      	.dropdown-menu .nav-link{
-        	color: #000;
-      	}
-		
-		.dropdown-toggle {
-			display: inline-block;
-	   		margin-left: 0.255em;
-			vertical-align: 0.255em;
-			content: "";
-			border-top: 0.3em solid;
-			border-right: 0.3em solid transparent;
-			border-bottom: 0;
-			border-left: 0.3em solid transparent;
 		}
 
 		h1 {
@@ -70,50 +42,17 @@
 	</style>
 </head>
 <body>
-
-	<header>
-		<div class="logo">DASH Learning Platform</div>
-		<nav class="navbar" fixed-top>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a class="nav-link" active href="index.html">Home</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lessons</a>
-					<ul class="dropdown-menu">
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson1.html">Lesson 1</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson2.html">Lesson 2</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson3.html">Lesson 3</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson4.html">Lesson 4</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson5.html">Lesson 5</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson6.html">Lesson 6</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson7.html">Lesson 7</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson8.html">Lesson 8</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson9.html">Lesson 9</a></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="lesson10.html">Lesson 10</a></li>
-					  <li class="nav-item"><hr class="dropdown-divider"></li>
-					  <li class="nav-item"><a class="dropdown-item nav-link" href="extraactivities.html">Extra Activities</a></li>
-					</ul>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="profile.php"><i class="bi bi-person-fill"></i>Profile</a></li>
-			</ul>
-		</nav>
-	</header>
+	
+<?php include 'header.html';?>
+<?php include 'menu.html';?>
 
 <div class="content">
 	<h1>Lesson 1: Alphabets</h1>
 	<br><br>
+<div id="section1" class="content-section active">
+	<!-- <p id="section1-content"></p> -->
 	<p>In this lesson, we will be learning about the alphabets. The English alphabet is a collection of 26 letters, each with its own unique sound and shape. These letters are the building blocks of the English language and are used to form words and sentences. The letters are typically taught in a specific order, starting with the letter A and ending with the letter Z.</p>
 	<br><br><br>
-	
-	<h2>The Alphabet Song</h2>
-	<br>
-	<p>Let's learn the alphabet song:</p>
-			
-	<div class="container-video">
-		<div class="video">
-			<iframe width="860" height="515" src="https://www.youtube.com/embed/hq3yfQnllfQ" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-			
 
     <h2>Writing Alphabets</h2>
 	<br>
@@ -183,89 +122,38 @@
 			<div class="col">z</div>
 		</div>
 	</div>
-	<audio controls autoplay>
-		<source src="audio/Lesson 1.mp3" type="audio/mp3">
-	</audio>
+</div>
+
+<div id="section2" class="content-section">
+	<h2>The Alphabet Song</h2>
+	<br>
+	<!-- <p id="section2-content"></p> -->
+	<p>Let's learn the alphabet song:</p>
+			
+	<div class="container-video">
+		<div class="video">
+			<iframe width="860" height="515" src="https://www.youtube.com/embed/hq3yfQnllfQ" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+<div id="section3" class="content-section">
+	<!-- <p id="section3-content"></p> -->
+	<div class="container-audio text-center">
+		<audio controls autoplay>
+			<source src="audio/Lesson 1.mp3" type="audio/mp3">
+		</audio>
+	</div>
 	<br><br><br>
-
-
-	<!-- 
-	<table>
-		<tr>
-		  <th>Capital Letters</th>
-		  <th>Small Letters</th>
-		</tr>
-		<tr>
-		  <td>
-			A <br>
-			B <br>
-			C <br>
-			D <br>
-			E <br>
-			F <br>
-			G <br>
-			H <br>
-			I <br>
-			J <br>
-			K <br>
-			L <br>
-			M <br>
-			N <br>
-			O <br>
-			P <br>
-			Q <br>
-			R <br>
-			S <br>
-			T <br>
-			U <br>
-			V <br>
-			W <br>
-			X <br>
-			Y <br>
-			Z <br>
-		  </td>
-		  <td>
-			a <br>
-			b <br>
-			c <br>
-			d <br>
-			e <br>
-			f <br>
-			g <br>
-			h <br>
-			i <br>
-			j <br>
-			k <br>
-			l <br>
-			m <br>
-			n <br>
-			o <br>
-			p <br>
-			q <br>
-			r <br>
-			s <br>
-			t <br>
-			u <br>
-			v <br>
-			w <br>
-			x <br>
-			y <br>
-			z <br>
-		  </td>
-		</tr>
-	  </table>
-	 -->
-
+</div>
 
 	<div class="center">
 		<a class="btn-quiz" href="quiz4.html">TRY QUIZ</a>
 	</div>
-	
+
 </div>
 
-<footer>
-	<p>DASH © 2023</p>
-</footer>
+<?php include 'footer.html';?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
