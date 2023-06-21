@@ -51,8 +51,7 @@
 	<h1>Lesson 1: Alphabets</h1>
 	<br><br>
 <div id="section1" class="content-section active">
-	<!-- <p id="section1-content"></p> -->
-	<p>In this lesson, we will be learning about the alphabets. The English alphabet is a collection of 26 letters, each with its own unique sound and shape. These letters are the building blocks of the English language and are used to form words and sentences. The letters are typically taught in a specific order, starting with the letter A and ending with the letter Z.</p>
+	<p id="section1-content"></p>
 	<br><br><br>
 
     <h2>Writing Alphabets</h2>
@@ -156,6 +155,33 @@
 
 <?php include 'footer.html';?>
 
+<script>
+// fetch data from txt
+document.addEventListener("DOMContentLoaded", function() {
+    fetchContent();
+});
+
+function fetchContent() {
+    fetch("lessons/lesson2.txt")
+        .then(response => response.text())
+        .then(data => {
+            const sections = data.split("---");
+
+            const section1Content = sections[0].trim();
+            // const section2Content = sections[1].trim();
+            // const section3Content = sections[2].trim();
+
+            document.getElementById("section1-content").textContent = section1Content;
+            // document.getElementById("section2-content").textContent = section2Content;
+            // document.getElementById("section3-content").textContent = section3Content;
+		})
+
+
+		.catch(error => {
+            console.error("Error fetching content:", error);
+        });
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>    
