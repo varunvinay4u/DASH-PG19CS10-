@@ -1,9 +1,9 @@
 <?php
 
 $dbhost = "localhost";
-$dbuser = "dashDB";
-$dbpass = "password";
-$dbname = "dash";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "dash1";
 
 
 $con = new mysqli("$dbhost","$dbuser","$dbpass","$dbname");
