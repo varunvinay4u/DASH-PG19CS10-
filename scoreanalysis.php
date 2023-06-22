@@ -28,16 +28,16 @@ $attempts=[$user_data['alphabetAttempts'],$user_data['colourAttempts'],$user_dat
 $lessons=['Alphabets','Colors','Numbers','Arithmetic','Shapes','Objects','Emotions','Sound','Communication','Actions'];  
 
 // for analysis with line diagram
-$lesson1=[$user_data['alphabetAvg'],$user_data['alphabet'],$user_data['alphabet2'],$user_data['alphabet3']];
-$lesson2=[$user_data['colourAvg'],$user_data['colour'],$user_data['colour2'],$user_data['colour3']];
-$lesson3=[$user_data['digitsAvg'],$user_data['digits'],$user_data['digits2'],$user_data['digits3']];
-$lesson4=[$user_data['arithmeticAvg'],$user_data['arithmetic'],$user_data['arithmetic2'],$user_data['arithmetic3']];
-$lesson5=[$user_data['shapesAvg'],$user_data['shapes'],$user_data['shapes2'],$user_data['shapes3']];
-$lesson6=[$user_data['objectsAvg'],$user_data['objects'],$user_data['objects2'],$user_data['objects3']];
-$lesson7=[$user_data['emotionsAvg'],$user_data['emotions'],$user_data['emotions2'],$user_data['emotions3']];
-$lesson8=[$user_data['audioAvg'],$user_data['audio'],$user_data['audio2'],$user_data['audio3']];
-$lesson9=[$user_data['commAvg'],$user_data['comm'],$user_data['comm2'],$user_data['comm3']];
-$lesson10=[$user_data['actionsAvg'],$user_data['actions'],$user_data['actions2'],$user_data['actions3']];
+$lesson1=[$user_data['alphabet3'],$user_data['alphabet2'],$user_data['alphabet'],$user_data['alphabetAvg']];
+$lesson2=[$user_data['colour3'],$user_data['colour2'],$user_data['colour'],$user_data['colourAvg']];
+$lesson3=[$user_data['digits3'],$user_data['digits2'],$user_data['digits'],$user_data['digitsAvg']];
+$lesson4=[$user_data['arithmetic3'],$user_data['arithmetic2'],$user_data['arithmetic'],$user_data['arithmeticAvg']];
+$lesson5=[$user_data['shapes3'],$user_data['shapes2'],$user_data['shapes'],$user_data['shapesAvg']];
+$lesson6=[$user_data['objects3'],$user_data['objects2'],$user_data['objects'],$user_data['objectsAvg']];
+$lesson7=[$user_data['emotions3'],$user_data['emotions2'],$user_data['emotions'],$user_data['emotionsAvg']];
+$lesson8=[$user_data['audio3'],$user_data['audio2'],$user_data['audio'],$user_data['audioAvg']];
+$lesson9=[$user_data['comm3'],$user_data['comm2'],$user_data['comm'],$user_data['commAvg']];
+$lesson10=[$user_data['actions3'],$user_data['actions2'],$user_data['actions'],$user_data['actionsAvg']];
 
 // labels
 $labels = ['Alphabet', 'Colour', 'Digits', 'Arithmetic', 'Shapes', 'Objects', 'Emotions', 'Audio', 'Communications', 'Actions'];
@@ -91,21 +91,21 @@ $jsonDataBar = json_encode([
     'labels' => $labels,
     'datasets' => [
       [
-        'label' => 'First Attempt',
+        'label' => 'Older Attempt',
         'backgroundColor' => 'red',
         // 'borderColor' => 'rgba(255, 99, 132, 1)',
         // 'borderWidth' => 1,
-        'data' => $scores,
+        'data' => $scores3,
       ],
       [
-        'label' => 'Second Attempt',
+        'label' => 'Previous Attempt',
         'backgroundColor' => 'blue',
         'data' => $scores2,
       ],
       [
-        'label' => 'Third Attempt',
+        'label' => 'Latest Attempt',
         'backgroundColor' => 'green',
-        'data' => $scores3,
+        'data' => $scores,
       ],
       [
         'label' => 'Average Mark',
@@ -131,7 +131,7 @@ $jsonDataBar = json_encode([
 
     <style>
       h2 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
     </style>
 </head>
@@ -274,7 +274,7 @@ $jsonDataBar = json_encode([
   // line diagram comparing all attempts and average mark
   var ctx5 = document.getElementById('myChartLine').getContext('2d');
       var data = {
-        labels: ['Average Mark', 'First Try', 'Second Try', 'Third Try'],
+        labels: ['Older Try', 'Previous Try', 'Latest Try', 'Average Mark'],
         datasets: [
           {
             label: 'lesson 1',
