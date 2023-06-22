@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lesson 6 - Objects and Animals</title>
+	  <title>Lesson 6 - Objects and Animals</title>
     <link rel="stylesheet" type="text/css" href="css/stylel6.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="icon" href="image/logo1.png" type="image/png">
+		<script src="js/lesson.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="image/logo1.png" type="image/png">
   <style>
     body {
 			background-image: url(image/bg.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-attachment: fixed;
-		}
-
-		.nav-link{
-			display: flex;
-			background-color: #4E9AF1;
-			text-decoration: none;
-			font-size: 18px;
-			color: #fff;
-		}
-		
-    .dropdown-menu .nav-link{
-      color: #000;
-    }
-		
-		.dropdown-toggle {
-			display: inline-block;
-	   		margin-left: 0.255em;
-			vertical-align: 0.255em;
-			content: "";
-			border-top: 0.3em solid;
-			border-right: 0.3em solid transparent;
-			border-bottom: 0;
-			border-left: 0.3em solid transparent;
 		}
 
 		h1 {
@@ -60,44 +38,19 @@
 			color: #063c7a;
 			margin: 25px 0;
     }
-    </style>
+  </style>
 </head>
 <body>
-	  <header>
-      <div class="logo">DASH Learning Platform</div>
-			<nav class="navbar" fixed-top>
-				<ul class="nav nav-pills">
-					<li class="nav-item"><a class="nav-link" active href="index.html">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lessons</a>
-						<ul class="dropdown-menu">
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson1.html">Lesson 1</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson2.html">Lesson 2</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson3.html">Lesson 3</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson4.html">Lesson 4</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson5.html">Lesson 5</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson6.html">Lesson 6</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson7.html">Lesson 7</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson8.html">Lesson 8</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson9.html">Lesson 9</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="lesson10.html">Lesson 10</a></li>
-                            <li class="nav-item"><hr class="dropdown-divider"></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link" href="extraactivities.html">Extra Activities</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="profile.php"><i class="bi bi-person-fill"></i>Profile</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="content">
-
-        <h1>Lesson 6 - Objects and Animals</h1>  
-        <p>In this lesson we shall learn about the various objects that we use in our day to day life. We shall also get familiar with the different types of animals that we see around us.</p>
+<?php include 'header.html';?>
+<?php include 'menu.html';?>
+<div class="content">
+    <h1>Lesson 6 - Objects and Animals</h1>
+    <div id="section1" class="content-section active">
+        <p id="section1-content"></p>
 
         <h2>OBJECTS</h2>
-        <p>An object is a material that may be perceived by the senses. Objects can be identified by its properties. Let us familiarise with some of the objects that we use in our day to day life.</p> 
-
+        <p id="section2-content"></p>
+        
         <div class="container text-center">
           <div class="row row-cols-3">
             <figure class="col">
@@ -164,16 +117,14 @@
 
 
         <h2>ANIMALS</h2>
-        <P>Animals are living things. Like plants, animals need food and water to live. Unlike plants, which make their own food, animals feed themselves by eating plants or other animals. Animals can also sense what goes on around them. Their bodies allow them to move in reaction to their surroundings. They use their senses and movement to find food, mates, and safety.</P>
-        <p>In general, animals are classified mainly into two:</p>
+        <p id="section3-content"></p>
         <ol class="list-obj text-center">
           <li>Domestic Animals</li>
           <li>Wild Animals</li>
         </ol>
 
         <h3>Domestic Animals</h3>
-        <p>A domestic animal is  an animal that's kept by or lives with humans. Some of these animals are bred to be extremely docile while growing rapidly to large sizes to that they make good livestock. Others are bred to be companions like dogs and cats.</p>
-        <p>Some of the common domestic animals are as follows:</p>
+        <p id="section4-content"></p>
 
         <div class="container text-center">
           <div class="row row-cols-3">
@@ -211,9 +162,7 @@
 
 
         <h3>Wild Animals</h3>
-        <p>Animals that live in wild conditions without being domesticated are the wild animals. Wild animals have their own preferences to survive in the environment that they live. </p>
-        <p>Some of the common wild animals are as follows:</p>
-
+        <p id="section5-content"></p>
         <div class="container text-center">
           <div class="row row-cols-3">
             <figure class="col">
@@ -247,20 +196,65 @@
             </figure>
           </div>
         </div>
-
-        <div class="center">
-          <a class="btn-quiz" href="quiz5.html">TRY QUIZ</a>
-        </div>
-
     </div>
-
-
-    <div class="footer">
-      <p>DASH © 2023</p>
+    <div id="section2" class="content-section">
+      <div class="container-video">
+				<div class="video">
+					<iframe width="860" height="515" src="videos/Animal_Sounds.mp4" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+      <div class="container-video">
+				<div class="video">
+					<iframe width="860" height="515" src="videos/Domestic_Animals.mp4" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
     </div>
+    <div id="section3" class="content-section">
+      <div class="container-audio text-center">
+			  <audio controls autoplay >
+				  <source src="audio/Lesson 6 child voice.mp3" type="audio/mp3">
+			  </audio>
+		  </div>
+    </div>
+    <div class="center">
+        <a class="btn-quiz" href="quiz5.html">TRY QUIZ</a>
+    </div>
+</div>
+
+<?php include 'footer.html';?>
+
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+// fetch data from txt
+document.addEventListener("DOMContentLoaded", function() {
+    fetchContent();
+});
+
+function fetchContent() {
+    fetch("lessons/lesson6.txt")
+        .then(response => response.text())
+        .then(data => {
+            const sections = data.split("---");
+
+            const section1Content = sections[0].trim();
+            const section2Content = sections[1].trim();
+            const section3Content = sections[2].trim();
+            const section4Content = sections[3].trim();
+            const section5Content = sections[4].trim();
+
+            document.getElementById("section1-content").textContent = section1Content;
+            document.getElementById("section2-content").textContent = section2Content;
+            document.getElementById("section3-content").textContent = section3Content;
+			      document.getElementById("section4-content").textContent = section4Content;
+            document.getElementById("section5-content").textContent = section5Content;
+		})
+
+		.catch(error => {
+            console.error("Error fetching content:", error);
+        });
+}
+</script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
     
