@@ -1,0 +1,36 @@
+Today we will learn about different shapes and their properties. Shapes are all around us and understanding them is important for many different activities.
+---
+
+A circle is a shape with all points at the same distance from its center. It is a two-dimensional shape and has no angles.
+---
+
+A square is a four-sided shape with all sides equal and all angles right angles. It is also a two-dimensional shape.
+---
+
+A triangle is a three-sided shape. There are different types of triangles based on their sides and angles.
+---
+
+A rectangle is a four-sided shape with opposite sides equal and parallel. It is also a two-dimensional shape.
+---
+
+A pentagon is a five-sided shape. It is also a two-dimentional shape.
+---
+
+3D shapes have three different measures such as length, width, and height as its dimensions. The only difference between 2D shape and 3D shapes is that 2D shapes do not have a thickness or depth.
+Usually, 3D shapes are obtained from the rotation of the 2D shapes. The faces of the solid shapes are the 2D shapes.
+---
+
+Cube is a solid three-dimensional figure, which has 6 square faces, 8 vertices and 12 edges.
+---
+
+Cuboid is a solid which has six rectangular faces at right angles to each other.
+---
+
+A sphere is a three-dimensional object that is round in shape.
+The points on the surface of the sphere are equidistant from the center. Hence, the distance between the center and the surface of the sphere are equal at any point.
+---
+
+A cylinder is a three-dimensional solid that holds two parallel bases joined by a curved surface, at a fixed distance.
+---
+
+A cone is a solid object that has a circular base and has a single vertex. It is a geometrical shape that tapers smoothly from the circular flat base to a point called the apex.
