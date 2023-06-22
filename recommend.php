@@ -105,25 +105,25 @@ $arr = str_replace(array("'"," '","' "," ",' ','[',']'), '', $array);
 foreach($arr as $rec)
 {
     if($rec=="Alphabets")
-        $links= array( "Alphabets" => "lesson1.html" );
+        $links= array( "Alphabets" => "lesson1.php" );
     if($rec=="Colors")
-        $links["Colors"]="lesson2.html";
+        $links["Colors"]="lesson2.php";
     if($rec=="Numbers")
-        $links["Numbers"]="lesson3.html";
+        $links["Numbers"]="lesson3.php";
     if($rec=="Arithmetic")
-        $links["Arithmetic"]="lesson4.html";
+        $links["Arithmetic"]="lesson4.php";
     if($rec=="Shapes")
-        $links["Shapes"]="lesson5.html";
+        $links["Shapes"]="lesson5.php";
     if($rec=="Objects")
-        $links["Objects"]="lesson6.html";
+        $links["Objects"]="lesson6.php";
     if($rec=="Emotions")
-        $links["Emotions"]="lesson7.html";
+        $links["Emotions"]="lesson7.php";
     if($rec=="Sound")
-        $links["Sound"]="lesson8.html";
+        $links["Sound"]="lesson8.php";
     if($rec=="Communication")
-        $links["Communication"]="lesson9.html";
+        $links["Communication"]="lesson9.php";
     if($rec=="Actions")
-        $links["Actions"]="lesson10.html";
+        $links["Actions"]="lesson10.php";
 }
 echo "<h1 class='h1 active'> Recommended Lessons: </h1><br>";
 foreach($links as $name => $url){
@@ -137,16 +137,16 @@ foreach($links as $name => $url){
 
     <section id="section2" class="text-center">
         <h1 class="h1">Lessons</h1><br>
-        <div class="btn-links"><a href="lesson1.html"><h2>Lesson 1: Alphabets</h2></a></div>
-	    <div class="btn-links"><a href="lesson2.html"><h2>Lesson 2: Colors</h2></a></div>
-        <div class="btn-links"><a href="lesson3.html"><h2>Lesson 3: Numbers</h2></a></div>
-	    <div class="btn-links"><a href="lesson4.html"><h2>Lesson 4: Arithmetic</h2></a></div>
-	    <div class="btn-links"><a href="lesson5.html"><h2>Lesson 5: Shapes</h2></a></div>
-	    <div class="btn-links"><a href="lesson6.html"><h2>Lesson 6: Objects</h2></a></div>
-	    <div class="btn-links"><a href="lesson7.html"><h2>Lesson 7: Emotions</h2></a></div>
-        <div class="btn-links"><a href="lesson8.html"><h2>Lesson 8: Sound</h2></a></div>
-	    <div class="btn-links"><a href="lesson9.html"><h2>Lesson 9: Communication</h2></a></div>
-	    <div class="btn-links"><a href="lesson10.html"><h2>Lesson 10: Actions</h2></a></div>
+        <div class="btn-links"><a href="lesson1.php"><h2>Lesson 1: Alphabets</h2></a></div>
+	    <div class="btn-links"><a href="lesson2.php"><h2>Lesson 2: Colors</h2></a></div>
+        <div class="btn-links"><a href="lesson3.php"><h2>Lesson 3: Numbers</h2></a></div>
+	    <div class="btn-links"><a href="lesson4.php"><h2>Lesson 4: Arithmetic</h2></a></div>
+	    <div class="btn-links"><a href="lesson5.php"><h2>Lesson 5: Shapes</h2></a></div>
+	    <div class="btn-links"><a href="lesson6.php"><h2>Lesson 6: Objects</h2></a></div>
+	    <div class="btn-links"><a href="lesson7.php"><h2>Lesson 7: Emotions</h2></a></div>
+        <div class="btn-links"><a href="lesson8.php"><h2>Lesson 8: Sound</h2></a></div>
+	    <div class="btn-links"><a href="lesson9.php"><h2>Lesson 9: Communication</h2></a></div>
+	    <div class="btn-links"><a href="lesson10.php"><h2>Lesson 10: Actions</h2></a></div>
     </section>
 
     
