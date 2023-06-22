@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function fetchContent() {
-    fetch("lessons/lesson2.txt")
+    fetch("lessons/lesson1.txt")
         .then(response => response.text())
         .then(data => {
             const sections = data.split("---");
